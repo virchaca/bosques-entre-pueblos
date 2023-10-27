@@ -139,7 +139,7 @@ function App() {
                   
                   <span className="aPictures"> <Link to= "/pageComponents/Fauna"> FAUNA </Link> </span>
                   <span className="aPictures"> <Link to="/pageComponents/Users">USUARIOS</Link></span>
-                  <span className="aPictures">CREA TU TARJETA</span>
+                  <span className="aPictures">CREA TU TARJETA nueva</span>
                   <span className="aPictures">OTROS</span>
                 </section>
 
