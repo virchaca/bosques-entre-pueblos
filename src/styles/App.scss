@@ -95,10 +95,15 @@
 
 .usersPictures {
   border: 1px solid black;
-  background-color: silver; 
+  background-image: url(../images/madroños5.jpg);
+  // background-size: cover;
+  padding: 100px;
   margin: 100px;
+  color: wheat;
   .usersPhoto {
     text-align: center;
+    margin: 50px;
+    padding: 80px;
   }
 }
 
