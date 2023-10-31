@@ -135,7 +135,7 @@ function App() {
                 </section>
 
                 <section className="sectionsPictures">
-                  <span className="aPictures"> <Link to="/pageComponents/forests">BOSQUES</Link></span>
+                  <span className="aPictures"> <Link to="/pageComponents/forests">LOS BOSQUES</Link></span>
                   
                   <span className="aPictures"> <Link to= "/pageComponents/Fauna"> FAUNA </Link> </span>
                   <span className="aPictures"> <Link to="/pageComponents/Users">USUARIOS</Link></span>

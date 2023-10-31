@@ -25,7 +25,7 @@
   display: flex;
   justify-content: space-between;
   background-image: url(../images/bosque.jpg);
-
+  margin-top: 50px;
   .intro {
     background-color: wheat;
     width: 30rem;
@@ -47,14 +47,17 @@
 }
 
 .sectionsPictures {
-  background-image: url(../images/polaroidback2.png);
+  background-image: url(../images/polaroidback3.png);
+  background-repeat: no-repeat;
   background-size: cover;
+  margin-inline: 600px;
+  margin-block: 50px;
   height: 350px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 30px solid white;
+  border: 30px solid black;
   padding-left: 120px;
   padding-right: 130px;
 
@@ -119,31 +122,30 @@
   justify-content: space-between;
 }
 
-.forestsDiv{
-  background-image: url(../images/bosque.jpg);
+.forestsDiv {
+  background-image: url(../images/trees.jpg);
   height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  
-   .forestsTypes{
+
+  .forestsTypes {
     height: 200px;
     border: 1px solid wheat;
     color: wheat;
   }
-  .forestText{
+  .forestText {
     color: wheat;
   }
 }
-.faunaSection{
+.faunaSection {
   background-image: url(../images/aves/birdsBack.jpg);
   background-size: cover;
   display: grid;
   grid-template-columns: 1fr;
   padding: 100px;
- 
 }
-.usersDiv{
+.usersDiv {
   background-image: url(../images/userback.jpg);
   height: 70vh;
 }
@@ -151,5 +153,4 @@
 .backToMain {
   color: black;
   text-decoration: none;
-  
 }
