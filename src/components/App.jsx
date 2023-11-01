@@ -1,5 +1,6 @@
 import "../styles/App.scss";
 // import ls from './services/localStorage';
+import { useState } from "react";
 
 import { Routes, Route, Link } from "react-router-dom";
 
@@ -9,12 +10,21 @@ import moni3 from "../images/moni3.png";
 import moni4 from "../images/moni4.png";
 import moni5 from "../images/moni5.png";
 import moni6 from "../images/moni6.png";
+import moni7 from "../images/moni7.png";
 
 import Fauna from "./pageComponents/Fauna";
 import Forests from "./pageComponents/Forests";
 import Users from "./pageComponents/Users";
 
+import GetAvatar from "./GetAvatar";
+import Profile from "./Profile";
+
 function App() {
+  const [avatar, setAvatar] = useState("");
+  const updateAvatar = (avatar) => {
+    setAvatar(avatar);
+  };
+
   return (
     <>
       <header className="header">
@@ -23,17 +33,6 @@ function App() {
             <h1>ENTRE BOSQUES y PUEBLOS</h1>
           </div>
           <form className="formHeader" action="">
-            <label htmlFor="estacion">
-              elije en que estacion del año nos visitas
-            </label>
-            <select id="estacion" name="select">
-              <option value="">elige estacion</option>
-              <option value="verano">verano</option>
-              <option value="otoño">otoño</option>
-              <option value="invierno">invierno</option>
-              <option value="primavera">primavera</option>
-            </select>
-
             <label htmlFor="hora">
               hora local
               <input type="time" id="hora" placeholder="nombre alrbol" />
@@ -99,13 +98,26 @@ function App() {
                           bosque de madroños{" "}
                         </a>
                       </li>
-                      <form>
+                      <form className="mainSectionForm">
+                        <label htmlFor="">
                         <input
                           type="search"
                           name="q"
                           placeholder="Nombre planta"
                         />
                         <input type="submit" value="Buscar" />
+                        </label>
+
+                        <label className="seasonInput" htmlFor="estacion">
+                          elije en que estacion del año nos visitas
+                        </label>
+                        <select id="estacion" name="select">
+                          <option value="">elige estacion</option>
+                          <option value="verano">verano</option>
+                          <option value="otoño">otoño</option>
+                          <option value="invierno">invierno</option>
+                          <option value="primavera">primavera</option>
+                        </select>
                       </form>
                     </ul>
                   </nav>
@@ -135,12 +147,21 @@ function App() {
                 </section>
 
                 <section className="sectionsPictures">
-                  <span className="aPictures"> <Link to="/pageComponents/forests">LOS BOSQUES</Link></span>
-                  
-                  <span className="aPictures"> <Link to= "/pageComponents/Fauna"> FAUNA </Link> </span>
-                  <span className="aPictures"> <Link to="/pageComponents/Users">USUARIOS</Link></span>
+                  <span className="aPictures">
+                    {" "}
+                    <Link to="/pageComponents/forests">LOS BOSQUES</Link>
+                  </span>
+
+                  <span className="aPictures">
+                    {" "}
+                    <Link to="/pageComponents/Fauna"> FAUNA </Link>{" "}
+                  </span>
+                  <span className="aPictures">
+                    {" "}
+                    <Link to="/pageComponents/Users">USUARIOS</Link>
+                  </span>
                   <span className="aPictures">CREA TU TARJETA nueva</span>
-              </section>
+                </section>
 
                 <section className="sectionButtons">
                   <a
@@ -203,7 +224,7 @@ function App() {
                   </p>
 
                   <p>
-                    {" "}                    
+                    {" "}
                     <a
                       href="https://www.elcafedelahistoria.com/refranes-bosque/"
                       title="refranitos refranitos..."
@@ -214,11 +235,19 @@ function App() {
                   </p>
                 </section>
                 <section className="usersPictures">
-                  <h3 className="h3Foro">Sube aqui tus fotos...</h3>
-                  <p>
-                    Elige tu fondo favorito o sube fotos de plantas, animales,
-                    paisajes...
-                  </p>
+                  <div className="usersPicturesHeader">
+                    <div className="usersPicText">
+                      <h3 className="h3Foro">Sube aqui tus fotos...</h3>
+                      <p>
+                        Elige tu fondo favorito o sube fotos de plantas,
+                        animales, paisajes...
+                      </p>
+                    </div>
+                    <div className="uploadPic">
+                      <Profile avatar={avatar} />
+                      <GetAvatar avatar={avatar} updateAvatar={updateAvatar} />
+                    </div>
+                  </div>
                   <div className="usersPhoto">
                     <img src={moni1} alt="" />
                     <img src={moni2} alt="" />
@@ -226,12 +255,12 @@ function App() {
                     <img src={moni4} alt="" />
                     <img src={moni5} alt="" />
                     <img src={moni6} alt="" />
-                    <img src={moni1} alt="" />
-                    <img src={moni2} alt="" />
-                    <img src={moni3} alt="" />
-                    <img src={moni4} alt="" />
+                    <img src={moni7} alt="" />
                     <img src={moni5} alt="" />
-                    <img src={moni6} alt="" />
+                    <img src={moni4} alt="" />
+                    <img src={moni3} alt="" />
+                    <img src={moni2} alt="" />
+                    <img src={moni1} alt="" />
                   </div>
                 </section>
                 <section className="espacio">
@@ -259,10 +288,9 @@ function App() {
             }
           />
 
-          <Route path="/pageComponents/Fauna" element={<Fauna />}/>
-          <Route path="/pageComponents/Forests" element={<Forests />}/>
-          <Route path="/pageComponents/Users" element={<Users />}/>
-
+          <Route path="/pageComponents/Fauna" element={<Fauna />} />
+          <Route path="/pageComponents/Forests" element={<Forests />} />
+          <Route path="/pageComponents/Users" element={<Users />} />
         </Routes>
       </main>
 
