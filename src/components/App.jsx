@@ -10,11 +10,12 @@ import moni3 from "../images/moni3.png";
 import moni4 from "../images/moni4.png";
 import moni5 from "../images/moni5.png";
 import moni6 from "../images/moni6.png";
-import moni7 from "../images/moni7.png";
+// import moni7 from "../images/moni7.png";
 
 import Fauna from "./pageComponents/Fauna";
 import Forests from "./pageComponents/Forests";
 import Users from "./pageComponents/Users";
+import Card from "./pageComponents/Card";
 
 import GetAvatar from "./GetAvatar";
 import Profile from "./Profile";
@@ -100,12 +101,12 @@ function App() {
                       </li>
                       <form className="mainSectionForm">
                         <label htmlFor="">
-                        <input
-                          type="search"
-                          name="q"
-                          placeholder="Nombre planta"
-                        />
-                        <input type="submit" value="Buscar" />
+                          <input
+                            type="search"
+                            name="q"
+                            placeholder="Nombre planta"
+                          />
+                          <input type="submit" value="Buscar" />
                         </label>
 
                         <label className="seasonInput" htmlFor="estacion">
@@ -160,79 +161,88 @@ function App() {
                     {" "}
                     <Link to="/pageComponents/Users">USUARIOS</Link>
                   </span>
-                  <span className="aPictures">CREA TU TARJETA nueva</span>
+                  <span className="aPictures">
+                    <Link to="/pageComponents/Card">CREA TU TARJETA</Link>
+                  </span>
                 </section>
 
-                <section className="sectionButtons">
-                  <a
-                    href="https://www.turismosierradefrancia.es/"
-                    target="blank"
-                  >
-                    {" "}
-                    <button className="btn1"> turismo sierra francia</button>
-                  </a>
-
-                  <a
-                    href="http://www.hernandezrabal.com/espana/castillaleon/salamanca/penadefrancia.htm"
-                    target="blank"
-                  >
-                    <button className="btn2"> ALGO DE HISTORIA</button>
-                  </a>
-
-                  <a
-                    href="https://www.i-bejar.com/rutas/comarca/laguna-marcos-alberca.htm"
-                    target="blank"
-                  >
-                    <button className="btn3"> LAGUNA SAN MARCOS</button>
-                  </a>
-
-                  <a
-                    href="https://es.wikiloc.com/rutas-senderismo/bosque-de-madronos-miranda-del-castanar-84675005"
-                    target="blank"
-                  >
-                    <button className="btn4">BOSQUE MADROÑOS</button>
-                  </a>
-                  <a
-                    href="https://www.comunidad.madrid/servicios/urbanismo-medio-ambiente/ecosistemas-forestales"
-                    target="blank"
-                  >
-                    Pistas par mi (comunidad madrid)
-                  </a>
-
-                  <blockquote cite="https://migueldeloyola.wordpress.com/2021/05/30/los-arboles-no-dejan-ver-el-bosque/#:~:text=Los%20%C3%A1rboles%20no%20dejan%20ver%20el%20bosque%20%E2%80%93%20Miguel%20de%20Loyola">
-                    <p>
-                      Nada más cierto eso de: los árboles no dejan ver el
-                      bosque. Una frase acuñada por la experiencia de los
-                      siglos, pero a la cual rara vez se echa manos al momento
-                      de enfrentar algún asunto importante. La tendencia{" "}
-                      <span className="highlight">
-                        {" "}
-                        generalizada en nuestro país, es a ir siempre por las
-                        ramas, sin llegar jamás a tocar la raíz de los
-                        problemas. El temor, los intereses, la apatía y
-                        negligencia por llegar al fondo de las cosas impide una
-                        solución definitiva. Nuestros legisladores, llamados
-                        precisamente a solucionar los problemas que afectan a la
-                        comunidad, se pierden en discusiones estériles{" "}
-                      </span>{" "}
-                      que no resuelven nada. Por el contrario, infectan las
-                      heridas, agravan los problemas y los vuelven endémicos{" "}
-                    </p>
-                  </blockquote>
-                  <p>
-                    <q> Miguel de Loyola, </q> escritor chileno.{" "}
-                  </p>
-
-                  <p>
-                    {" "}
+                <section className="infoSpace">
+                  <div className="sectionButtons">
                     <a
-                      href="https://www.elcafedelahistoria.com/refranes-bosque/"
-                      title="refranitos refranitos..."
+                      href="https://www.turismosierradefrancia.es/"
                       target="blank"
                     >
-                      ✅ Dichos y refranes acerca del bosque ✅{" "}
-                    </a>{" "}
-                  </p>
+                      {" "}
+                      <button className="btn1"> turismo sierra francia</button>
+                    </a>
+
+                    <a
+                      href="http://www.hernandezrabal.com/espana/castillaleon/salamanca/penadefrancia.htm"
+                      target="blank"
+                    >
+                      <button className="btn2"> ALGO DE HISTORIA</button>
+                    </a>
+
+                    <a
+                      href="https://www.i-bejar.com/rutas/comarca/laguna-marcos-alberca.htm"
+                      target="blank"
+                    >
+                      <button className="btn3"> LAGUNA SAN MARCOS</button>
+                    </a>
+
+                    <a
+                      href="https://es.wikiloc.com/rutas-senderismo/bosque-de-madronos-miranda-del-castanar-84675005"
+                      target="blank"
+                    >
+                      <button className="btn4">BOSQUE MADROÑOS</button>
+                    </a>
+                    <a
+                      href="https://www.comunidad.madrid/servicios/urbanismo-medio-ambiente/ecosistemas-forestales"
+                      target="blank"
+                    >
+                      {" "}
+                      <button className="btn1">
+                        Pistas par mi (comunidad madrid)
+                      </button>
+                    </a>
+                  </div>
+                  <div className="cite">
+                    <blockquote cite="https://migueldeloyola.wordpress.com/2021/05/30/los-arboles-no-dejan-ver-el-bosque/#:~:text=Los%20%C3%A1rboles%20no%20dejan%20ver%20el%20bosque%20%E2%80%93%20Miguel%20de%20Loyola">
+                      <p>
+                        Nada más cierto eso de: los árboles no dejan ver el
+                        bosque. Una frase acuñada por la experiencia de los
+                        siglos, pero a la cual rara vez se echa manos al momento
+                        de enfrentar algún asunto importante. La tendencia{" "}
+                        <span className="highlight">
+                          {" "}
+                          generalizada en nuestro país, es a ir siempre por las
+                          ramas, sin llegar jamás a tocar la raíz de los
+                          problemas. El temor, los intereses, la apatía y
+                          negligencia por llegar al fondo de las cosas impide
+                          una solución definitiva. Nuestros legisladores,
+                          llamados precisamente a solucionar los problemas que
+                          afectan a la comunidad, se pierden en discusiones
+                          estériles{" "}
+                        </span>{" "}
+                        que no resuelven nada. Por el contrario, infectan las
+                        heridas, agravan los problemas y los vuelven endémicos{" "}
+                      </p>
+                    </blockquote>
+                    <p>
+                      <q> Miguel de Loyola, </q> escritor chileno.{" "}
+                    </p>
+
+                    <p>
+                      {" "}
+                      <a
+                        href="https://www.elcafedelahistoria.com/refranes-bosque/"
+                        title="refranitos refranitos..."
+                        target="blank"
+                      >
+                        ✅ Dichos y refranes acerca del bosque ✅{" "}
+                      </a>{" "}
+                    </p>
+                  </div>
                 </section>
                 <section className="usersPictures">
                   <div className="usersPicturesHeader">
@@ -255,15 +265,15 @@ function App() {
                     <img src={moni4} alt="" />
                     <img src={moni5} alt="" />
                     <img src={moni6} alt="" />
-                    <img src={moni7} alt="" />
+                    {/* <img src={moni7} alt="" />
                     <img src={moni5} alt="" />
                     <img src={moni4} alt="" />
                     <img src={moni3} alt="" />
                     <img src={moni2} alt="" />
-                    <img src={moni1} alt="" />
+                    <img src={moni1} alt="" /> */}
                   </div>
                 </section>
-                <section className="espacio">
+                <section className="sponsorSpace">
                   <ul>
                     <li>animaciones</li>
                     <li>OPINIONES DE USUARIOS</li>
@@ -291,6 +301,7 @@ function App() {
           <Route path="/pageComponents/Fauna" element={<Fauna />} />
           <Route path="/pageComponents/Forests" element={<Forests />} />
           <Route path="/pageComponents/Users" element={<Users />} />
+          <Route path="/pageComponents/Card" element={<Card />} />
         </Routes>
       </main>
 

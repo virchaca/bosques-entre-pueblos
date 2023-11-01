@@ -1,5 +1,7 @@
 // import React from 'react'
 import { Link } from "react-router-dom";
+import forest1 from "../../images/forest1.png";
+// import forest2 from "../../images/forest2.png";
 
 const Forests = () => {
   return (
@@ -9,7 +11,11 @@ const Forests = () => {
       </Link>
 
       <div className="forestsDiv">
-        <section className="forestsTypes"> TIPOS DE BOSQUES</section>
+        <section className="forestsTypes"> TIPOS DE BOSQUES
+        
+        <img src={forest1} alt="" />        
+        {/* <img src={forest2} alt="" /> */}
+        </section>
         <p className="forestText">
           VEGETACIÓN En las cumbres más altas del Parque Natural, la vegetación
           ha tenido que adaptarse a la crudeza del clima, dominando el piorno y
@@ -35,6 +41,7 @@ const Forests = () => {
           Parque Natural cabe destacar la Armeria salmantica, planta que forma
           pequeñas matas y crece únicamente en el entorno de la Peña de Francia.
         </p>
+
       </div>
       <Link to="/" className="backToMain">
         <i className="fa-solid fa-left-long"></i> Back

@@ -1,5 +1,6 @@
 // import React from 'react'
 import { Link } from "react-router-dom";
+import user1 from '../../images/user1.png';
 
 const Users = () => {
   return (
@@ -9,7 +10,9 @@ const Users = () => {
       </Link>
 
       <div className="usersDiv">
-        <section className=""> ESPACIO PARA EL USUSARIO</section>
+        <section className=""> 
+        <p>ESPACIO PARA EL USUSARIO</p>
+        <img src={user1} alt="" /></section>
         <p className="">
          
         </p>
