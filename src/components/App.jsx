@@ -271,12 +271,6 @@ function App() {
                     <img src={moni4} alt="" />
                     <img src={moni5} alt="" />
                     <img src={moni6} alt="" />
-                    {/* <img src={moni7} alt="" />
-                    <img src={moni5} alt="" />
-                    <img src={moni4} alt="" />
-                    <img src={moni3} alt="" />
-                    <img src={moni2} alt="" />
-                    <img src={moni1} alt="" /> */}
                   </div>
                 </section>
                 <section className="sponsorSpace">

@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   color: darkgray;
+  margin-top: 20px;
 }
 
 /* .formHeader {} */
@@ -26,13 +27,17 @@
   justify-content: space-between;
   background-image: url(../images/bosque.jpg);
   margin-top: 50px;
+  margin-bottom: 100px;
   @media screen and (max-width: 480px) {
     flex-direction: column;
   }
   .intro {
     background-color: wheat;
-    width: 28rem;
-    padding: 10px;
+    width: 26rem;
+    padding: 30px;
+    margin: 80px;
+    border: 5px solid black;
+    border-style: dashed;
     @media screen and (max-width: 480px) {
       width: 15em;
     }
@@ -41,6 +46,7 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+    margin: 50px;
     .aWiki {
       color: black;
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -56,6 +62,7 @@
     flex-direction: column;
     background-color: black;
     color: white;
+    margin-block: 50px;
     .seasonInput {
       background-color: antiquewhite;
       color: black;
@@ -68,14 +75,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-inline: 10rem;
-  margin-block: 50px;
+  margin-inline: 6rem;
+  margin-block: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   // border: 30px solid black;
-  padding-inline: 130px;
+  padding-inline: 100px;
   @media screen and (max-width: 320px) {
     display: flex;
     flex-direction: column;
@@ -84,18 +91,25 @@
   }
 
   .aPictures {
-    background-image: url(../images/marco-polaroid.jpg);
+    // background-image: url(../images/marco-polaroid.jpg);
+    background-color: black;
+    border-top: 20px solid wheat;
+    border-right: 20px solid wheat;
+    border-left: 20px solid wheat;
+    border-bottom: 50px solid wheat;
     box-shadow: 10px 10px 10px black;
     background-size: cover;
     margin-block: 100px;
-    height: 150px;
+    margin-inline: 20px;
+    padding: 15px;
+    height: 130px;
     width: 150px;
     color: wheat;
     font-weight: bolder;
     font-style: oblique;
     font-size: 20px;
     text-decoration: none;
-    padding: 15px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,6 +123,7 @@
   .sectionButtons {
     display: flex;
     justify-content: center;
+    margin-block: 50px;
     .btn1,
     .btn3 {
       background-color: white;
@@ -140,8 +155,8 @@
   border: 1px solid black;
   background-image: url(../images/madroños5.jpg);
   background-size: cover;
-  // padding: 100px;
-  margin: 100px;
+  padding-block: 100px;
+  margin-block: 100px;
   color: black;
   .usersPicturesHeader {
     display: flex;
@@ -149,19 +164,33 @@
     .usersPicText {
       background-color: antiquewhite;
       height: fit-content;
+      border: 5px solid black;
+      border-style: dashed ;
     }
     .uploadPic {
       display: flex;
+      border: 5px solid white;
+      border-style: dashed ;
     }
   }
   .usersPhoto {
     text-align: center;
+    margin: 100px;
+    img{
+      margin: 25px;
+      border: 2px solid black;
+    }
+  
   }
 }
 
 .sponsorSpace {
   display: flex;
   justify-content: space-around;
+  border: 5px solid black;
+  border-style: dashed solid;
+  border-radius: 25px;
+  margin: 50px;
 }
 
 .footer {
@@ -179,6 +208,7 @@
   .forestTypesTitle {
     color: wheat;
     text-align: center;
+    padding: 50px;
   }
   .forestsTypes {
     display: flex;
@@ -187,6 +217,7 @@
   }
   .forestText {
     color: wheat;
+    padding: 50px;
   }
   .forestLink {
     border: 1px solid white;
