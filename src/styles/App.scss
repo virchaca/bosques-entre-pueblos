@@ -172,21 +172,74 @@
 }
 
 .forestsDiv {
-  background-image: url(../images/trees.jpg);
-  height: 70vh;
+  background-image: url(../images/trees.jpg); 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
-  .forestsTypes {
-    height: 200px;
-    border: 1px solid wheat;
+  .forestTypesTitle {
     color: wheat;
+    text-align: center;
+  }
+  .forestsTypes {
+    display: flex;
+    text-align: center;
+    list-style: none;       
   }
   .forestText {
     color: wheat;
   }
+  .forestLink {
+    border: 1px solid white;
+    width: 50rem;
+    background-color: wheat;
+    margin: 20px;
+    padding: 20px;
+  }  
 }
+.forest1{
+  background-image: url(../images/dehesa4.png);
+  background-size: contain;  
+  text-align: end;
+  .imgForest1{
+    width: 30%;
+    margin: 50px;
+  }
+}
+.forest2{
+  background-image: url(../images/hayedo4.png);
+  background-size: contain;   
+  text-align: end;
+  padding: 50px;
+}
+.forest3{
+  background-image: url(../images/niceForest.png);
+  background-size: contain;  
+  text-align: end;
+  .imgForest3{
+    width: 30%;
+    margin: 50px;
+  }
+}
+.forest4{
+  background-image: url(../images/ruta.png);
+  background-size: contain;  
+  text-align: end;
+  .imgForest4{
+    width: 30%;
+    margin: 50px;
+  }
+}
+.forest5{
+  background-image: url(../images/pinar2.png);
+  background-size: contain;    
+  text-align: end;
+
+  .imgForest5{
+    width: 30%;
+    margin: 50px;
+  }
+}
+
 .faunaSection {
   background-image: url(../images/aves/birdsBack.jpg);
   background-size: cover;
@@ -195,18 +248,18 @@
   padding: 100px;
 }
 .usersDiv {
-  background-image: url(../images/ecosistemas_lamina_bosque_mediterraneo.png);
-  background-repeat:repeat-x;
+  background-image: url(../images/PenaF.jpg);
+  background-repeat: repeat-x;
   background-size: contain;
-  height: 70vh;
-  padding: 20px;
+    padding: 50px;
 }
 
 .cardSection {
-  background: linear-gradient(black, rgb(6, 39, 6), rgb(66, 66, 22));
+  // background: linear-gradient(black, rgb(6, 39, 6), rgb(66, 66, 22));
+  background-image: url(../images/tronco2.png);
+  background-size: cover;
   display: flex;
   justify-content: space-around;
-  margin-inline: 300px;
   padding-block: 20px;
   .cardForm {
     background-color: silver;

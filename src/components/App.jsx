@@ -17,6 +17,12 @@ import Forests from "./pageComponents/Forests";
 import Users from "./pageComponents/Users";
 import Card from "./pageComponents/Card";
 
+import Forest1 from "./pageComponents/forestsTypes/Forest1";
+import Forest2 from "./pageComponents/forestsTypes/Forest2";
+import Forest3 from "./pageComponents/forestsTypes/Forest3";
+import Forest4 from "./pageComponents/forestsTypes/Forest4";
+import Forest5 from "./pageComponents/forestsTypes/Forest5";
+
 import GetAvatar from "./GetAvatar";
 import Profile from "./Profile";
 
@@ -150,19 +156,19 @@ function App() {
                 <section className="sectionsPictures">
                   <span className="aPictures">
                     {" "}
-                    <Link to="/pageComponents/forests">LOS BOSQUES</Link>
+                    <Link to="/forests">LOS BOSQUES</Link>
                   </span>
 
                   <span className="aPictures">
                     {" "}
-                    <Link to="/pageComponents/Fauna"> FAUNA </Link>{" "}
+                    <Link to="/Fauna"> FAUNA </Link>{" "}
                   </span>
                   <span className="aPictures">
                     {" "}
-                    <Link to="/pageComponents/Users">USUARIOS</Link>
+                    <Link to="/Users">USUARIOS</Link>
                   </span>
                   <span className="aPictures">
-                    <Link to="/pageComponents/Card">CREA TU TARJETA</Link>
+                    <Link to="/Card">CREA TU TARJETA</Link>
                   </span>
                 </section>
 
@@ -298,10 +304,16 @@ function App() {
             }
           />
 
-          <Route path="/pageComponents/Fauna" element={<Fauna />} />
-          <Route path="/pageComponents/Forests" element={<Forests />} />
-          <Route path="/pageComponents/Users" element={<Users />} />
-          <Route path="/pageComponents/Card" element={<Card />} />
+          <Route path="/Fauna" element={<Fauna />} />
+          <Route path="/Forests" element={<Forests />} />
+          <Route path="/Users" element={<Users />} />
+          <Route path="/Card" element={<Card />} />
+          <Route path="/Forest1" element={<Forest1 />} />
+          <Route path="/Forest2" element={<Forest2 />} />
+          <Route path="/Forest3" element={<Forest3 />} />
+          <Route path="/Forest4" element={<Forest4 />} />
+          <Route path="/Forest5" element={<Forest5 />} />
+
         </Routes>
       </main>
 

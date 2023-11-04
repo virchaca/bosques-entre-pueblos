@@ -1,7 +1,7 @@
 // import React from 'react'
-import { Link } from "react-router-dom";
-import forest1 from "../../images/forest1.png";
-// import forest2 from "../../images/forest2.png";
+// import Forest1 from "./forestsTypes/Forest1";
+// import Forest2 from "./forestsTypes/Forest2";
+import { Routes, Route, Link } from "react-router-dom";
 
 const Forests = () => {
   return (
@@ -11,11 +11,76 @@ const Forests = () => {
       </Link>
 
       <div className="forestsDiv">
-        <section className="forestsTypes"> TIPOS DE BOSQUES
-        
-        <img src={forest1} alt="" />        
-        {/* <img src={forest2} alt="" /> */}
-        </section>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <h3 className="forestTypesTitle">TIPOS DE BOSQUES</h3>
+                <ul className="forestsTypes">
+                  {" "}
+                  <li className="forestLink">
+                    {" "}
+                    <Link to="/Forest1">BOSQUES TIPO...1</Link>
+                    <p>
+                      Este bosque va de esto: Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Voluptatibus sapiente
+                      consectetur excepturi nesciunt itaque debitis expedita
+                      amet, iusto accusantium rem exercitationem ratione quae,
+                      id reiciendis, beatae fugiat doloremque obcaecati quas!                    
+                    </p>
+                  </li>
+                  <li className="forestLink">
+                    {" "}
+                    <Link to="/Forest2">BOSQUES TIPO...2</Link>
+                    <p>
+                      Este bosque va de esto: Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Voluptatibus sapiente
+                      consectetur excepturi nesciunt itaque debitis expedita
+                      amet, iusto accusantium rem exercitationem ratione quae,
+                      id reiciendis, beatae fugiat doloremque obcaecati quas!                      
+                    </p>
+                  </li>
+                  <li className="forestLink">
+                    {" "}
+                    <Link to="/Forest3">BOSQUES TIPO...3</Link>
+                    <p>
+                      Este bosque va de esto: Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Voluptatibus sapiente
+                      consectetur excepturi nesciunt itaque debitis expedita
+                      amet, iusto accusantium rem exercitationem ratione quae,
+                      id reiciendis, beatae fugiat doloremque obcaecati quas! 
+                    </p>
+                  </li>
+                  <li className="forestLink">
+                    {" "}
+                    <Link to="/Forest4">BOSQUES TIPO...4</Link>
+                    <p>
+                      Este bosque va de esto: Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Voluptatibus sapiente
+                      consectetur excepturi nesciunt itaque debitis expedita
+                      amet, iusto accusantium rem exercitationem ratione quae,
+                      id reiciendis, beatae fugiat doloremque obcaecati quas!                      
+                    </p>
+                  </li>
+                  <li className="forestLink">
+                    {" "}
+                    <Link to="/Forest5">BOSQUES TIPO...5</Link>
+                    <p>
+                      Este bosque va de esto: Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Voluptatibus sapiente
+                      consectetur excepturi nesciunt itaque debitis expedita
+                      amet, iusto accusantium rem exercitationem ratione quae,
+                      id reiciendis, beatae fugiat doloremque obcaecati quas!                    
+                    </p>
+                  </li>
+                </ul>
+              </>
+            }
+          />
+          {/* <Route path="/Forest1" element={<Forest1 />} />          
+          <Route path="/Fauna" element={<Forest2 />} /> */}
+        </Routes>
         <p className="forestText">
           VEGETACIÓN En las cumbres más altas del Parque Natural, la vegetación
           ha tenido que adaptarse a la crudeza del clima, dominando el piorno y
@@ -40,8 +105,9 @@ const Forests = () => {
           económica de muchos pueblos de la Sierra. Como especie exclusiva del
           Parque Natural cabe destacar la Armeria salmantica, planta que forma
           pequeñas matas y crece únicamente en el entorno de la Peña de Francia.
+          
         </p>
-
+        
       </div>
       <Link to="/" className="backToMain">
         <i className="fa-solid fa-left-long"></i> Back

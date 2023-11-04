@@ -8,7 +8,7 @@ const Card = () => {
         <i className="fa-solid fa-left-long"></i> Back
       </Link>
 
-    <div className='cardSection'>Card
+    <div className='cardSection'>
     <form className="cardForm">
         <label htmlFor="">Nombre
         <input type="text" name="" id="" placeholder="escribe aqui tu nombre"/></label>
