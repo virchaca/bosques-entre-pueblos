@@ -273,6 +273,13 @@ function App() {
                     <img src={moni6} alt="" />
                   </div>
                 </section>
+                
+                <div className="arrowDiv">
+                  <a href="/">
+                    <i className="arrow fa-solid fa-circle-arrow-up fa-2xl"></i>
+                  </a>
+                </div>
+
                 <section className="sponsorSpace">
                   <ul>
                     <li>animaciones</li>
@@ -307,7 +314,6 @@ function App() {
           <Route path="/Forest3" element={<Forest3 />} />
           <Route path="/Forest4" element={<Forest4 />} />
           <Route path="/Forest5" element={<Forest5 />} />
-
         </Routes>
       </main>
 

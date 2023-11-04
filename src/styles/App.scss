@@ -96,7 +96,7 @@
     border-top: 20px solid wheat;
     border-right: 20px solid wheat;
     border-left: 20px solid wheat;
-    border-bottom: 50px solid wheat;
+    border-bottom: 70px solid wheat;
     box-shadow: 10px 10px 10px black;
     background-size: cover;
     margin-block: 100px;
@@ -109,7 +109,7 @@
     font-style: oblique;
     font-size: 20px;
     text-decoration: none;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,22 +165,21 @@
       background-color: antiquewhite;
       height: fit-content;
       border: 5px solid black;
-      border-style: dashed ;
+      border-style: dashed;
     }
     .uploadPic {
       display: flex;
       border: 5px solid white;
-      border-style: dashed ;
+      border-style: dashed;
     }
   }
   .usersPhoto {
     text-align: center;
     margin: 100px;
-    img{
+    img {
       margin: 25px;
       border: 2px solid black;
     }
-  
   }
 }
 
@@ -201,7 +200,7 @@
 }
 
 .forestsDiv {
-  background-image: url(../images/trees.jpg); 
+  background-image: url(../images/trees.jpg);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -213,7 +212,7 @@
   .forestsTypes {
     display: flex;
     text-align: center;
-    list-style: none;       
+    list-style: none;
   }
   .forestText {
     color: wheat;
@@ -225,47 +224,47 @@
     background-color: wheat;
     margin: 20px;
     padding: 20px;
-  }  
+  }
 }
-.forest1{
+.forest1 {
   background-image: url(../images/dehesa4.png);
-  background-size: contain;  
+  background-size: contain;
   text-align: end;
-  .imgForest1{
+  .imgForest1 {
     width: 30%;
     margin: 50px;
   }
 }
-.forest2{
+.forest2 {
   background-image: url(../images/hayedo4.png);
-  background-size: contain;   
+  background-size: contain;
   text-align: end;
   padding: 50px;
 }
-.forest3{
+.forest3 {
   background-image: url(../images/niceForest.png);
-  background-size: contain;  
+  background-size: contain;
   text-align: end;
-  .imgForest3{
+  .imgForest3 {
     width: 30%;
     margin: 50px;
   }
 }
-.forest4{
+.forest4 {
   background-image: url(../images/ruta.png);
-  background-size: contain;  
+  background-size: contain;
   text-align: end;
-  .imgForest4{
+  .imgForest4 {
     width: 30%;
     margin: 50px;
   }
 }
-.forest5{
+.forest5 {
   background-image: url(../images/pinar2.png);
-  background-size: contain;    
+  background-size: contain;
   text-align: end;
 
-  .imgForest5{
+  .imgForest5 {
     width: 30%;
     margin: 50px;
   }
@@ -274,15 +273,33 @@
 .faunaSection {
   background-image: url(../images/aves/birdsBack.jpg);
   background-size: cover;
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 100px;
+  padding-block: 50px;
+  padding-inline: 100px;
+
+  .faunaTitle {
+    text-align: center;
+  }
+  .faunaTableTitle {
+    background-color: black;
+    color: white;
+    padding-inline: 20px;
+    padding-block: 5px;
+    margin-top: 20px;
+    opacity: 0.8;
+  }
+  .tableFauna {
+    font-weight: bold;
+    background-color: gray;
+    opacity: 0.8;
+    color: black;
+    margin-bottom: 50px;
+  }
 }
 .usersDiv {
   background-image: url(../images/PenaF.jpg);
   background-repeat: repeat-x;
   background-size: contain;
-    padding: 50px;
+  padding: 50px;
 }
 
 .cardSection {
@@ -291,7 +308,7 @@
   background-size: cover;
   display: flex;
   justify-content: space-around;
-  padding-block: 20px;
+  padding-block: 50px;
   .cardForm {
     background-color: silver;
     display: flex;
@@ -301,4 +318,14 @@
 .backToMain {
   color: black;
   text-decoration: none;
+}
+
+.arrowDiv {
+  text-align: center;
+  .arrow {
+    color: black;
+  }
+}
+.hidden {
+  display: none;
 }
