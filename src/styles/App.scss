@@ -15,6 +15,8 @@
   .dateAndTime {
     border: 1px solid darkgray;
     height: fit-content;
+    
+    
   }
   .burguerMenu {
     display: flex;
@@ -56,17 +58,28 @@
   @media screen and (max-width: 480px) {
     flex-direction: column;
   }
-  .seasonTips {
+  .formDisplay{
+    display: flex;
+    align-items: flex-end;
+    .ulWiki {
+      list-style: none;     
+      margin: 50px;   
+    }
+      .seasonTips {
+        height: fit-content;
     color: black;
     margin-bottom: 50px;
     border: 5px solid black;
     background-color: white;
     border-style: dashed;
     opacity: 0.8;
+    width: 50%;
   }
+  }
+
   .intro {
     background-color: wheat;
-    width: 26rem;
+    width: 40%;
     padding: 30px;
     margin: 80px;
     border: 5px solid black;
@@ -76,21 +89,7 @@
       width: 15em;
     }
   }
-  .ulWiki {
-    list-style: none;
-    // display: flex;
-    // flex-direction: column;
-    margin: 50px;
-    // .aWiki {
-    //   color: black;
-    //   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-    //     sans-serif;
-    //   font-weight: 600;
-    //   background-color: black;
-    //   color: white;
-    //   text-decoration: none;
-    // }
-  }
+  
   .mainSectionForm {
     display: flex;
     flex-direction: column;

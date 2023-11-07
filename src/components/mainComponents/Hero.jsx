@@ -1,12 +1,40 @@
 // import React from 'react'
 
+import { useState } from "react";
+
 function Hero() {
+const [season, setSeason] = useState('');
+
+//   const handleSelectSeason = (ev) => {
+//     const actualSeason = ev.target.value;
+//     if (season==='summer') {
+
+//     } else if (
+//       season==='autumn'
+//     ){
+//   } else if (
+//     season==='winter'
+//   ){
+// } else if (
+//   season==='sprint'
+// ){}
+//   }
+
+const handleSelectSeason = (ev) => {
+  const actualSeason = ev.target.value;
+  setSeason(actualSeason);
+}
+
+  const handleSubmit = (ev) => {
+    ev.preventDefault();
+  }
   return (
     <div>
       <section className="hero">
+        <div className="formDisplay">
                   <nav>
                     <ul className="ulWiki">
-                      <form className="mainSectionForm">
+                      <form className="mainSectionForm" onSubmit={handleSubmit}>
                         <label htmlFor="">
                           <input
                             type="search"
@@ -21,28 +49,41 @@ function Hero() {
                           />
                         </label>
 
-                        <label className="seasonInput" htmlFor="estacion">
+                        <label className="seasonInput" htmlFor="season">
                           en que momento del año nos visitas
                         </label>
                         <select
-                          id="estacion"
+                          id="season"
                           name="select"
                           className="seasonInput"
+                          value={season}
+                          onChange={handleSelectSeason}
                         >
                           <option value="">elige estacion</option>
-                          <option value="verano">verano</option>
-                          <option value="otoño">otoño</option>
-                          <option value="invierno">invierno</option>
-                          <option value="primavera">primavera</option>
+                          <option value="summer">verano</option>
+                          <option value="autumn">otoño</option>
+                          <option value="winter">invierno</option>
+                          <option value="spring">primavera</option>
                         </select>
                       </form>                      
                     </ul>       
                     </nav>
-                    <section className="seasonTips hidden">
-                    <p >lo mejor que ver y hacer:
+                    <div>
+                    <p className={`summer seasonTips ${season === 'summer' ? '' : 'hidden'}`}>
+                    o mejor que ver y hacer en VERANITO:
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, qui dignissimos? Dolores, maxime provident mollitia vitae cupiditate odio distinctio sint dolorem iusto exercitationem cumque illo sapiente. Nisi similique dolorum assumenda.</p>
-                    </section>                    
-           
+                      <p className={`autumn seasonTips ${season === 'autumn' ? '' : 'hidden'}`}>
+                        lo mejor que ver y hacer en OTOÑO:
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, qui dignissimos? Dolores, maxime provident mollitia vitae cupiditate odio distinctio sint dolorem iusto exercitationem cumque illo sapiente. Nisi similique dolorum assumenda.</p>
+                      <p className={`winter seasonTips ${season === 'winter' ? '' : 'hidden'}`}>
+                        lo mejor que ver y hacer en INVIERNO:
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, qui dignissimos? Dolores, maxime provident mollitia vitae cupiditate odio distinctio sint dolorem iusto exercitationem cumque illo sapiente. Nisi similique dolorum assumenda.</p>
+
+                      <p className={`spring seasonTips ${season === 'spring' ? '' : 'hidden'}`}>
+                        lo mejor que ver y hacer en PRIMAVERA:
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, qui dignissimos? Dolores, maxime provident mollitia vitae cupiditate odio distinctio sint dolorem iusto exercitationem cumque illo sapiente. Nisi similique dolorum assumenda.</p>
+                    </div>                    
+                    </div>
                   
                   <p className="intro">
                     Su importancia vegetal radica principalmente en la
