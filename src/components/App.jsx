@@ -34,10 +34,11 @@ function App() {
 
   return (
     <>
-      <header className="header">
+      <header className="header" id="header" >
         <section className="headerSection">
           <div>
-            <h1>ENTRE BOSQUES y PUEBLOS</h1>
+            <h1> BOSQUES entre PUEBLOS</h1> 
+            {/* ENTRE BOSQUES y PUEBLOS  */}
           </div>
           <form className="formHeader" action="">
             <label htmlFor="hora">
@@ -53,7 +54,7 @@ function App() {
         </section>
       </header>
 
-      <main>
+      <main id="main">
         <Routes>
           <Route
             path="/"
@@ -62,7 +63,7 @@ function App() {
                 <section className="sectionNav">
                   <nav>
                     <ul className="ulWiki">
-                      <li>
+                      {/* <li>
                         {" "}
                         <a
                           className="aWiki"
@@ -104,21 +105,22 @@ function App() {
                           {" "}
                           bosque de madroños{" "}
                         </a>
-                      </li>
+                      </li> */}
                       <form className="mainSectionForm">
-                        <label htmlFor="">
+                        <label htmlFor="" >
                           <input
                             type="search"
                             name="q"
                             placeholder="Nombre planta"
+                            className="plantInput"
                           />
-                          <input type="submit" value="Buscar" />
+                          <input type="submit" value="Buscar" className="plantInput"/>
                         </label>
 
                         <label className="seasonInput" htmlFor="estacion">
-                          elije en que estacion del año nos visitas
+                          en que momento del año nos visitas
                         </label>
-                        <select id="estacion" name="select">
+                        <select id="estacion" name="select" className="seasonInput">
                           <option value="">elige estacion</option>
                           <option value="verano">verano</option>
                           <option value="otoño">otoño</option>
@@ -275,10 +277,11 @@ function App() {
                 </section>
                 
                 <div className="arrowDiv">
-                  <a href="/">
-                    <i className="arrow fa-solid fa-circle-arrow-up fa-2xl"></i>
-                  </a>
-                </div>
+  <a href="#main">
+    <i className="arrow fa-solid fa-circle-arrow-up fa-2xl"></i>
+  </a>
+</div>
+
 
                 <section className="sponsorSpace">
                   <ul>
