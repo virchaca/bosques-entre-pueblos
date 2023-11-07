@@ -4,18 +4,39 @@
 }
 
 .header {
-  background-color: black;
-}
-.headerSection {
-  display: flex;
-  justify-content: space-between;
-  color: darkgray;
-  margin-top: 20px;
-}
+  .headerSection {
+    display: flex;
+    justify-content: space-between;
+    color: darkgray;
+    margin-top: 20px;
+    background-color: black;
+  }
 
-.dateAndTime{
-  border: 1px solid darkgray;
-  height: fit-content;
+  .dateAndTime {
+    border: 1px solid darkgray;
+    height: fit-content;
+  }
+  .burguerMenu {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 1rem;
+    text-decoration: none;
+
+    .menuList {
+      // background-color: lightgray;
+      list-style: none;
+      border: 5px solid lightgray;
+      border-style: dashed;
+      position: fixed;
+      background-color: rgba(255, 255, 255, 0.9);
+      z-index: 999;
+      /* Asegura que esté por encima del contenido */
+    }
+    .no-underline {
+      text-decoration: none;
+      color: black;
+    }
+  }
 }
 
 //     background: repeating-linear-gradient(
@@ -29,20 +50,19 @@
   display: flex;
   justify-content: space-between;
   background-image: url(../images/bosque.jpg);
-  margin-top: 50px;
+  margin-top: 10px;
   margin-bottom: 100px;
   align-items: flex-end;
   @media screen and (max-width: 480px) {
     flex-direction: column;
   }
-  .seasonTips{
-    color:  black;
+  .seasonTips {
+    color: black;
     margin-bottom: 50px;
     border: 5px solid black;
     background-color: white;
     border-style: dashed;
     opacity: 0.8;
-   
   }
   .intro {
     background-color: wheat;
@@ -79,7 +99,7 @@
     margin-block: 50px;
     padding-bottom: 10px;
     opacity: 0.8;
-    .plantInput{
+    .plantInput {
       padding: 4px;
     }
     .seasonInput {
@@ -103,6 +123,11 @@
   align-items: center;
   // border: 30px solid black;
   padding-inline: 100px;
+  .no-underline2 {
+    text-decoration: none;
+    color: darkred;
+    text-align: center;
+  }
   @media screen and (max-width: 320px) {
     display: flex;
     flex-direction: column;
@@ -294,7 +319,7 @@
   background-image: url(../images/aves/birdsBack.jpg);
   background-size: cover;
   padding-block: 50px;
-  padding-inline: 100px;
+  padding-inline: 100px;  
 
   .faunaTitle {
     text-align: center;
@@ -306,6 +331,7 @@
     padding-block: 5px;
     margin-top: 20px;
     opacity: 0.8;
+    cursor: pointer;   
   }
   .tableFauna {
     font-weight: bold;

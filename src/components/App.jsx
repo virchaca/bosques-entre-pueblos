@@ -48,19 +48,19 @@ function App() {
                 <section className="menuSection">
                   <span className="aPictures">
                     {" "}
-                    <Link to="/forests">LOS BOSQUES</Link>
+                    <Link to="/forests" className="no-underline2">LOS BOSQUES</Link>
                   </span>
 
                   <span className="aPictures">
                     {" "}
-                    <Link to="/Fauna"> FAUNA </Link>{" "}
+                    <Link to="/Fauna" className="no-underline2"> FAUNA </Link>{" "}
                   </span>
                   <span className="aPictures">
                     {" "}
-                    <Link to="/Users">USUARIOS</Link>
+                    <Link to="/Users" className="no-underline2">USUARIOS</Link>
                   </span>
                   <span className="aPictures">
-                    <Link to="/Card">CREA TU TARJETA</Link>
+                    <Link to="/Card" className="no-underline2">CREA TU TARJETA</Link>
                   </span>
                 </section>
                 <InfoSpace />
@@ -86,6 +86,7 @@ function App() {
           <Route path="/Forest3" element={<Forest3 />} />
           <Route path="/Forest4" element={<Forest4 />} />
           <Route path="/Forest5" element={<Forest5 />} />
+          <Route path="/UsersPics" element={<UsersPics/>} />
         </Routes>
       </main>
 

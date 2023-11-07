@@ -1,6 +1,23 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Fauna = () => {
+  const [showAves, setShowAves] = useState(false);
+  const [showMamiferos, setShowMamiferos] = useState(true);
+  const [showAnfibios, setShowAnfibios] = useState(true);
+  
+const handleClickAves = () => { 
+    setShowAves(!showAves);  
+}
+
+const handleClickMamiferos = () => {
+setShowMamiferos(!showMamiferos);
+}
+
+const handleClickAnfibios = () => {
+  setShowAnfibios(!showAnfibios);  
+}
+
   return (
     <>
       <Link to="/" className="backToMain">
@@ -9,8 +26,10 @@ const Fauna = () => {
 
       <div className="faunaSection" id="faunaSection">
         <h1 className="faunaTitle" id="faunaTitle"> Aves y otros animales</h1>
-        <span className="faunaTableTitle">Aves</span>
-        <table className="tableFauna" border="1">
+
+        <button className="faunaTableTitle" onClick={handleClickAves}>Aves</button>
+        <section className={showAves? 'hidden' : ''} >
+        <table className='tableFauna' border="1">
           <tr>
             <th>Nombre Común</th>
             <th>Nombre Científico</th>
@@ -121,11 +140,13 @@ const Fauna = () => {
           </tr>
         </table>
 
-        <span className="faunaTableTitle">
-          Aves migradoras de presencia regular en la Sierra de Francia{" "}
-        </span>
         <table className="tableFauna" border="1">
           <tr>
+            <th>
+              Migradoras de presencia regular
+            </th>
+          </tr>
+        <tr>
             <th>Nombre Común</th>
             <th>Nombre Científico</th>
             <th>Nombre Común</th>
@@ -156,11 +177,9 @@ const Fauna = () => {
             <td>Accipiter nisus</td>
           </tr>
         </table>
-
-        <span className="faunaTableTitle">
-          Mamíferos de la sierra de Francia
-        </span>
-        <table className="tableFauna" border="1">
+        </section>
+        <button className="faunaTableTitle" onClick={handleClickMamiferos}>Mamíferos de la sierra de Francia</button>    
+        <table className={`${showMamiferos ? 'hidden' : ''} tableFauna`}  border="1">
           <tr>
             <th>Nombre Científico</th>
             <th>Nombre Común</th>
@@ -230,11 +249,10 @@ const Fauna = () => {
             <td>Meles meles</td>
           </tr>
         </table>
-
-        <span className="faunaTableTitle">
-          Anfibios y Reptiles de ka sierra de Francia
-        </span>
-        <table className="tableFauna" border="1">
+  
+       
+        <button className="faunaTableTitle" onClick={handleClickAnfibios}>Anfibios y Reptiles de la sierra de Francia</button>    
+        <table className={`${showAnfibios ? 'hidden' : ''}  tableFauna`}  border="1">
           <tr>
             <th>Nombre Científico</th>
             <th>Nombre Común</th>
@@ -303,12 +321,7 @@ const Fauna = () => {
             <td>Culebra viperina</td>
             <td>Natrix maura</td>
           </tr>
-        </table>
-        <div className="arrowDiv">
-                  <a href="#faunaSection">
-                    <i className="arrow fa-solid fa-circle-arrow-up fa-2xl"></i>
-                  </a>
-                </div>
+        </table>      
       </div>
       
       <Link to="/" className="backToMain">
