@@ -1,10 +1,11 @@
 // import React from 'react'
-import moni1 from "../../images/moni1.png";
-import moni2 from "../../images/moni2.png";
-import moni3 from "../../images/moni3.png";
-import moni4 from "../../images/moni4.png";
-import moni5 from "../../images/moni5.png";
-import moni6 from "../../images/moni6.png";
+
+import zorro1 from "../../images/zorro1.png";
+import aguila2 from "../../images/aguila2.png";
+import oso1 from "../../images/oso1.png";
+import garduña2 from "../../images/garduña2.png";
+import tejon1 from "../../images/tejon1.png";
+import cuervo1 from "../../images/cuervo1.jpg";
 
 import { useState } from "react";
 import GetAvatar from "../GetAvatar";
@@ -32,12 +33,12 @@ function UsersPics() {
                     </div>
                   </div>
                   <div className="usersPhoto">
-                    <img src={moni1} alt="" />
-                    <img src={moni2} alt="" />
-                    <img src={moni3} alt="" />
-                    <img src={moni4} alt="" />
-                    <img src={moni5} alt="" />
-                    <img src={moni6} alt="" />
+                    <img  className="imgUsersPics" src={zorro1} alt="" />
+                    <img  className="imgUsersPics" src={aguila2} alt="" />
+                    <img  className="imgUsersPics" src={garduña2} alt="" />
+                    <img  className="imgUsersPics" src={tejon1} alt="" />
+                    <img className="imgUsersPics"  src={oso1} alt="" />
+                    <img  className="imgUsersPics" src={cuervo1} alt="" />
                   </div>
                 </section>
     </div>
