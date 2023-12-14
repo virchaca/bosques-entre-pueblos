@@ -1,0 +1,476 @@
+* {
+  margin: 0.2rem;
+  @media all and (min-width: 768px) {
+    margin: 10px;
+    padding: 0px;
+  }
+}
+
+.header {
+  .headerSection {
+    display: flex;
+    flex-direction: column;
+    color: darkgray;
+    // margin-top: 20px;
+    padding: 0.5rem;
+    background-color: black;
+    @media all and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      // color: darkgray;
+      margin-top: 20px;
+      // background-color: black;
+    }
+  }
+
+  .dateAndTime {
+    border: 1px solid darkgray;
+    height: fit-content;
+    width: fit-content;
+
+    @media all and (min-width: 768px) {
+      border: 1px solid darkgray;
+      height: fit-content;
+    }
+  }
+  .burguerMenu {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    @media all and (min-width: 768px) {
+      justify-content: space-between;
+      margin-inline: 1rem;
+    }
+
+    .menuList {
+      // background-color: lightgray;
+      list-style: none;
+      border: 5px solid black;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-style: dashed;
+      font-weight: bold;
+
+      @media all and (min-width: 768px) {
+        position: fixed;
+        border: 5px solid lightgray;
+        border-style: dashed;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 999;
+        /* Asegura que esté por encima del contenido */
+      }
+    }
+    .no-underline {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+//     background: repeating-linear-gradient(
+//         45deg,
+//         rgba(0, 0, 0, 0) 20px,
+//         rgba(10, 77, 24, 0) 40px,
+//         #1a1918 40px,
+//         #DF6C4F 60px
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/bosque.jpg);
+  margin-top: 10px;
+  margin-bottom: 100px;
+
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(../images/bosque.jpg);
+    // margin-top: 10px;
+    // margin-bottom: 100px;
+  }
+  .formDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media all and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
+    .seasonTips {
+      color: black;
+      border: 5px solid black;
+      background-color: white;
+      border-style: dashed;
+      opacity: 0.8;
+
+      @media all and (min-width: 768px) {
+        color: black;
+        margin-bottom: 50px;
+        // border: 5px solid black;
+        // background-color: white;
+        // border-style: dashed;
+        opacity: 0.8;
+        width: 30vw;
+      }
+    }
+  }
+
+  .intro {
+    background-color: wheat;
+    width: 40vw;
+    padding: 30px;
+    margin: 50px;
+    border: 5px solid black;
+    border-style: dashed;
+    opacity: 0.8;
+    width: 15em;
+    @media screen and (min-width: 768px) {
+      width: 20rem;
+    }
+  }
+
+  .mainSectionForm {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    margin-block: 50px;
+    padding: 10px;
+    gap: 10px;
+    @media screen and (min-width: 768px) {
+      padding: 0px;
+      gap: 0px;
+    }
+    .plantInput {
+      padding: 4px;
+    }
+    .seasonInput {
+      background-color: white;
+      color: black;
+      padding: 4px;
+    }
+  }
+}
+
+.menuSection {
+  background-image: url(../images/wooden-background-1490898564QuQ.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  padding-block: 3rem;
+
+  @media screen and (min-width: 768px) {
+    margin-inline: 6rem;
+    margin-block: 100px;
+    justify-content: space-between;
+    align-items: center;
+    // border: 30px solid black;
+    padding-inline: 5rem;
+    padding-block: 0rem;
+  }
+  .no-underline2 {
+    text-decoration: none;
+    color: darkred;
+    text-align: center;
+  }
+
+  .aPictures {
+    background-color: black;
+    border-top: 20px solid wheat;
+    border-right: 20px solid wheat;
+    border-left: 20px solid wheat;
+    border-bottom: 70px solid wheat;
+    box-shadow: 10px 10px 10px black;
+    background-size: cover;
+    padding: 15px;
+    height: 130px;
+    width: 150px;
+    color: wheat;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    @media screen and (min-width: 768px) {
+      margin-block: 100px;
+      margin-inline: 20px;
+    }
+  }
+}
+
+.infoSpace {
+  .sectionButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block: 20px;
+    @media all and (min-width: 768px) {
+      // display: flex;
+      // justify-content: center;
+      margin-block: 50px;
+    }
+    .btn1,
+    .btn3 {
+      background-color: white;
+      padding: 5px 10px;
+      padding: 10px 20px;
+      border-radius: 20px;
+      width: 300;
+      font-weight: bold;
+      color: rgb(90, 11, 11);
+    }
+
+    .btn2,
+    .btn4 {
+      background-color: black;
+      padding: 5px 10px;
+      padding: 10px 20px;
+      border-radius: 20px;
+      width: 300;
+      font-weight: bold;
+      color: white;
+    }
+  }
+  .cite {
+    border: 1px solid black;
+
+    @media all and (min-width: 768px) {
+      margin-inline: 100px;
+    }
+  }
+}
+.usersPictures {
+  border: 1px solid black;
+  background-image: url(../images/madroños5.jpg);
+  background-size: cover;
+  padding: 20px;
+  margin-block: 30px;
+  color: black;
+  @media all and (min-width: 768px) {
+    padding-block: 100px;
+    margin-block: 100px;
+  }
+  .usersPicturesHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .usersPicText {
+      background-color: antiquewhite;
+      height: fit-content;
+      border: 5px solid black;
+      border-style: dashed;
+    }
+    .uploadPic {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 5px solid white;
+      border-style: dashed;
+
+      @media all and (min-width: 768px) {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+    }
+  }
+  .usersPhoto {
+    text-align: center;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media all and (min-width: 768px) {
+      text-align: center;
+      margin: 50px;
+    }
+    img {
+      margin: 25px;
+      border: 10px solid white;
+    }
+    .imgUsersPics {
+      width: 200px;
+    }
+  }
+}
+
+.sponsorDiv {
+  margin-bottom: 1rem;
+  @media all and (min-width: 768px) {
+    margin-bottom: 0rem;
+  }
+
+  .sponsorSpace {
+    display: flex;
+    justify-content: space-around;
+    border: 5px solid black;
+    border-style: dashed solid;
+    border-radius: 25px;
+    margin-block: 2rem;
+    @media all and (min-width: 768px) {
+      margin: 50px;
+    }
+  }
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media all and (min-width: 768px) {
+   flex-direction: row;
+   justify-content: space-between;
+  }
+  // .mybrand {
+  //      
+  // }
+}
+
+.forestsDiv {
+  background-image: url(../images/trees.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  .forestTypesTitle {
+    color: wheat;
+    text-align: center;
+    padding: 50px;
+  }
+  .forestsTypes {
+    display: flex;
+    text-align: center;
+    list-style: none;
+  }
+  .forestText {
+    color: wheat;
+    padding: 50px;
+  }
+  .forestLink {
+    border: 1px solid white;
+    width: 50rem;
+    background-color: wheat;
+    margin: 20px;
+    padding: 20px;
+  }
+}
+.forest1 {
+  background-image: url(../images/dehesa4.png);
+  background-size: contain;
+  text-align: end;
+  .imgForest1 {
+    width: 30%;
+    margin: 50px;
+  }
+}
+.forest2 {
+  background-image: url(../images/hayedo4.png);
+  background-size: contain;
+  text-align: end;
+  padding: 50px;
+}
+.forest3 {
+  background-image: url(../images/niceForest.png);
+  background-size: contain;
+  text-align: end;
+  .imgForest3 {
+    width: 30%;
+    margin: 50px;
+  }
+}
+.forest4 {
+  background-image: url(../images/ruta.png);
+  background-size: contain;
+  text-align: end;
+  .imgForest4 {
+    width: 30%;
+    margin: 50px;
+  }
+}
+.forest5 {
+  background-image: url(../images/pinar2.png);
+  background-size: contain;
+  text-align: end;
+
+  .imgForest5 {
+    width: 30%;
+    margin: 50px;
+  }
+}
+
+.faunaSection {
+  background-image: url(../images/aves/birdsBack.jpg);
+  background-size: cover;
+  padding-block: 50px;
+  padding-inline: 100px;
+
+  .faunaTitle {
+    text-align: center;
+  }
+  .faunaTableTitle {
+    background-color: black;
+    color: white;
+    padding-inline: 20px;
+    padding-block: 5px;
+    margin-top: 20px;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .tableFauna {
+    font-weight: bold;
+    background-color: gray;
+    opacity: 0.8;
+    color: black;
+    margin-bottom: 50px;
+  }
+}
+.usersDiv {
+  background-image: url(../images/PenaF.jpg);
+  background-repeat: repeat-x;
+  background-size: contain;
+  padding: 50px;
+}
+
+.cardSection {
+  // background: linear-gradient(black, rgb(6, 39, 6), rgb(66, 66, 22));
+  background-image: url(../images/tronco2.png);
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  padding-block: 50px;
+  .cardForm {
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.backToMain {
+  color: black;
+  text-decoration: none;
+}
+
+.arrowDiv {
+  text-align: center;
+  .arrow {
+    color: black;
+  }
+}
+.hidden {
+  display: none;
+}
