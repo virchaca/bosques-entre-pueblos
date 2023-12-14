@@ -452,10 +452,11 @@
 @media all and (min-width: 768px) {}
 .faunaSection {
   background-image: url(../images/aves/birdsBack.jpg);
-  background-size: cover;
+  
   padding-block: 10px;
   padding-inline: 10px;
   @media all and (min-width: 768px) {
+    background-size: cover;
     padding-block: 50px;
   padding-inline: 100px;
   }
@@ -478,7 +479,15 @@
     opacity: 0.8;
     color: black;
     margin-bottom: 50px;
-    // width: fit-content;
+    font-size: 8px;
+    @media all and (min-width: 768px) {
+      font-weight: bold;
+      background-color: gray;
+      opacity: 0.8;
+      color: black;
+      margin-bottom: 50px;
+      font-size: 14px;
+    }
   }
 }
 .usersDiv {
