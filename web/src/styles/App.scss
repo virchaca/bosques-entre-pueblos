@@ -122,15 +122,15 @@
 
   .intro {
     background-color: wheat;
-    width: 40vw;
-    padding: 30px;
-    margin: 50px;
+    padding: 10px;
+    margin: 1.5rem;
     border: 5px solid black;
     border-style: dashed;
     opacity: 0.8;
-    width: 15em;
+    // width: 15em;
     @media screen and (min-width: 768px) {
       width: 20rem;
+      padding: 30px;
     }
   }
 
@@ -369,6 +369,7 @@
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    align-items: center;
     // list-style: none;  
     @media all and (min-width: 768px) {
       flex-direction: row;
@@ -405,6 +406,7 @@
   background-image: url(../images/dehesa4.png);
   background-size: contain;
   text-align: end;
+
   .imgForest1 {
     width: 30%;
     margin: 50px;
@@ -479,7 +481,7 @@
     opacity: 0.8;
     color: black;
     margin-bottom: 50px;
-    font-size: 8px;
+    font-size: 6px;
     @media all and (min-width: 768px) {
       font-weight: bold;
       background-color: gray;

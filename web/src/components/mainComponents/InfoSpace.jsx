@@ -76,7 +76,7 @@ function InfoSpace() {
                         title="refranitos refranitos..."
                         target="blank"
                       >
-                        ✅ Dichos y refranes acerca del bosque ✅{" "}
+                        ✅ Dichos y refranes del bosque ✅{" "}
                       </a>{" "}
                     </p>
                   </div>

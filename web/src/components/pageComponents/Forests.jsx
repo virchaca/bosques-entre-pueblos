@@ -10,16 +10,16 @@ const Forests = () => {
         <i className="fa-solid fa-left-long"></i> Back
       </Link>
 
-      <div className="forestsDiv">
+      <div className="forestsDiv">      
         <Routes>
           <Route
             path="/"
             element={
               <>
                 <h3 className="forestTypesTitle">TIPOS DE BOSQUES</h3>
-                <ul className="forestsTypes">
+                <section className="forestsTypes">
                   {" "}
-                  <li className="forestLink">
+                  <div className="forestLink">
                     {" "}
                     <Link to="/Forest1">BOSQUES TIPO...1</Link>
                     <p>
@@ -29,8 +29,8 @@ const Forests = () => {
                       amet, iusto accusantium rem exercitationem ratione quae,
                       id reiciendis, beatae fugiat doloremque obcaecati quas!                    
                     </p>
-                  </li>
-                  <li className="forestLink">
+                  </div>
+                  <div className="forestLink">
                     {" "}
                     <Link to="/Forest2">BOSQUES TIPO...2</Link>
                     <p>
@@ -40,8 +40,8 @@ const Forests = () => {
                       amet, iusto accusantium rem exercitationem ratione quae,
                       id reiciendis, beatae fugiat doloremque obcaecati quas!                      
                     </p>
-                  </li>
-                  <li className="forestLink">
+                  </div>
+                  <div className="forestLink">
                     {" "}
                     <Link to="/Forest3">BOSQUES TIPO...3</Link>
                     <p>
@@ -51,8 +51,8 @@ const Forests = () => {
                       amet, iusto accusantium rem exercitationem ratione quae,
                       id reiciendis, beatae fugiat doloremque obcaecati quas! 
                     </p>
-                  </li>
-                  <li className="forestLink">
+                  </div>
+                  <div className="forestLink">
                     {" "}
                     <Link to="/Forest4">BOSQUES TIPO...4</Link>
                     <p>
@@ -62,8 +62,8 @@ const Forests = () => {
                       amet, iusto accusantium rem exercitationem ratione quae,
                       id reiciendis, beatae fugiat doloremque obcaecati quas!                      
                     </p>
-                  </li>
-                  <li className="forestLink">
+                  </div>
+                  <div className="forestLink">
                     {" "}
                     <Link to="/Forest5">BOSQUES TIPO...5</Link>
                     <p>
@@ -73,8 +73,8 @@ const Forests = () => {
                       amet, iusto accusantium rem exercitationem ratione quae,
                       id reiciendis, beatae fugiat doloremque obcaecati quas!                    
                     </p>
-                  </li>
-                </ul>
+                  </div>
+                </section>
               </>
             }
           />
