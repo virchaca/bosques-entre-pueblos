@@ -12,7 +12,7 @@ const Users = () => {
       <div className="usersDiv">
         <section className=""> 
         <p>ESPACIO PARA EL USUSARIO</p>
-        <img src={user1} alt="" /></section>
+        <img className="usersImg" src={user1} alt="" /></section>
         <p className="">
          
         </p>
