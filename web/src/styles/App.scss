@@ -76,11 +76,12 @@
 
 .hero {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   background-image: url(../images/bosque.jpg);
   margin-top: 10px;
   margin-bottom: 100px;
+  justify-content: center;
 
   @media all and (min-width: 768px) {
     display: flex;
@@ -104,6 +105,8 @@
       background-color: white;
       border-style: dashed;
       opacity: 0.8;
+      margin: 2rem;
+      padding: 1rem;
 
       @media all and (min-width: 768px) {
         color: black;
@@ -168,18 +171,19 @@
   padding-block: 3rem;
 
   @media screen and (min-width: 768px) {
-    margin-inline: 6rem;
     margin-block: 100px;
     justify-content: space-between;
     align-items: center;
     // border: 30px solid black;
     padding-inline: 5rem;
     padding-block: 0rem;
+    gap: 15px;
   }
   .no-underline2 {
     text-decoration: none;
     color: darkred;
     text-align: center;
+    
   }
 
   .aPictures {
@@ -203,6 +207,7 @@
     align-items: center;
     margin: 10px;
     @media screen and (min-width: 768px) {
+      flex-wrap: nowrap;
       margin-block: 100px;
       margin-inline: 20px;
     }
@@ -348,6 +353,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  // @media all and (min-width: 768px) {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-around;
+  //  }
   .forestTypesTitle {
     color: wheat;
     text-align: center;
@@ -355,21 +365,43 @@
   }
   .forestsTypes {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
     list-style: none;
+    // align-content: center;
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: nowrap;;
+      // text-align: center;
+      // list-style: none;
+    }
+  }
+ 
+  .forestLink {
+    border: 1px solid white;
+    width: 16rem;
+    background-color: wheat;   
+    padding: 10px;
+    margin-block: 1rem;
+    @media all and (min-width: 768px) {      
+      width: 50rem;     
+      margin: 20px;
+      padding: 20px;
+    }
+  
   }
   .forestText {
     color: wheat;
-    padding: 50px;
-  }
-  .forestLink {
-    border: 1px solid white;
-    width: 50rem;
-    background-color: wheat;
-    margin: 20px;
     padding: 20px;
+    text-align: center;
+    @media all and (min-width: 768px) {
+      padding: 50px;
+    }
   }
 }
+@media all and (min-width: 768px) {}
+
 .forest1 {
   background-image: url(../images/dehesa4.png);
   background-size: contain;
@@ -384,6 +416,10 @@
   background-size: contain;
   text-align: end;
   padding: 50px;
+  .imgForest2{
+    width: 50%;
+    margin: 10px;
+  }
 }
 .forest3 {
   background-image: url(../images/niceForest.png);
