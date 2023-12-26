@@ -127,10 +127,12 @@
     border: 5px solid black;
     border-style: dashed;
     opacity: 0.8;
+    font-size: 10px;
     // width: 15em;
     @media screen and (min-width: 768px) {
       width: 20rem;
       padding: 30px;
+      font-size: 16px;
     }
   }
 
@@ -188,15 +190,15 @@
 
   .aPictures {
     background-color: black;
-    border-top: 20px solid wheat;
-    border-right: 20px solid wheat;
-    border-left: 20px solid wheat;
-    border-bottom: 70px solid wheat;
+    border-top: 15px solid wheat;
+    border-right: 15px solid wheat;
+    border-left: 15px solid wheat;
+    border-bottom: 50px solid wheat;
     box-shadow: 10px 10px 10px black;
     background-size: cover;
     padding: 15px;
-    height: 130px;
-    width: 150px;
+    height: 65px;
+    width: 75px;
     color: wheat;
     font-weight: bolder;
     font-style: oblique;
@@ -210,6 +212,14 @@
       flex-wrap: nowrap;
       margin-block: 100px;
       margin-inline: 20px;
+      padding: 15px;
+      height: 130px;
+      width: 150px;
+      border-top: 20px solid wheat;
+      border-right: 20px solid wheat;
+      border-left: 20px solid wheat;
+      border-bottom: 70px solid wheat;
+      font-size: 2rem;
     }
   }
 }
@@ -305,11 +315,18 @@
       margin: 50px;
     }
     img {
-      margin: 25px;
+      margin: 7px;
       border: 10px solid white;
+      @media all and (min-width: 768px) {
+        margin: 25px;
+        border: 10px solid white;
+      }
     }
     .imgUsersPics {
-      width: 200px;
+      width: 100px;
+      @media all and (min-width: 768px) {
+        width: 220px;
+      }
     }
   }
 }
@@ -365,7 +382,7 @@
   }
   .forestsTypes {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
@@ -380,14 +397,19 @@
  
   .forestLink {
     border: 1px solid white;
-    width: 16rem;
+    width: 8rem;
     background-color: wheat;   
-    padding: 10px;
-    margin-block: 1rem;
+    padding: 3px;
+    margin-block: 0.5rem;
+    font-size: 10px;
     @media all and (min-width: 768px) {      
       width: 50rem;     
       margin: 20px;
       padding: 20px;
+      width: 16rem;
+      padding: 10px;
+    margin-block: 1rem;
+    font-size: 16px;
     }
   
   }
@@ -395,60 +417,117 @@
     color: wheat;
     padding: 20px;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 10px;
     @media all and (min-width: 768px) {
       padding: 50px;
+      font-size: 16px;
     }
   }
 }
 
 
 .forest1 {
-  background-image: url(../images/dehesa4.png);
-  background-size: contain;
-  text-align: end;
+  background-image: url(../images/ruta.png);
+  background-size: cover;
+  padding: 2em;
+  height: 20vh;
+  @media all and (min-width: 768px) {
+    padding: 4rem;
+  }
+  .chestnutTitle{
+   
+    background-color: white;    
+    width: fit-content;
+    display: inline;
+    // text-align: center;
+    // font-size: 14px;
+    @media all and (min-width: 768px) {
+      font-size: 20px;
+    }
 
-  .imgForest1 {
-    width: 30%;
-    margin: 50px;
+  }
+  .chestnutDescription{
+    background-color: white;
+    border: 2px solid black;
+    width: 50%;
+    margin: 2rem;
+    padding: 2rem;
+    font-size: 10px;
+    @media all and (min-width: 768px) {
+      font-size: 16px;
+    }
   }
 }
 .forest2 {
   background-image: url(../images/hayedo4.png);
   background-size: contain;
-  text-align: end;
-  padding: 50px;
-  .imgForest2{
-    width: 50%;
-    margin: 10px;
+  height: 20vh;
+  padding: 2rem;
+  
+  .leafyTitle{
+    background-color: white;
+    text-align: center;
+    display: inline;
+    
   }
 }
 .forest3 {
   background-image: url(../images/niceForest.png);
-  background-size: contain;
-  text-align: end;
-  .imgForest3 {
-    width: 30%;
-    margin: 50px;
+  background-size: contain;  
+  height: 20vh;
+  padding-top: 1rem;
+  
+  .riverTitle{
+    background-color: white;
+    margin: 1rem;
+    display: inline;
+    
   }
+ 
 }
 .forest4 {
-  background-image: url(../images/ruta.png);
-  background-size: contain;
-  text-align: end;
-  .imgForest4 {
-    width: 30%;
-    margin: 50px;
+  background-image: url(../images/dehesa4.png);
+  background-size: cover;
+  padding: 1em;
+  height: 20vh;
+  @media all and (min-width: 768px) {
+    padding: 4rem;
   }
+  .piornoTitle{
+    background-color: white;    
+    text-align: center;
+    display: inline;
+    // font-size: 14px;
+    @media all and (min-width: 768px) {
+      font-size: 20px;
+    }
+
+  }
+  .piornoDescription{
+    background-color: white;
+    border: 2px solid black;
+    width: 50%;
+    margin: 2rem;
+    padding: 2rem;
+    font-size: 10px;
+    @media all and (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  
 }
 .forest5 {
   background-image: url(../images/pinar2.png);
   background-size: contain;
   text-align: end;
-
-  .imgForest5 {
-    width: 30%;
-    margin: 50px;
-  }
+  height: 20vh;
+  padding: 2rem;
+.holmTitle{
+  background-color: white;
+  display: inline;
+}
+ 
 }
 
 @media all and (min-width: 768px) {}

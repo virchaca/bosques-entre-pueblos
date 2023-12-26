@@ -21,58 +21,59 @@ const Forests = () => {
                   {" "}
                   <div className="forestLink">
                     {" "}
-                    <Link to="/Forest1">BOSQUES TIPO...1</Link>
+                    <Link to="/Forest1">BOSQUES DE CASTAÑOS</Link>
                     <p>
-                      Este bosque va de esto: Lorem ipsum dolor sit amet
-                      consectetur adipisicing elit. Voluptatibus sapiente
-                      consectetur excepturi nesciunt itaque debitis expedita
-                      amet, iusto accusantium rem exercitationem ratione quae,
-                      id reiciendis, beatae fugiat doloremque obcaecati quas!                    
+                    Bosques donde predomina el castaño (Castanea sativa), en algunos casos ejemplares centenarios, 
+                    además de numerosos avellanos, robles, acebedas -únicas en la provincia de Salamanca- 
+                    y sus cerezos silvestres de más de 20 metros de altura. Descubrimos este hermoso y 
+                    desconocido bosque bajo la lluvia.                   
                     </p>
                   </div>
                   <div className="forestLink">
                     {" "}
-                    <Link to="/Forest2">BOSQUES TIPO...2</Link>
+                    <Link to="/Forest2">BOSQUES MIXTOS DE FRONDOSAS</Link>
                     <p>
-                      Este bosque va de esto: Lorem ipsum dolor sit amet
-                      consectetur adipisicing elit. Voluptatibus sapiente
-                      consectetur excepturi nesciunt itaque debitis expedita
-                      amet, iusto accusantium rem exercitationem ratione quae,
-                      id reiciendis, beatae fugiat doloremque obcaecati quas!                      
+                     Masas boscosas de roble melojo o rebollo (Quercus Pirenayca), adapatados a climas secos 
+                     y continentales. Conviven con ejemplares de encina, el sauce cenizo, 
+                     haya, fresnos y castaño. El sotobosque se encuentra conformado 
+                     principalmente por  los géneros Cytisus, Rubus y Rosa.                 
+                    </p>
+                    {/* <p>    Masas boscosas de roble melojo (Quercus Pirenayca), árboles que crecen sobre suelos silíceos, 
+                     adapatados a climas secos y continentales. Se puede también encontrar ejemplares de encina 
+                     (Quercus Ilex), y en su ámbito setas como Amanita muscaria, a. cesarea, boletus edulis, b. aereus. 
+                     Y especies de árboles como el sauce cenizo (Salix atrocinerea), haya, fresnos y castaño. El sotobosque se encuentra conformado 
+                     principalmente por especies de los géneros Cytisus, Rubus y Rosa.    </p> */}
+                  </div>
+                  <div className="forestLink">
+                    {" "}
+                    <Link to="/Forest3">BOSQUES DE RIVERA</Link>
+                    <p>
+                    Formación vegetal con una variedad de flora concreta, que se extiende a lo largo de cauces de río. La primera franja suele presentar especies más pequeñas, como arbustos o juncos. Conforme el cauce del río avanza, se da paso a otras especies de mayor tamaño muy adaptados a suelos con un alto nivel freático como la familia de los Salix, Fresnos y chopos.
                     </p>
                   </div>
                   <div className="forestLink">
                     {" "}
-                    <Link to="/Forest3">BOSQUES TIPO...3</Link>
+                    <Link to="/Forest4">BOSQUES DE PIORNO </Link>
                     <p>
-                      Este bosque va de esto: Lorem ipsum dolor sit amet
-                      consectetur adipisicing elit. Voluptatibus sapiente
-                      consectetur excepturi nesciunt itaque debitis expedita
-                      amet, iusto accusantium rem exercitationem ratione quae,
-                      id reiciendis, beatae fugiat doloremque obcaecati quas! 
-                    </p>
+                    En las zonas más altas se encuentran los bosques de Piornos o retamas(genista florida),espectaculares cuando florecen. Forman extensos matorrales, solos o conviviendo con arbustos como el enebro rastrero, escoba blanca y con hierbas o matas, como viborera salmantina, el cantueso, tomillo perruno, Santolina, la dedalera.
+                      </p>
+                      {/* <p>
+                    En las zonas más altas de la Sierra de Francia se encuentran los bosques de Piornos o retamas(genista florida), muestran una de las manifestaciones más espectaculares cuando florecen. Forman extensos matorrales, solos o conviviendo con otros arbustos, como el enebro rastrero (Juniperus communis), escoba blanca,  hierbas y matas, como viborera salmantina (Echium salmanticum), la ortegia (Ortegia hispanica, ), el cantueso ( Lavandula pedunculata), Lamiáceas, tomillo perruno, Santolina rosmarinifolia,  Asteráceas y la dedalera de flores rosadas (Digitalis thapsi Plantagináceas).
+                      </p> */}
                   </div>
                   <div className="forestLink">
                     {" "}
-                    <Link to="/Forest4">BOSQUES TIPO...4</Link>
+                    <Link to="/Forest5">BOSQUES DE DEHESA</Link>
                     <p>
-                      Este bosque va de esto: Lorem ipsum dolor sit amet
-                      consectetur adipisicing elit. Voluptatibus sapiente
-                      consectetur excepturi nesciunt itaque debitis expedita
-                      amet, iusto accusantium rem exercitationem ratione quae,
-                      id reiciendis, beatae fugiat doloremque obcaecati quas!                      
+                    En las inmediaciones de las Sierra de Francia y algunas manchas boscosas puntuales. Masas donde predomina la encina, 
+                    con otras especies como el quejigo, y el alcornoque. El estrato inferior consta de altas presencias de Lavandula , Daphne gnidium o Cistus ladanifer, géneros como Thymus o Cytisus.        
                     </p>
-                  </div>
-                  <div className="forestLink">
-                    {" "}
-                    <Link to="/Forest5">BOSQUES TIPO...5</Link>
-                    <p>
-                      Este bosque va de esto: Lorem ipsum dolor sit amet
-                      consectetur adipisicing elit. Voluptatibus sapiente
-                      consectetur excepturi nesciunt itaque debitis expedita
-                      amet, iusto accusantium rem exercitationem ratione quae,
-                      id reiciendis, beatae fugiat doloremque obcaecati quas!                    
-                    </p>
+                    {/* <p>
+                    En las inmediaciones de las Sierra de Francia y algunas manchas boscosas puntuales. Masas en las que 
+                    Quercus ilex aporta más de un 80% de los ejemplares, pero aparecen otras especies como el quejigo 
+                    (Quercus faginea) y el alcornoque (Quercus suber). El estrato inferior consta de altas presencias de 
+                    Lavandula stoechas, Daphne gnidium o Cistus ladanifer y otras especies de géneros como Thymus o Cytisus. Abundan los rebaños de vacas y de cerdos, sobretodo en la época de la montaners, cuando caen las bellotas del árbol y sirven de alimento al cerdo ibérico.             
+                    </p> */}
                   </div>
                 </section>
               </>
