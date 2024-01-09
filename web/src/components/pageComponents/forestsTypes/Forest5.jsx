@@ -18,6 +18,12 @@ const Forest5 = () => {
                     Lavandula stoechas, Daphne gnidium o Cistus ladanifer y otras especies de géneros como Thymus o Cytisus. Abundan los rebaños de vacas y de cerdos, sobretodo en la época de la montaners, cuando caen las bellotas del árbol y sirven de alimento al cerdo ibérico.             
                     </p>
 
+                    <p className="inProcess">
+        El inventario se encuentra actualmente en proceso, mientras llevamos a
+        cabo la identificación y clasificación de las especies. Agradecemos su
+        paciencia y comprensión durante este período.
+      </p>
+
     <Link to="/Forests" className="backToMain">
       <i className="fa-solid fa-left-long"></i> Back
     </Link>

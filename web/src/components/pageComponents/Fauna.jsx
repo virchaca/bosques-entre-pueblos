@@ -26,6 +26,7 @@ const handleClickAnfibios = () => {
 
       <div className="faunaSection" id="faunaSection">
         <h1 className="faunaTitle" id="faunaTitle"> Algunos animales de la sierra de Francia</h1>
+        <p className="faunaExplanation">Haz click en los botones para mostrar/ocultar las diferentes especies:</p>
         
         <button className="faunaTableTitle" onClick={handleClickMamiferos}>-Mamíferos-</button> 
 

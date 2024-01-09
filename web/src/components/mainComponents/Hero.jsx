@@ -18,7 +18,7 @@ function Hero() {
       <section className="hero">
         <div className="formDisplay">
           <form className="mainSectionForm" onSubmit={handleSubmit}>
-            <label htmlFor="">
+            {/* <label htmlFor="">
               <input
                 type="search"
                 name="q"
@@ -26,10 +26,10 @@ function Hero() {
                 className="plantInput"
               />
               <input type="submit" value="Buscar" className="plantInput" />
-            </label>
+            </label> */}
 
             <label className="seasonInput" htmlFor="season">
-              en que momento del año nos visitas
+              En que estación del año nos visitas
             </label>
             <select
               id="season"
@@ -52,33 +52,44 @@ function Hero() {
                 season === "summer" ? "" : "hidden"
               }`}
             >
-              o mejor que ver y hacer en VERANITO: Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Perspiciatis, qui dignissimos?
-              Dolores, maxime provident mollitia vitae cupiditate odio
-              distinctio sint dolorem iusto exercitationem cumque illo sapiente.
-              Nisi similique dolorum assumenda.
+              En verano, puedes disfrutar de rutas a través de bosques
+              sombreados, donde la exuberante vegetación proporciona un ambiente
+              fresco y agradable. Además, puedes explorar las numerosas zonas de
+              baño, como piscinas fluviales naturales, para refrescarte con agua
+              fresca durante los meses más cálidos del año. Estas piscinas
+              suelen estar ubicadas en entornos naturales, como ríos o arroyos,
+              ofreciendo un lugar tranquilo y hermoso para disfrutar del agua y
+              escapar del calor del verano.
             </p>
             <p
               className={`autumn seasonTips ${
                 season === "autumn" ? "" : "hidden"
               }`}
             >
-              lo mejor que ver y hacer en OTOÑO: Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Perspiciatis, qui dignissimos?
-              Dolores, maxime provident mollitia vitae cupiditate odio
-              distinctio sint dolorem iusto exercitationem cumque illo sapiente.
-              Nisi similique dolorum assumenda.
+              En otoño, puedes disfrutar de apacibles paseos por bosques donde
+              crecen numerosas setas. Sin embargo, es importante recordar que,
+              para recolectar setas, es necesario contar con un carnet de
+              recolector. Además, el clima fresco y agradable hace que sea una
+              temporada ideal para explorar las diversas rutas en bicicleta, ya
+              que las temperaturas son más suaves y no hace tanto calor como en
+              verano. Así, podrás sumergirte en la belleza de los paisajes
+              otoñales mientras realizas emocionantes paseos en bici por la
+              naturaleza.
             </p>
             <p
               className={`winter seasonTips ${
                 season === "winter" ? "" : "hidden"
               }`}
             >
-              lo mejor que ver y hacer en INVIERNO: Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Perspiciatis, qui dignissimos?
-              Dolores, maxime provident mollitia vitae cupiditate odio
-              distinctio sint dolorem iusto exercitationem cumque illo sapiente.
-              Nisi similique dolorum assumenda.
+              En invierno, podrás disfrutar de emocionantes rutas por las partes
+              más altas de las montañas. En estas zonas, encontrarás ecosistemas
+              con vegetación baja donde los rayos del sol alcanzan con mayor
+              intensidad, brindándote un cálido respiro en medio del fresco
+              clima invernal. Además, esta temporada es ideal para la
+              observación de los voladeros de buitres, ya que su actividad suele
+              ser más intensa durante el invierno. Así, podrás maravillarte con
+              la majestuosidad de estas aves mientras exploras los paisajes
+              montañosos y disfrutas de la naturaleza invernal.
             </p>
 
             <p
@@ -86,11 +97,16 @@ function Hero() {
                 season === "spring" ? "" : "hidden"
               }`}
             >
-              lo mejor que ver y hacer en PRIMAVERA: Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Perspiciatis, qui dignissimos?
-              Dolores, maxime provident mollitia vitae cupiditate odio
-              distinctio sint dolorem iusto exercitationem cumque illo sapiente.
-              Nisi similique dolorum assumenda.
+              En primavera, la naturaleza se despierta con renovada vitalidad.
+              Los bosques se llenan de vida, y podrás experimentar el renacer de
+              la vegetación. El sonido del agua corriendo por arroyos junto con
+              el canto de los pájaros, añaden una melodía relajante al ambiente.
+              Disfrutarás de paseos que te llevarán a través de diversos
+              ecosistemas, donde los tonos de verde se despliegan en cada
+              rincón. Las temperaturas agradables hacen que los mediodías sean
+              perfectos para caminar bajo el cálido sol sin sentirte abrasado,
+              permitiéndote conectar con la belleza de la naturaleza en su
+              máximo esplendor primaveral.
             </p>
           </div>
         </div>

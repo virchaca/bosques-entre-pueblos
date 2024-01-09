@@ -18,7 +18,11 @@ const Forest2 = () => {
                      Y especies de árboles como el sauce cenizo (Salix atrocinerea), haya, fresnos y castaño. El sotobosque se encuentra conformado 
                      principalmente por especies de los géneros Cytisus, Rubus y Rosa.   
      </p>
-     
+     <p className="inProcess">
+        El inventario se encuentra actualmente en proceso, mientras llevamos a
+        cabo la identificación y clasificación de las especies. Agradecemos su
+        paciencia y comprensión durante este período.
+      </p>
     <Link to="/Forests" className="backToMain">
       <i className="fa-solid fa-left-long"></i> Back
     </Link>

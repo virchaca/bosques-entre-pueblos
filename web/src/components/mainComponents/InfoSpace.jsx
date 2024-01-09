@@ -10,7 +10,7 @@ function InfoSpace() {
                       target="blank"
                     >
                       {" "}
-                      <button className="btn1"> turismo sierra francia</button>
+                      <button className="btn1"> TURISMO SIERRA DE FRANCIA</button>
                     </a>
 
                     <a
@@ -34,6 +34,15 @@ function InfoSpace() {
                       <button className="btn4">BOSQUE MADROÑOS</button>
                     </a>
                     <a
+                      href="https://www.turismoentresierras.com/las-piscinas-naturales-de-la-sierra-de-francia-2/"
+                      target="blank"
+                    >
+                      {" "}
+                      <button className="btn1">
+                        PISCINAS NATURALES
+                      </button>
+                    </a>
+                    {/* <a
                       href="https://www.comunidad.madrid/servicios/urbanismo-medio-ambiente/ecosistemas-forestales"
                       target="blank"
                     >
@@ -41,8 +50,9 @@ function InfoSpace() {
                       <button className="btn1">
                         Pistas par mi (comunidad madrid)
                       </button>
-                    </a>
+                    </a> */}
                   </div>
+
                   <div className="cite">
                     <blockquote cite="https://migueldeloyola.wordpress.com/2021/05/30/los-arboles-no-dejan-ver-el-bosque/#:~:text=Los%20%C3%A1rboles%20no%20dejan%20ver%20el%20bosque%20%E2%80%93%20Miguel%20de%20Loyola">
                       <p>

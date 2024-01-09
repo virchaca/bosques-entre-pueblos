@@ -107,10 +107,12 @@
       opacity: 0.8;
       margin: 2rem;
       padding: 1rem;
+      font-size: 10px;
 
       @media all and (min-width: 768px) {
         color: black;
         margin-bottom: 50px;
+        font-size: 16px;
         // border: 5px solid black;
         // background-color: white;
         // border-style: dashed;
@@ -185,7 +187,10 @@
     text-decoration: none;
     color: darkred;
     text-align: center;
-    
+    font-size: 14px;
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+    }
   }
 
   .aPictures {
@@ -196,7 +201,7 @@
     border-bottom: 50px solid wheat;
     box-shadow: 10px 10px 10px black;
     background-size: cover;
-    padding: 15px;
+    padding: 1px;
     height: 65px;
     width: 75px;
     color: wheat;
@@ -357,11 +362,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   @media all and (min-width: 768px) {
-   flex-direction: row;
-   justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
   }
   // .mybrand {
-  //      
+  //
   // }
 }
 
@@ -387,31 +392,29 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    // list-style: none;  
+    // list-style: none;
     @media all and (min-width: 768px) {
       flex-direction: row;
       flex-wrap: nowrap;
-     
     }
   }
- 
+
   .forestLink {
     border: 1px solid white;
     width: 8rem;
-    background-color: wheat;   
+    background-color: wheat;
     padding: 3px;
     margin-block: 0.5rem;
     font-size: 10px;
-    @media all and (min-width: 768px) {      
-      width: 50rem;     
+    @media all and (min-width: 768px) {
+      width: 50rem;
       margin: 20px;
       padding: 20px;
       width: 16rem;
       padding: 10px;
-    margin-block: 1rem;
-    font-size: 16px;
+      margin-block: 1rem;
+      font-size: 16px;
     }
-  
   }
   .forestText {
     color: wheat;
@@ -426,28 +429,31 @@
   }
 }
 
-
+.inProcess {
+  color: rgb(82, 9, 9);
+  background-color: gray;
+  opacity: 0.6;
+  width: fit-content;
+}
 .forest1 {
-  background-image: url(../images/ruta.png);
+  background-image: url(../images/castaño.jpg);
   background-size: cover;
   padding: 2em;
-  height: 20vh;
+  height: 40vh;
   @media all and (min-width: 768px) {
     padding: 4rem;
   }
-  .chestnutTitle{
-   
-    background-color: white;    
-    width: fit-content;
+  .chestnutTitle {
+    background-color: white;
     display: inline;
-    // text-align: center;
-    // font-size: 14px;
+    text-align: center;
+    font-size: 14px;
+    border: 2px solid black;
     @media all and (min-width: 768px) {
-      font-size: 20px;
+      font-size: 28px;
     }
-
   }
-  .chestnutDescription{
+  .chestnutDescription {
     background-color: white;
     border: 2px solid black;
     width: 50%;
@@ -459,52 +465,60 @@
     }
   }
 }
+
 .forest2 {
   background-image: url(../images/hayedo4.png);
-  background-size: contain;
-  height: 20vh;
+  background-size: cover;
+  height: 40vh;
   padding: 2rem;
-  
-  .leafyTitle{
+
+  .leafyTitle {
     background-color: white;
     text-align: center;
     display: inline;
-    
+    font-size: 14px;
+    border: 2px solid black;
+    @media all and (min-width: 768px) {
+      font-size: 28px;
+    }
   }
 }
 .forest3 {
   background-image: url(../images/niceForest.png);
-  background-size: contain;  
-  height: 20vh;
+  background-size: cover;
+  height: 50vh;
   padding-top: 1rem;
-  
-  .riverTitle{
+
+  .riverTitle {
     background-color: white;
     margin: 1rem;
     display: inline;
-    
+    font-size: 14px;
+    border: 2px solid black;
+    @media all and (min-width: 768px) {
+      font-size: 28px;
+    }
   }
- 
 }
 .forest4 {
   background-image: url(../images/dehesa4.png);
   background-size: cover;
   padding: 1em;
-  height: 20vh;
+  height: 40vh;
   @media all and (min-width: 768px) {
     padding: 4rem;
   }
-  .piornoTitle{
-    background-color: white;    
+  .piornoTitle {
+    background-color: white;
     text-align: center;
     display: inline;
-    // font-size: 14px;
+    font-size: 14px;
+    border: 2px solid black;
     @media all and (min-width: 768px) {
-      font-size: 20px;
+      font-size: 28px;
     }
-
   }
-  .piornoDescription{
+  .piornoDescription {
     background-color: white;
     border: 2px solid black;
     width: 50%;
@@ -515,35 +529,46 @@
       font-size: 16px;
     }
   }
-  
 }
 .forest5 {
-  background-image: url(../images/pinar2.png);
-  background-size: contain;
+  background-image: url(../images/dehesa2.png);
+  background-size: cover;
   text-align: end;
-  height: 20vh;
+  height: 40vh;
   padding: 2rem;
-.holmTitle{
-  background-color: white;
-  display: inline;
-}
- 
+  .holmTitle {
+    background-color: white;
+    display: inline;
+    font-size: 14px;
+    border: 2px solid black;
+    @media all and (min-width: 768px) {
+      font-size: 28px;
+    }
+  }
 }
 
-@media all and (min-width: 768px) {}
+@media all and (min-width: 768px) {
+}
 .faunaSection {
   background-image: url(../images/aves/birdsBack.jpg);
-  
+
   padding-block: 10px;
   padding-inline: 10px;
   @media all and (min-width: 768px) {
     background-size: cover;
     padding-block: 50px;
-  padding-inline: 100px;
+    padding-inline: 100px;
   }
 
   .faunaTitle {
     text-align: center;
+  }
+  .faunaExplanation {
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    padding: 10px;
+    width: fit-content;
   }
   .faunaTableTitle {
     background-color: black;
@@ -572,17 +597,27 @@
   }
 }
 .usersDiv {
-  background-image: url(../images/PenaF.jpg);
+  // background-image: url(../images/PenaF.jpg);
   background-repeat: repeat-x;
   background-size: contain;
   padding: 50px;
+  font-size: 14px;
   @media all and (min-width: 768px) {
-
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    width: fit-content;
+  }
+  .usersText {
+    @media all and (min-width: 768px) {
+      width: 200px;
+    }
   }
   .usersImg {
-    width: 50%;   
+    width: 75%;
     @media all and (min-width: 768px) {
-      width: 25%;
+      width: 200px;
     }
   }
 }
@@ -600,8 +635,7 @@
     background-size: cover;
     flex-direction: row;
     justify-content: space-around;
-  padding-block: 50px;
- 
+    padding-block: 50px;
   }
   .cardForm {
     background-color: silver;

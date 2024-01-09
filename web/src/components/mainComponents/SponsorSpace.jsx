@@ -5,14 +5,15 @@ function SponsorSpace() {
     <div className="sponsorDiv">
       <section className="sponsorSpace">
         <ul>
-          <li>animaciones</li>
-          <li>OPINIONES DE USUARIOS</li>
-          <li>enlaces de interés</li>
+          <span>Sección en construccion...</span>
+          <li>Animaciones</li>
+          <li>Opiniones de usuarios</li>
+          <li>Enlaces de interés</li>
         </ul>
         <ul>
-          <li>venta / proveedores</li>
-          <li>rutas</li>
-          <li>info interesante</li>
+          <li>Venta / proveedores de productos artesanales</li>
+          <li>Rutas y deportes de aventura</li>
+          <li>Cursos y otra info interesante</li>
         </ul>
       </section>
       <p className="contact">

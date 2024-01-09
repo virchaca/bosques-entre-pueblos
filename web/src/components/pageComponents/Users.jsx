@@ -1,6 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 // import React from 'react'
 import { Link } from "react-router-dom";
-import user1 from '../../images/user1.png';
+import user1 from "../../images/user1.png";
 
 const Users = () => {
   return (
@@ -10,12 +11,16 @@ const Users = () => {
       </Link>
 
       <div className="usersDiv">
-        <section className=""> 
-        <p>ESPACIO PARA EL USUSARIO</p>
-        <img className="usersImg" src={user1} alt="" /></section>
-        <p className="">
-         
+        <p className="usersText">
+          "Sección en construcción: Estamos trabajando en crear un espacio donde
+          los usuarios podrán iniciar sesión, tener una cuenta personalizada y
+          marcar las especies que desean ver pero aún no han tenido la
+          oportunidad. Además, podrán listar sus especies favoritas y realizar
+          anotaciones sobre las mismas. ¡Pronto estará disponible para su
+          disfrute!"
         </p>
+        <img className="usersImg" src={user1} alt="" />
+        <p className=""></p>
       </div>
     </>
   );

@@ -101,8 +101,8 @@ function App() {
 
       <footer className="footer">
         
-        <span>iconos</span>
-        <span>enlaces</span>
+        {/* <span>iconos</span>
+        <span>enlaces</span> */}
         
 
         <span className="mybrand">
