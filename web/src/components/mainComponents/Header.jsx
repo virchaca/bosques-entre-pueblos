@@ -29,8 +29,8 @@ function Header() {
           </div>
           <section>
             <div className="dateAndTime">
-              <span>Date {currentDateTime.toLocaleDateString()}</span>
-              <span>Time {currentDateTime.toLocaleTimeString()}</span>
+              <span>Fecha y hora actual {currentDateTime.toLocaleDateString()}</span><span>-</span>
+              <span> {currentDateTime.toLocaleTimeString()}</span>
             </div>
           </section>
         </section>
@@ -56,11 +56,11 @@ function Header() {
                     Fauna
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/Users" className="no-underline">
                     Usuarios
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link to="/Card" className="no-underline">
                     Crea tu tarjeta

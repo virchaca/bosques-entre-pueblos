@@ -1,0 +1,18 @@
+.sponsorDiv {
+    margin-bottom: 1rem;
+    @media all and (min-width: 768px) {
+      margin-bottom: 0rem;
+    }
+  
+    .sponsorSpace {
+      display: flex;
+      justify-content: space-around;
+      border: 5px solid black;
+      border-style: dashed solid;
+      border-radius: 25px;
+      margin-block: 2rem;
+      @media all and (min-width: 768px) {
+        margin: 50px;
+      }
+    }
+  }

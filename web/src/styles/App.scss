@@ -68,93 +68,93 @@
 }
 
 
-.hero {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  background-image: url(../images/bosque.jpg);
-  margin-top: 10px;
-  margin-bottom: 100px;
-  justify-content: center;
+// .hero {
+//   display: flex;
+//   flex-direction: column-reverse;
+//   align-items: center;
+//   background-image: url(../images/bosque.jpg);
+//   margin-top: 10px;
+//   margin-bottom: 100px;
+//   justify-content: center;
 
-  @media all and (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-image: url(../images/bosque.jpg);
-    // margin-top: 10px;
-    // margin-bottom: 100px;
-  }
-  .formDisplay {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media all and (min-width: 768px) {
-      display: flex;
-      align-items: center;
-    }
-    .seasonTips {
-      color: black;
-      border: 5px solid black;
-      background-color: white;
-      border-style: dashed;
-      opacity: 0.8;
-      margin: 2rem;
-      padding: 1rem;
-      font-size: 10px;
+//   @media all and (min-width: 768px) {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     background-image: url(../images/bosque.jpg);
+//     // margin-top: 10px;
+//     // margin-bottom: 100px;
+//   }
+//   .formDisplay {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     @media all and (min-width: 768px) {
+//       display: flex;
+//       align-items: center;
+//     }
+//     .seasonTips {
+//       color: black;
+//       border: 5px solid black;
+//       background-color: white;
+//       border-style: dashed;
+//       opacity: 0.8;
+//       margin: 2rem;
+//       padding: 1rem;
+//       font-size: 10px;
 
-      @media all and (min-width: 768px) {
-        color: black;
-        margin-bottom: 50px;
-        font-size: 16px;
-        // border: 5px solid black;
-        // background-color: white;
-        // border-style: dashed;
-        opacity: 0.8;
-        width: 30vw;
-      }
-    }
-  }
+//       @media all and (min-width: 768px) {
+//         color: black;
+//         margin-bottom: 50px;
+//         font-size: 16px;
+//         // border: 5px solid black;
+//         // background-color: white;
+//         // border-style: dashed;
+//         opacity: 0.8;
+//         width: 30vw;
+//       }
+//     }
+//   }
 
-  .intro {
-    background-color: wheat;
-    padding: 10px;
-    margin: 1.5rem;
-    border: 5px solid black;
-    border-style: dashed;
-    opacity: 0.8;
-    font-size: 10px;
-    // width: 15em;
-    @media screen and (min-width: 768px) {
-      width: 20rem;
-      padding: 30px;
-      font-size: 16px;
-    }
-  }
+//   .intro {
+//     background-color: wheat;
+//     padding: 10px;
+//     margin: 1.5rem;
+//     border: 5px solid black;
+//     border-style: dashed;
+//     opacity: 0.8;
+//     font-size: 10px;
+//     // width: 15em;
+//     @media screen and (min-width: 768px) {
+//       width: 20rem;
+//       padding: 30px;
+//       font-size: 16px;
+//     }
+//   }
 
-  .mainSectionForm {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    color: white;
-    opacity: 0.8;
-    margin-block: 50px;
-    padding: 10px;
-    gap: 10px;
-    @media screen and (min-width: 768px) {
-      padding: 0px;
-      gap: 0px;
-    }
-    .plantInput {
-      padding: 4px;
-    }
-    .seasonInput {
-      background-color: white;
-      color: black;
-      padding: 4px;
-    }
-  }
-}
+//   .mainSectionForm {
+//     display: flex;
+//     flex-direction: column;
+//     background-color: black;
+//     color: white;
+//     opacity: 0.8;
+//     margin-block: 50px;
+//     padding: 10px;
+//     gap: 10px;
+//     @media screen and (min-width: 768px) {
+//       padding: 0px;
+//       gap: 0px;
+//     }
+//     .plantInput {
+//       padding: 4px;
+//     }
+//     .seasonInput {
+//       background-color: white;
+//       color: black;
+//       padding: 4px;
+//     }
+//   }
+// }
 
 .menuSection {
   background-image: url(../images/wooden-background-1490898564QuQ.jpg);
@@ -163,7 +163,7 @@
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  // gap: 15px;
   justify-content: center;
   align-items: center;
   padding-block: 3rem;
@@ -181,7 +181,7 @@
     text-decoration: none;
     color: darkred;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     @media screen and (min-width: 768px) {
       font-size: 24px;
     }
@@ -189,15 +189,15 @@
 
   .aPictures {
     background-color: black;
-    border-top: 15px solid wheat;
-    border-right: 15px solid wheat;
-    border-left: 15px solid wheat;
-    border-bottom: 50px solid wheat;
+    border-top: 8px solid wheat;
+    border-right: 8px solid wheat;
+    border-left: 8px solid wheat;
+    border-bottom: 40px solid wheat;
     box-shadow: 10px 10px 10px black;
     background-size: cover;
-    padding: 1px;
-    height: 65px;
-    width: 75px;
+    padding: 5px;
+    height: 3rem;
+    width: 3rem;
     color: wheat;
     font-weight: bolder;
     font-style: oblique;
@@ -263,117 +263,13 @@
       margin-inline: 100px;
     }
   }
-}
-// .usersPictures {
-//   // border: 1px solid black;
-//   // background-image: url(../images/madroños5.jpg);
-//   // background-size: cover;
-//   // padding: 20px;
-//   // margin-block: 30px;
-//   margin-block: 50px;
- 
-//   color: black;
-//   @media all and (min-width: 768px) {   
-//     margin-block: 100px;
-//   }
-//   .usersPicturesHeader {
-//     // background-image: url(../images/madroños5.jpg);
-//     // background-size: cover;
-//     display: flex;
-//     flex-direction: column;
-//     gap: 2rem;
-//     padding: 20px;
-//     border: 1px solid black;
-
-//     @media all and (min-width: 768px) {
-//       flex-direction: row;
-//       justify-content: space-around;
-//     }
-//     .usersPicText {
-//       background-color: antiquewhite;
-//       height: fit-content;
-//       border: 1px solid black;
-//       // border-style: dashed;
-//       .spanUploadPic{
-//         background: darkred;
-//     border-radius: 15px;
-//     border: 0;
-//     color: white;
-//     padding: 3px;
-//       }
-//       .sendPhotoBtn{
-//         background: black;
-//     border-radius: 15px;
-//     border: 0;
-//     color: white;
-//     padding: 5px;
-//     cursor: pointer;
-//       }
-//     }
-//     .uploadPic {
-//       display: flex;
-//       flex-direction: column;
-//       align-items: center;
-//       border: 5px solid white;
-//       border-style: dashed;
-//       background-color: black;
-
-//       @media all and (min-width: 768px) {
-//         flex-direction: row;
-//         align-items: flex-start;
-//       }
-//     }
-//   }
-//   .usersPhoto {
-//     // background: rgba(0, 0, 0, 0.9); 
-//     // background: rgba(255, 255, 255, 0.7);
-//     background-color: black;
-//     text-align: center;
-//     // margin-block: 10px;
-//     padding: 10px;
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     @media all and (min-width: 768px) {
-//       text-align: center;
-//       // margin: 50px;
-//       padding-block: 60px;;
-//     }
-//     img {
-//       margin: 7px;
-//       border: 2px solid white;
-//       @media all and (min-width: 768px) {
-//         margin: 25px;
-//         border: 2px solid white;
-//       }
-//     }
-//     .imgUsersPics {
-//       width: 100px;
-//       @media all and (min-width: 768px) {
-//         width: 220px;
-//       }
-//     }
-//   }
-// }
-
-.sponsorDiv {
-  margin-bottom: 1rem;
-  @media all and (min-width: 768px) {
-    margin-bottom: 0rem;
-  }
-
-  .sponsorSpace {
-    display: flex;
-    justify-content: space-around;
-    border: 5px solid black;
-    border-style: dashed solid;
-    border-radius: 25px;
-    margin-block: 2rem;
-    @media all and (min-width: 768px) {
-      margin: 50px;
-    }
+  .crow{
+    text-align: center;
   }
 }
+
+
+
 
 .footer {
   background-color: black;
@@ -384,6 +280,9 @@
   @media all and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .icons{
+    color: white;
   }
   // .mybrand {
   //

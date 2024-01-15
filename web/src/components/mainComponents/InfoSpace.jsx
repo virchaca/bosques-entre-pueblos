@@ -1,4 +1,5 @@
 // import React from 'react'
+import crow from "../../images/crow.gif"
 
 function InfoSpace() {
   return (
@@ -85,11 +86,13 @@ function InfoSpace() {
                         href="https://www.elcafedelahistoria.com/refranes-bosque/"
                         title="refranitos refranitos..."
                         target="blank"
+                        
                       >
-                        ✅ Dichos y refranes del bosque ✅{" "}
+                        🍂 Dichos y refranes del bosque 🍂{" "}
                       </a>{" "}
                     </p>
                   </div>
+                  <p className="crow" ><img className="crowGif" src={crow} alt="" /></p>
                 </section>
     </div>
   )
