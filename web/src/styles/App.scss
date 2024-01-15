@@ -67,12 +67,6 @@
   }
 }
 
-//     background: repeating-linear-gradient(
-//         45deg,
-//         rgba(0, 0, 0, 0) 20px,
-//         rgba(10, 77, 24, 0) 40px,
-//         #1a1918 40px,
-//         #DF6C4F 60px
 
 .hero {
   display: flex;
@@ -270,71 +264,97 @@
     }
   }
 }
-.usersPictures {
-  border: 1px solid black;
-  background-image: url(../images/madroños5.jpg);
-  background-size: cover;
-  padding: 20px;
-  margin-block: 30px;
-  color: black;
-  @media all and (min-width: 768px) {
-    padding-block: 100px;
-    margin-block: 100px;
-  }
-  .usersPicturesHeader {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+// .usersPictures {
+//   // border: 1px solid black;
+//   // background-image: url(../images/madroños5.jpg);
+//   // background-size: cover;
+//   // padding: 20px;
+//   // margin-block: 30px;
+//   margin-block: 50px;
+ 
+//   color: black;
+//   @media all and (min-width: 768px) {   
+//     margin-block: 100px;
+//   }
+//   .usersPicturesHeader {
+//     // background-image: url(../images/madroños5.jpg);
+//     // background-size: cover;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 2rem;
+//     padding: 20px;
+//     border: 1px solid black;
 
-    @media all and (min-width: 768px) {
-      flex-direction: row;
-      justify-content: space-around;
-    }
-    .usersPicText {
-      background-color: antiquewhite;
-      height: fit-content;
-      border: 5px solid black;
-      border-style: dashed;
-    }
-    .uploadPic {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border: 5px solid white;
-      border-style: dashed;
+//     @media all and (min-width: 768px) {
+//       flex-direction: row;
+//       justify-content: space-around;
+//     }
+//     .usersPicText {
+//       background-color: antiquewhite;
+//       height: fit-content;
+//       border: 1px solid black;
+//       // border-style: dashed;
+//       .spanUploadPic{
+//         background: darkred;
+//     border-radius: 15px;
+//     border: 0;
+//     color: white;
+//     padding: 3px;
+//       }
+//       .sendPhotoBtn{
+//         background: black;
+//     border-radius: 15px;
+//     border: 0;
+//     color: white;
+//     padding: 5px;
+//     cursor: pointer;
+//       }
+//     }
+//     .uploadPic {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       border: 5px solid white;
+//       border-style: dashed;
+//       background-color: black;
 
-      @media all and (min-width: 768px) {
-        flex-direction: row;
-        align-items: flex-start;
-      }
-    }
-  }
-  .usersPhoto {
-    text-align: center;
-    margin: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    @media all and (min-width: 768px) {
-      text-align: center;
-      margin: 50px;
-    }
-    img {
-      margin: 7px;
-      border: 10px solid white;
-      @media all and (min-width: 768px) {
-        margin: 25px;
-        border: 10px solid white;
-      }
-    }
-    .imgUsersPics {
-      width: 100px;
-      @media all and (min-width: 768px) {
-        width: 220px;
-      }
-    }
-  }
-}
+//       @media all and (min-width: 768px) {
+//         flex-direction: row;
+//         align-items: flex-start;
+//       }
+//     }
+//   }
+//   .usersPhoto {
+//     // background: rgba(0, 0, 0, 0.9); 
+//     // background: rgba(255, 255, 255, 0.7);
+//     background-color: black;
+//     text-align: center;
+//     // margin-block: 10px;
+//     padding: 10px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     @media all and (min-width: 768px) {
+//       text-align: center;
+//       // margin: 50px;
+//       padding-block: 60px;;
+//     }
+//     img {
+//       margin: 7px;
+//       border: 2px solid white;
+//       @media all and (min-width: 768px) {
+//         margin: 25px;
+//         border: 2px solid white;
+//       }
+//     }
+//     .imgUsersPics {
+//       width: 100px;
+//       @media all and (min-width: 768px) {
+//         width: 220px;
+//       }
+//     }
+//   }
+// }
 
 .sponsorDiv {
   margin-bottom: 1rem;

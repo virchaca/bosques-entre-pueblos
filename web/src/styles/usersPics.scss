@@ -1,0 +1,105 @@
+
+.usersPictures {
+  
+    margin-block: 50px;
+    color: black;
+    @media all and (min-width: 768px) {   
+      margin-block: 100px;
+    }
+    .usersForestPic{
+      
+      img{
+         width: 90vw;
+       margin: auto;
+      }
+     
+     }
+    .usersPicturesHeader {
+ 
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 20px;
+      align-items: center;
+      // border: 1px solid black;
+  
+      @media all and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .usersPicText {
+        background-color: antiquewhite;
+        height: fit-content;
+        border: 1px solid black;
+        font-size: 12px;
+        @media all and (min-width: 768px) {
+          font-size: 16px;
+        }
+     
+        .spanUploadPic{
+          background: darkred;
+      border-radius: 15px;
+      border: 0;
+      color: white;
+      padding: 3px;
+        }
+        .sendPhotoBtn{
+          background: black;
+      border-radius: 15px;
+      border: 0;
+      color: white;
+      padding: 5px;
+      cursor: pointer;
+      font-size: 12px;
+      @media all and (min-width: 768px) {
+        font-size: 16px;
+      }
+        }
+      }
+      .uploadPic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 5px solid white;
+        border-style: dashed;
+        background-color: black;
+        padding: 5px;
+  
+        @media all and (min-width: 768px) {
+          flex-direction: row;
+          align-items: flex-start;
+        }
+      }
+    }
+    .usersPhoto {
+      // background: rgba(0, 0, 0, 0.9); 
+      // background: rgba(255, 255, 255, 0.7);
+      background-color: black;
+      text-align: center;
+      // margin-block: 10px;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      @media all and (min-width: 768px) {
+        text-align: center;
+        // margin: 50px;
+        padding-block: 60px;;
+      }
+      img {
+        margin: 7px;
+        border: 2px solid white;
+        @media all and (min-width: 768px) {
+          margin: 25px;
+          border: 2px solid white;
+        }
+      }
+      .imgUsersPics {
+        width: 100px;
+        @media all and (min-width: 768px) {
+          width: 220px;
+        }
+      }
+    }
+  }
+  

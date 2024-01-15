@@ -1,10 +1,15 @@
 .profile {
   .profile__avatar {
     border: 1px solid #ccc;
-    width: 200px;
-    height: 200px;
+  
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100px;
+    height: 100px;
+    @media all and (min-width: 768px) {   
+        width: 200px;
+    height: 200px;
   }
+}
 }

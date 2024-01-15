@@ -69,6 +69,7 @@ function GetAvatar({/*avatar=moni7,*/ updateAvatar, text='Sube tu foto'}) {
           onChange={uploadImage}
         />
       </label>
+      {/* <p className="get-avatar__text">Comenta que te gustaría compartir sobre esta foto</p> */}
 
       {/* <div
         className="get-avatar__preview"

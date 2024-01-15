@@ -60,12 +60,12 @@ function App() {
                       FAUNA{" "}
                     </Link>{" "}
                   </span>
-                  <span className="aPictures">
+                  {/* <span className="aPictures">
                     {" "}
                     <Link to="/Users" className="no-underline2">
                       USUARIOS
                     </Link>
-                  </span>
+                  </span> */}
                   <span className="aPictures">
                     <Link to="/Card" className="no-underline2">
                       CREA TU TARJETA
@@ -76,11 +76,11 @@ function App() {
                 <UsersPics />
                 {/* de aqui he quitado: avatar={avatar}/> */}
 
-                <div className="arrowDiv">
+                {/* <div className="arrowDiv">
                   <a href="/">
                     <i className="arrow fa-solid fa-circle-arrow-up fa-2xl"></i>
                   </a>
-                </div>
+                </div> */}
 
                 <SponsorSpace />
               </>
