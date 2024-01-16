@@ -1,6 +1,8 @@
 // import React from 'react'
 // import forest1 from "../../../images/forest1.png";
 import { Link } from "react-router-dom";
+import "../../../styles/forests.scss";
+
 
 const Forest4 = () => {
   return (

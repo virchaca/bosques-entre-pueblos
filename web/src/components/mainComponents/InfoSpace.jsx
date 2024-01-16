@@ -1,5 +1,6 @@
 // import React from 'react'
 import crow from "../../images/crow.gif"
+import "../../styles/infoSpace.scss";
 
 function InfoSpace() {
   return (

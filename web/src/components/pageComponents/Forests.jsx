@@ -2,6 +2,7 @@
 // import Forest1 from "./forestsTypes/Forest1";
 // import Forest2 from "./forestsTypes/Forest2";
 import { Routes, Route, Link } from "react-router-dom";
+import "../../styles/forests.scss";
 
 const Forests = () => {
   return (

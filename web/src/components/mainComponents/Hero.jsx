@@ -29,7 +29,7 @@ function Hero() {
             </label> */}
 
             <label className="seasonInput" htmlFor="season">
-              En que estación del año nos visitas
+              Indícanos en que momento del año nos visitas y te daremos algunos consejos sobre que hacer en esa época.
             </label>
             <select
               id="season"
@@ -38,7 +38,7 @@ function Hero() {
               value={season}
               onChange={handleSelectSeason}
             >
-              <option value="">elige estacion</option>
+              <option value="">Elige estación</option>
               <option value="summer">verano</option>
               <option value="autumn">otoño</option>
               <option value="winter">invierno</option>
@@ -113,14 +113,14 @@ function Hero() {
 
         <p className="intro">
           Su importancia vegetal radica principalmente en la existencia de
-          forests galaico-portugueses de roble rebollo y roble carballo (en cuyo
+          bosques galaico-portugueses de roble rebollo y roble carballo (en cuyo
           sotosbosque crecen acebos, serbales y arce menor) y los castaños, que
           constituyen una población de gran valor por su adaptación al clima de
           la zona pues sólo se encuentran en zonas bastante húmedas durante todo
           el año. Entre otros ecosistemas con los que cuenta se podrían destacar
           los brezales secos europeos y mediterráneos endémicos con aliaga, las
           zonas subestépicas de gramíneas y anuales del Thero-Brachypodietea,
-          encinares de Quercus ilex y Quercus rotundifolia, los forests de
+          encinares de Quercus ilex y Quercus rotundifolia, los bosques de
           Castanea sativa, los alcornocales de Quercus suber y los pinares
           mediterráneos de Pinus pinaster y Pinus sylvestris. Además aparecen
           grandes áreas cultivadas de árboles frutales, viñedos y olivares,

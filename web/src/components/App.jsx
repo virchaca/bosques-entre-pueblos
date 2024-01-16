@@ -105,18 +105,19 @@ function App() {
         <span>enlaces</span> */}
         
 
-        <span className="mybrand">
+        <p className="mybrand">
+          <a href="https://virchaca.github.io/portfolio/" target="blank" title="Portfolio"><i className="icons fa-solid fa-user-tie"></i></a>
           <a
             href="https://www.linkedin.com/in/virginia-alvarezperez/"
-            target="blank"
+            target="blank" title="Virginia Alvarez Perez"
           >
             <i className="icons fa-brands fa-linkedin"></i>
           </a>
-          <a href="https://github.com/virchaca" target="blank">
+          <a href="https://github.com/virchaca" target="blank" title="Github Virchaca">
             <i className="icons fa-brands fa-github-alt"></i>
           </a>{" "}
           @VirWebCreations
-        </span>
+        </p>
       </footer>
     </>
   );

@@ -1,0 +1,52 @@
+.infoSpace {
+  .sectionButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block: 20px;
+
+    @media all and (min-width: 768px) {
+      margin-block: 50px;
+    }
+    .btn1,
+    .btn3 {
+      background-color: white;
+      padding: 5px 10px;
+      padding: 10px 20px;
+      border-radius: 20px;
+      width: 300;
+      font-weight: bold;
+      color: rgb(90, 11, 11);
+      font-size: 12px;
+      @media all and (min-width: 768px) {
+        font-size: 16px;
+      }
+    }
+
+    .btn2,
+    .btn4 {
+      background-color: black;
+      padding: 5px 10px;
+      padding: 10px 20px;
+      border-radius: 20px;
+      width: 300;
+      font-weight: bold;
+      color: white;
+      font-size: 12px;
+      @media all and (min-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
+  .cite {
+    border: 1px solid black;
+    font-size: 12px;
+    @media all and (min-width: 768px) {
+      font-size: 16px;
+      margin-inline: 100px;
+    }
+  }
+  .crow {
+    text-align: center;
+  }
+}

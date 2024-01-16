@@ -4,18 +4,13 @@ import "../../styles/sponsorSpace.scss";
 function SponsorSpace() {
   return (
     <div className="sponsorDiv">
-      <section className="sponsorSpace">
-        <ul>
-          <span>Proximamente en esta sección enlaces sobre:</span>
+      <section className="sponsorSpace">        
+          <p>Contáctanos para cualquier consulta sobre temas relacionados, como:</p>
           {/* <li>Animaciones</li> */}      
-          <li>Cursos y otro contenido de interés </li>
-        </ul>
-        <ul>
-          <li>Venta de productos artesanales</li>
-          <li>Rutas y deportes de aventura</li>
-        
-        </ul>
-      </section>
+          <p>- Cursos y otro contenido de interés </p>
+          <p>- Venta de productos artesanales</p>
+          <p>- Rutas y turismo por la zona</p>     
+       </section>
       <p className="contact">
         {" "}
         <i className="fa-regular fa-paper-plane"></i>
@@ -23,6 +18,7 @@ function SponsorSpace() {
         <a
           href="mailto:virginia.alvarez82@gmail.com?&subject=Bosques Entre Pueblos - Contacto &body=Hola Vir,
                   "
+                  title="virginia.alvarez82@gmail.com"
         >
           {" "}
           @VirWebCreations{" "}

@@ -1,0 +1,176 @@
+.forestsDiv {
+    background-image: url(../images/trees.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    // @media all and (min-width: 768px) {
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: space-around;
+    //  }
+    .forestTypesTitle {
+      color: wheat;
+      text-align: center;
+      padding: 50px;
+    }
+    .forestsTypes {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      // list-style: none;
+      @media all and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+    }
+  
+    .forestLink {
+      border: 1px solid white;
+      width: 8rem;
+      background-color: wheat;
+      padding: 3px;
+      margin-block: 0.5rem;
+      font-size: 10px;
+      @media all and (min-width: 768px) {
+        width: 50rem;
+        margin: 20px;
+        padding: 20px;
+        width: 16rem;
+        padding: 10px;
+        margin-block: 1rem;
+        font-size: 16px;
+      }
+    }
+    .forestText {
+      color: wheat;
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      font-size: 10px;
+      @media all and (min-width: 768px) {
+        padding: 50px;
+        font-size: 16px;
+      }
+    }
+  }
+  
+  .inProcess {
+    color: rgb(82, 9, 9);
+    background-color: gray;
+    opacity: 0.6;
+    width: fit-content;
+  }
+  .forest1 {
+    background-image: url(../images/castaño.jpg);
+    background-size: cover;
+    padding: 2em;
+    height: 40vh;
+    @media all and (min-width: 768px) {
+      padding: 4rem;
+    }
+    .chestnutTitle {
+      background-color: white;
+      display: inline;
+      text-align: center;
+      font-size: 14px;
+      border: 2px solid black;
+      @media all and (min-width: 768px) {
+        font-size: 28px;
+      }
+    }
+    .chestnutDescription {
+      background-color: white;
+      border: 2px solid black;
+      width: 50%;
+      margin: 2rem;
+      padding: 2rem;
+      font-size: 10px;
+      @media all and (min-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
+  
+  .forest2 {
+    background-image: url(../images/hayedo4.png);
+    background-size: cover;
+    height: 40vh;
+    padding: 2rem;
+  
+    .leafyTitle {
+      background-color: white;
+      text-align: center;
+      display: inline;
+      font-size: 14px;
+      border: 2px solid black;
+      @media all and (min-width: 768px) {
+        font-size: 28px;
+      }
+    }
+  }
+  .forest3 {
+    background-image: url(../images/niceForest.png);
+    background-size: cover;
+    height: 50vh;
+    padding-top: 1rem;
+  
+    .riverTitle {
+      background-color: white;
+      margin: 1rem;
+      display: inline;
+      font-size: 14px;
+      border: 2px solid black;
+      @media all and (min-width: 768px) {
+        font-size: 28px;
+      }
+    }
+  }
+  .forest4 {
+    background-image: url(../images/dehesa4.png);
+    background-size: cover;
+    padding: 1em;
+    height: 40vh;
+    @media all and (min-width: 768px) {
+      padding: 4rem;
+    }
+    .piornoTitle {
+      background-color: white;
+      text-align: center;
+      display: inline;
+      font-size: 14px;
+      border: 2px solid black;
+      @media all and (min-width: 768px) {
+        font-size: 28px;
+      }
+    }
+    .piornoDescription {
+      background-color: white;
+      border: 2px solid black;
+      width: 50%;
+      margin: 2rem;
+      padding: 2rem;
+      font-size: 10px;
+      @media all and (min-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
+  .forest5 {
+    background-image: url(../images/dehesa2.png);
+    background-size: cover;
+    text-align: end;
+    height: 40vh;
+    padding: 2rem;
+    .holmTitle {
+      background-color: white;
+      display: inline;
+      font-size: 14px;
+      border: 2px solid black;
+      @media all and (min-width: 768px) {
+        font-size: 28px;
+      }
+    }
+  }

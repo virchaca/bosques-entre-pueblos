@@ -1,22 +1,23 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import "../../styles/fauna.scss";
 
 const Fauna = () => {
   const [showAves, setShowAves] = useState(true);
   const [showMamiferos, setShowMamiferos] = useState(false);
   const [showAnfibios, setShowAnfibios] = useState(true);
-  
-const handleClickAves = () => { 
-    setShowAves(!showAves);  
-}
 
-const handleClickMamiferos = () => {
-setShowMamiferos(!showMamiferos);
-}
+  const handleClickAves = () => {
+    setShowAves(!showAves);
+  };
 
-const handleClickAnfibios = () => {
-  setShowAnfibios(!showAnfibios);  
-}
+  const handleClickMamiferos = () => {
+    setShowMamiferos(!showMamiferos);
+  };
+
+  const handleClickAnfibios = () => {
+    setShowAnfibios(!showAnfibios);
+  };
 
   return (
     <>
@@ -25,16 +26,29 @@ const handleClickAnfibios = () => {
       </Link>
 
       <div className="faunaSection" id="faunaSection">
-        <h1 className="faunaTitle" id="faunaTitle"> Algunos animales de la sierra de Francia</h1>
-        <p className="faunaExplanation">Haz click en los botones para mostrar/ocultar las diferentes especies:</p>
-        
-        <button className="faunaTableTitle" onClick={handleClickMamiferos}>-Mamíferos-</button> 
+        <div className="faunaTitle">
+          <h1 id="faunaTitle"> Algunos animales de la sierra de Francia</h1>
+          <p className="faunaExplanation">
+            Haz click en los botones para mostrar/ocultar los diferentes grupos.
+          </p>
+        </div>
 
-        <button className="faunaTableTitle" onClick={handleClickAnfibios}>-Anfibios y Reptiles-</button>   
+        <button className="faunaTableTitle" onClick={handleClickMamiferos}>
+          -Mamíferos-
+        </button>
 
-        <button className="faunaTableTitle" onClick={handleClickAves}>-Aves-</button>
+        <button className="faunaTableTitle" onClick={handleClickAnfibios}>
+          -Anfibios y Reptiles-
+        </button>
 
-        <table className={`${showMamiferos ? 'hidden' : ''} tableFauna`}  border="1">
+        <button className="faunaTableTitle" onClick={handleClickAves}>
+          -Aves-
+        </button>
+
+        <table
+          className={`${showMamiferos ? "hidden" : ""} tableFauna`}
+          border="1"
+        >
           <span>MAMIFEROS</span>
           <tr>
             <th>Nombre Científico</th>
@@ -104,11 +118,14 @@ const handleClickAnfibios = () => {
             <td>Tejón</td>
             <td>Meles meles</td>
           </tr>
-        </table>  
-       
+        </table>
+
         {/* <button className="faunaTableTitle" onClick={handleClickAnfibios}>Anfibios y Reptiles de la sierra de Francia</button>     */}
-        <table className={`${showAnfibios ? 'hidden' : ''}  tableFauna`}  border="1">
-        <span>ANFIBIOS Y REPTILES</span>
+        <table
+          className={`${showAnfibios ? "hidden" : ""}  tableFauna`}
+          border="1"
+        >
+          <span>ANFIBIOS Y REPTILES</span>
           <tr>
             <th>Nombre Científico</th>
             <th>Nombre Común</th>
@@ -177,164 +194,162 @@ const handleClickAnfibios = () => {
             <td>Culebra viperina</td>
             <td>Natrix maura</td>
           </tr>
-        </table>   
+        </table>
 
         {/* <button className="faunaTableTitle" onClick={handleClickAves}>Aves</button> */}
-        <section className={showAves? 'hidden' : ''} >
-        <table className='tableFauna' border="1">
-        <span>AVES</span>
-          <tr>
-            <th>Nombre Común</th>
-            <th>Nombre Científico</th>
-            <th>Nombre Común</th>
-            <th>Nombre Científico</th>
-            <th>Nombre Común</th>
-            <th>Nombre Científico</th>
-          </tr>
-          <tr>
-            <td>Chova piquiroja</td>
-            <td>Pyrrhocorax pyrrhocorax</td>
-            <td>Milano real</td>
-            <td>Milvus milvus</td>
-            <td>Alimoche</td>
-            <td>Nephron percnopterus</td>
-          </tr>
-          <tr>
-            <td>Buitre leonado</td>
-            <td>Gyps fulvus</td>
-            <td>Águila culebrera europea</td>
-            <td>Circaetus gallicus</td>
-            <td>Cigüeña blanca</td>
-            <td>Ciconia ciconia</td>
-          </tr>
-          <tr>
-            <td>Águila real</td>
-            <td>Aquila crysaetos</td>
-            <td>Águila calzada</td>
-            <td>Hieraaetus pennatus</td>
-            <td>Halcón peregrino</td>
-            <td>Falco peregrinus</td>
-          </tr>
-          <tr>
-            <td>Búho real</td>
-            <td>Bubo bubo</td>
-            <td>Totovía</td>
-            <td>Lullula arborea</td>
-            <td>Alcohón abejero</td>
-            <td>Pernis apivorus</td>
-          </tr>
-          <tr>
-            <td>Curruca rabilarga</td>
-            <td>Sylvia undata</td>
-            <td>Águilucho cenizo</td>
-            <td>Circus pygarus</td>
-            <td>Escribano hortelano</td>
-            <td>Emberiza hortulana</td>
-          </tr>
-          <tr>
-            <td>Buitre negro</td>
-            <td>Aegyplus monachus</td>
-            <td>Elanio azul</td>
-            <td>Elanus caeruleus</td>
-            <td>Chorlito carambolo</td>
-            <td>Charadruis morinellus</td>
-          </tr>
-          <tr>
-            <td>Chotacabras gris</td>
-            <td>Caprimulgus europaeus</td>
-            <td>Martín pescador</td>
-            <td>Alcedo atthis</td>
-            <td>Carraca europea</td>
-            <td>Coracias garrulus</td>
-          </tr>
-          <tr>
-            <td>Terrera común</td>
-            <td>Calandrella brachydactyla</td>
-            <td>Cogujada montesina</td>
-            <td>Galerida theklae</td>
-            <td>Collalba negra</td>
-            <td>Oenanthe leucura</td>
-          </tr>
-          <tr>
-            <td>Cigüeña negra</td>
-            <td>Ciconia nigra</td>
-            <td>Bisbita campestre</td>
-            <td>Anthus campestris</td>
-            <td>Trepador azul</td>
-            <td>Sitta europaea</td>
-          </tr>
-          <tr>
-            <td>Herrerillo común</td>
-            <td>Cyanistes caeruleus</td>
-            <td>Carbonero común</td>
-            <td>Parus major</td>
-            <td>Carbonero garrapino</td>
-            <td>Periparus ater</td>
-          </tr>
-          <tr>
-            <td>Petirrojo europeo</td>
-            <td>Erithacus rubecula</td>
-            <td>Mirlo común</td>
-            <td>Turdus merula</td>
-            <td>Pinzón común</td>
-            <td>Fringilla coelebs</td>
-          </tr>
-          <tr>
-            <td>Arrendajo</td>
-            <td>Garrulus glandarius</td>
-            <td>Pico picapinos</td>
-            <td>Dendrocopos major</td>
-            <td>Pico mediano</td>
-            <td>Dendrocopos medius</td>
-          </tr>
-          <tr>
-            <td>Busardo ratonero</td>
-            <td>Buteo buteo</td>
-          </tr>
-        </table>
+        <section className={showAves ? "hidden" : ""}>
+          <table className="tableFauna" border="1">
+            <span>AVES</span>
+            <tr>
+              <th>Nombre Común</th>
+              <th>Nombre Científico</th>
+              <th>Nombre Común</th>
+              <th>Nombre Científico</th>
+              <th>Nombre Común</th>
+              <th>Nombre Científico</th>
+            </tr>
+            <tr>
+              <td>Chova piquiroja</td>
+              <td>Pyrrhocorax pyrrhocorax</td>
+              <td>Milano real</td>
+              <td>Milvus milvus</td>
+              <td>Alimoche</td>
+              <td>Nephron percnopterus</td>
+            </tr>
+            <tr>
+              <td>Buitre leonado</td>
+              <td>Gyps fulvus</td>
+              <td>Águila culebrera europea</td>
+              <td>Circaetus gallicus</td>
+              <td>Cigüeña blanca</td>
+              <td>Ciconia ciconia</td>
+            </tr>
+            <tr>
+              <td>Águila real</td>
+              <td>Aquila crysaetos</td>
+              <td>Águila calzada</td>
+              <td>Hieraaetus pennatus</td>
+              <td>Halcón peregrino</td>
+              <td>Falco peregrinus</td>
+            </tr>
+            <tr>
+              <td>Búho real</td>
+              <td>Bubo bubo</td>
+              <td>Totovía</td>
+              <td>Lullula arborea</td>
+              <td>Alcohón abejero</td>
+              <td>Pernis apivorus</td>
+            </tr>
+            <tr>
+              <td>Curruca rabilarga</td>
+              <td>Sylvia undata</td>
+              <td>Águilucho cenizo</td>
+              <td>Circus pygarus</td>
+              <td>Escribano hortelano</td>
+              <td>Emberiza hortulana</td>
+            </tr>
+            <tr>
+              <td>Buitre negro</td>
+              <td>Aegyplus monachus</td>
+              <td>Elanio azul</td>
+              <td>Elanus caeruleus</td>
+              <td>Chorlito carambolo</td>
+              <td>Charadruis morinellus</td>
+            </tr>
+            <tr>
+              <td>Chotacabras gris</td>
+              <td>Caprimulgus europaeus</td>
+              <td>Martín pescador</td>
+              <td>Alcedo atthis</td>
+              <td>Carraca europea</td>
+              <td>Coracias garrulus</td>
+            </tr>
+            <tr>
+              <td>Terrera común</td>
+              <td>Calandrella brachydactyla</td>
+              <td>Cogujada montesina</td>
+              <td>Galerida theklae</td>
+              <td>Collalba negra</td>
+              <td>Oenanthe leucura</td>
+            </tr>
+            <tr>
+              <td>Cigüeña negra</td>
+              <td>Ciconia nigra</td>
+              <td>Bisbita campestre</td>
+              <td>Anthus campestris</td>
+              <td>Trepador azul</td>
+              <td>Sitta europaea</td>
+            </tr>
+            <tr>
+              <td>Herrerillo común</td>
+              <td>Cyanistes caeruleus</td>
+              <td>Carbonero común</td>
+              <td>Parus major</td>
+              <td>Carbonero garrapino</td>
+              <td>Periparus ater</td>
+            </tr>
+            <tr>
+              <td>Petirrojo europeo</td>
+              <td>Erithacus rubecula</td>
+              <td>Mirlo común</td>
+              <td>Turdus merula</td>
+              <td>Pinzón común</td>
+              <td>Fringilla coelebs</td>
+            </tr>
+            <tr>
+              <td>Arrendajo</td>
+              <td>Garrulus glandarius</td>
+              <td>Pico picapinos</td>
+              <td>Dendrocopos major</td>
+              <td>Pico mediano</td>
+              <td>Dendrocopos medius</td>
+            </tr>
+            <tr>
+              <td>Busardo ratonero</td>
+              <td>Buteo buteo</td>
+            </tr>
+          </table>
 
-        <table className="tableFauna" border="1">
-          <tr>
-            <th>
-              Migradoras de presencia regular
-            </th>
-          </tr>
-        <tr>
-            <th>Nombre Común</th>
-            <th>Nombre Científico</th>
-            <th>Nombre Común</th>
-            <th>Nombre Científico</th>
-            <th>Nombre Común</th>
-            <th>Nombre Científico</th>
-          </tr>
-          <tr>
-            <td>Mirlo capiblanco</td>
-            <td>Turdus torquatus</td>
-            <td>Colirrojo real</td>
-            <td>Phoenicus phoenicus</td>
-            <td>Roquero solitario</td>
-            <td>Monticola solitarius</td>
-          </tr>
-          <tr>
-            <td>Roquero rojo</td>
-            <td>Monticola saxatilis</td>
-            <td>Golondrina daurica</td>
-            <td>Hirundo daurica</td>
-            <td>Pico menor</td>
-            <td>Dryobates minor</td>
-          </tr>
-          <tr>
-            <td>Alcotán</td>
-            <td>Falco subbuteo</td>
-            <td>Gavilán</td>
-            <td>Accipiter nisus</td>
-          </tr>
-        </table>
-        </section>   
+          <table className="tableFauna" border="1">
+            <tr>
+              <th>Migradoras de presencia regular</th>
+            </tr>
+            <tr>
+              <th>Nombre Común</th>
+              <th>Nombre Científico</th>
+              <th>Nombre Común</th>
+              <th>Nombre Científico</th>
+              <th>Nombre Común</th>
+              <th>Nombre Científico</th>
+            </tr>
+            <tr>
+              <td>Mirlo capiblanco</td>
+              <td>Turdus torquatus</td>
+              <td>Colirrojo real</td>
+              <td>Phoenicus phoenicus</td>
+              <td>Roquero solitario</td>
+              <td>Monticola solitarius</td>
+            </tr>
+            <tr>
+              <td>Roquero rojo</td>
+              <td>Monticola saxatilis</td>
+              <td>Golondrina daurica</td>
+              <td>Hirundo daurica</td>
+              <td>Pico menor</td>
+              <td>Dryobates minor</td>
+            </tr>
+            <tr>
+              <td>Alcotán</td>
+              <td>Falco subbuteo</td>
+              <td>Gavilán</td>
+              <td>Accipiter nisus</td>
+            </tr>
+          </table>
+        </section>
       </div>
-      
+
       <Link to="/" className="backToMain">
-        <i className="fa-solid fa-left-long"></i> Back   
+        <i className="fa-solid fa-left-long"></i> Back
       </Link>
     </>
   );

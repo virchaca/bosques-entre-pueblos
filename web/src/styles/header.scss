@@ -1,0 +1,62 @@
+.header {
+    .headerSection {
+      display: flex;
+      flex-direction: column;
+      color: darkgray;
+      // margin-top: 20px;
+      padding: 0.5rem;
+      background-color: black;
+      @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        // color: darkgray;
+        margin-top: 20px;
+        // background-color: black;
+      }
+    }
+  
+    .dateAndTime {
+      border: 1px solid darkgray;
+      height: fit-content;
+      width: fit-content;
+      font-size: 12px;
+  
+      @media all and (min-width: 768px) {
+        border: 1px solid darkgray;
+        height: fit-content;
+        font-size: 16px;
+      }
+    }
+    .burguerMenu {
+      display: flex;
+      justify-content: space-between;
+      text-decoration: none;
+      @media all and (min-width: 768px) {
+        justify-content: space-between;
+        margin-inline: 1rem;
+      }
+  
+      .menuList {
+        // background-color: lightgray;
+        list-style: none;
+        border: 5px solid black;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-style: dashed;
+        font-weight: bold;
+  
+        @media all and (min-width: 768px) {
+          position: fixed;
+          border: 5px solid lightgray;
+          border-style: dashed;
+          background-color: rgba(255, 255, 255, 0.9);
+          z-index: 999;
+          /* Asegura que esté por encima del contenido */
+        }
+      }
+      .no-underline {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }

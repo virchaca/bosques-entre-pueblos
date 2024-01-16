@@ -1,0 +1,62 @@
+.faunaSection {
+  background-image: url(../images/aves/birdsBack.jpg);
+
+  padding-block: 10px;
+  padding-inline: 10px;
+  @media all and (min-width: 768px) {
+    background-size: cover;
+    padding-block: 50px;
+    padding-inline: 100px;
+  }
+
+  .faunaTitle {
+    text-align: center;
+    border: 2px solid black;
+    width: fit-content;
+    margin-block: 2rem;
+    background-color: white;
+    opacity: 0.8;
+    font-size: 16px;
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+    }
+
+    .faunaExplanation {
+      padding: 10px;
+      width: fit-content;
+      font-size: 12px;
+      @media all and (min-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
+  .faunaTableTitle {
+    background-color: black;
+    color: white;
+    padding-inline: 20px;
+    padding-block: 5px;
+    margin-top: 20px;
+    opacity: 0.8;
+    cursor: pointer;
+    font-size: 12px;
+    @media all and (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  .tableFauna {
+    font-weight: bold;
+    background-color: gray;
+    opacity: 0.8;
+    color: black;
+    margin-bottom: 50px;
+    font-size: 6px;
+    @media all and (min-width: 768px) {
+      font-weight: bold;
+      background-color: gray;
+      opacity: 0.8;
+      color: black;
+      margin-bottom: 50px;
+      font-size: 14px;
+    }
+  }
+}

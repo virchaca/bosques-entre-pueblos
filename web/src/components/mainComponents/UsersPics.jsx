@@ -37,7 +37,7 @@ function UsersPics() {
             <h3 className="h3Foro">Sube aqui tus fotos...</h3>
             <p>
               Prueba la foto que quieras compartirnos en el botón de
-              <u>'sube tu foto'</u>.
+              <strong>'sube tu foto'</strong>.
             </p>
             <p>
               Cuando lo tengas claro, envíanosla{" "}
