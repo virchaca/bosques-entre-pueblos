@@ -2,6 +2,12 @@
   background-image: url(../images/bark.jpg);
   background-size: contain;
   padding: 1rem;
+  .cardIntro{
+    background-color: white;
+    text-align: center;
+    margin: 2rem;
+    padding: 5px;
+  }
   .cardSection {
     padding: 1rem;
     display: flex;
@@ -53,7 +59,11 @@
       background-size: cover;
     }
     .fondo5 {
-      background-image: url(../images/fondocards/6a.jpg);
+      background-image: url(../images/fondocards/puente2.jpg);
+      background-size: cover;
+    }
+    .fondo6 {
+      background-image: url(../images/fondocards/caminoAgua2.png);
       background-size: cover;
     }
   }

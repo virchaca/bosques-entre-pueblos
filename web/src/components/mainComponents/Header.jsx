@@ -49,7 +49,7 @@ function Header() {
 
                 <li>
                   <Link to="/Forests" className="no-underline">
-                    Forests
+                    Bosques
                   </Link>
                 </li>
                 <li>
@@ -69,7 +69,12 @@ function Header() {
                 </li>
                 <li>
                   <Link to="/UsersPics" className="no-underline">
-                    Sube tu foto
+                    Comparte tus fotos
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="no-underline">
+                    Contacto
                   </Link>
                 </li>
               </ul>

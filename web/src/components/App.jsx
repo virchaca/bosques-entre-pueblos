@@ -90,6 +90,8 @@ function App() {
           <Route path="/Forests" element={<Forests />} />
           <Route path="/Users" element={<Users />} />
           <Route path="/Card" element={<Card />} />
+          
+          <Route path="/contact" element={<SponsorSpace />} />
           <Route path="/Forest1" element={<Forest1 />} />
           <Route path="/Forest2" element={<Forest2 />} />
           <Route path="/Forest3" element={<Forest3 />} />
@@ -101,9 +103,7 @@ function App() {
 
       <footer className="footer">
         
-        {/* <span>iconos</span>
-        <span>enlaces</span> */}
-        
+             
 
         <p className="mybrand">
           <a href="https://virchaca.github.io/portfolio/" target="blank" title="Portfolio"><i className="icons fa-solid fa-user-tie"></i></a>

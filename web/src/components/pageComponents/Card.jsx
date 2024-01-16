@@ -73,8 +73,11 @@ const Card = () => {
         <i className="fa-solid fa-left-long"></i> Back
       </Link>
       <section className="cardBox">
+      <p className="cardIntro">Elige entre los distintos fondos de fotos de la Sierra de Francia y crea una tarjeta con tus datos, fecha, lugares visitados y alguna anécdota que te gustaría recordar. Dale al botón de crear tarjeta y se generará un enlace donde descargar tu tarjeta. Puedes crear tantas como quieras, solo pulsa en crear una nueva y empieza otra vez!</p>
         <div className="cardSection">
+          
           <form className="cardForm">
+      
             <label htmlFor="">
               Nombre
               <input
@@ -147,6 +150,8 @@ const Card = () => {
               <option value="fondo2">fondo2</option>
               <option value="fondo3">fondo3</option>
               <option value="fondo4">fondo4</option>
+               <option value="fondo5">fondo5</option>
+               <option value="fondo6">fondo6</option>
             </select>
           </form>
 

@@ -1,5 +1,6 @@
 // import React from 'react'
 import "../../styles/sponsorSpace.scss";
+// import { Link } from "react-router-dom";
 
 function SponsorSpace() {
   return (
@@ -24,6 +25,9 @@ function SponsorSpace() {
           @VirWebCreations{" "}
         </a>{" "}
       </p>
+      {/* <Link to="/" className="backToMain">
+        <i className="fa-solid fa-left-long"></i> Back
+      </Link> */}
     </div>
   );
 }
