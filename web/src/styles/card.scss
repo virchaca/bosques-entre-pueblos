@@ -1,6 +1,8 @@
-.cardSection {
-    background-image: url(../images/tronco2.png);
-    background-size: contain;
+.cardBox {
+  background-image: url(../images/bark.jpg);
+  background-size: contain;
+  padding: 1rem;
+  .cardSection {
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -18,4 +20,60 @@
       display: flex;
       flex-direction: column;
     }
+    .cardBottom {
+    //   width: 400px;
+      height: 500px;
+      border: 5px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @media all and (min-width: 768px) {
+        width: 400px;
+      }
+      .cardFinalText {
+        background-color: white;
+        margin: 10px;
+      }
+    }
+    .fondo1 {
+      background-image: url(../images/fondocards/5.jpg);
+      background-size: cover;
+      
+    }
+
+    .fondo2 {
+      background-image: url(../images/fondocards/PenaF.jpg);
+    }
+    .fondo3 {
+      background-image: url(../images/fondocards/madroños5.jpg);
+    }
+
+    .fondo4 {
+      background-image: url(../images/fondocards/3.jpg);
+      background-size: cover;
+    }
+    .fondo5 {
+      background-image: url(../images/fondocards/6a.jpg);
+      background-size: cover;
+    }
   }
+  .cardBtns {
+    display: flex;
+
+    .createCard {
+      background-color: black;
+      width: fit-content;
+      margin: auto;
+    }
+    .singleBtn {
+      cursor: pointer;
+      padding: 5px;
+    }
+    .downloadImage {
+      a {
+        text-decoration: none;
+        color: red;
+      }
+    }
+  }
+}
