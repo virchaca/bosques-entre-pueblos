@@ -150,12 +150,14 @@ const Card = () => {
               <option value="fondo2">fondo2</option>
               <option value="fondo3">fondo3</option>
               <option value="fondo4">fondo4</option>
-               <option value="fondo5">fondo5</option>
-               <option value="fondo6">fondo6</option>
+              <option value="fondo5">fondo5</option>
+              <option value="fondo6">fondo6</option>
             </select>
           </form>
 
           {/*  aqui empiezo cambios para canvas */}
+<div className="cardBottomBack">
+
 
           <section className={`cardBottom ${bottomPic}`} ref={cardBottomRef}>
             <div>
@@ -172,6 +174,7 @@ const Card = () => {
               <p className="cardFinalText">{anecdote || "Anécdotas:"}</p>
             </div>
           </section>
+        </div>
         </div>
         <div className="cardBtns">
           <section className="createCard">

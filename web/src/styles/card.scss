@@ -25,22 +25,28 @@
       background-color: silver;
       display: flex;
       flex-direction: column;
+      border: 2px solid black;
     }
-    .cardBottom {
-    //   width: 400px;
-      height: 500px;
-      border: 5px solid black;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      @media all and (min-width: 768px) {
-        width: 400px;
-      }
-      .cardFinalText {
-        background-color: white;
-        margin: 10px;
-      }
+    .cardBottomBack{
+      background-color: silver;
+      padding: 10px;
+      .cardBottom {
+        height: 500px;
+     border: 5px solid black;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     @media all and (min-width: 768px) {
+       width: 400px;
+       
+     }
+     .cardFinalText {
+       background-color: white;
+       margin: 10px;
+     }
+   }
     }
+  
     .fondo1 {
       background-image: url(../images/fondocards/5.jpg);
       background-size: cover;
