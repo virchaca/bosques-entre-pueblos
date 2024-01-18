@@ -1,31 +1,76 @@
 .contactDiv {
-    background-image: url("../images/dehesa4.png");
-    padding: 2rem;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @media all and (min-width: 768px) {
-        padding: 4rem;    
-    }
-  
-    .contactSpace {    
-background-color: white;
-opacity: 0.8;
-      border: 2px solid black;
-    //   border-style: dashed solid;
-      border-radius: 25px;
-      margin-block: 2rem;      
-      width: fit-content;    
-      padding: 10px;
-      font-size: 12px; 
-      margin: auto;
+  background-image: url("../images/dehesa4.png");
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;
+  @media all and (min-width: 768px) {
+    padding: 4rem;
+    flex-direction: row;    
+    
+  }
 
-      
-      @media all and (min-width: 768px) {
-        margin: auto;
-        text-align: center;  
-        font-size: 16px;      
-      }
-      
+  .contactSpace {
+    background-color: white;
+    opacity: 0.8;
+    border: 2px solid black;   
+    border-radius: 25px;
+    margin-block: 2rem;
+    width: fit-content;
+    padding: 10px;
+    font-size: 12px;
+    @media all and (min-width: 768px) {
+      margin: auto;
+      text-align: center;
+      font-size: 16px;
     }
   }
+
+  .formSection{
+    background-color: silver;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    border: 2px solid black;
+    margin: auto;
+
+    @media all and (min-width: 768px) {    
+      font-size: 16px;
+      width: 350px;
+        }
+     .form{    
+    display: flex;
+    flex-direction: column;
+    
+    input{
+      border-radius: 15px;
+      padding: 5px;
+      font-size: 10px;
+      @media all and (min-width: 768px) {    
+        font-size: 14px;
+      }
+    }
+    textarea{
+      border-radius: 15px;
+      padding: 5px;
+      font-size: 10px;
+      @media all and (min-width: 768px) {    
+        font-size: 16px;
+      }
+    }
+  }
+  .btnSubmit{
+    // width: fit-content;
+    margin-inline: 20px;
+    background-color: darkolivegreen;
+    text-align: center;    
+    cursor: pointer;
+    @media all and (min-width: 768px) {    
+      margin-inline: 30px;
+    }
+  }
+ 
+  }
+ 
+}

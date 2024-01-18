@@ -7,6 +7,7 @@ function Contact() {
     <>
     <div className="contactDiv">
       <section className="contactSpace">    
+      <p>Contáctanos por mail o mediante formulario</p>
       <p className="myContact">
         {" "}
         <i className="fa-regular fa-paper-plane"></i>
@@ -23,6 +24,28 @@ function Contact() {
           <p>Contáctanos para cualquier consulta</p>
           
        </section>
+      
+      <section className="formSection">
+        <h4>Contáctenos mediante formulario</h4>
+        <form action="https://formsubmit.co/e304ce9ec8898c2d635b585601a5787f" method="POST" className="form" > 
+          <label htmlFor="name" >Nombre</label>
+          <input type="text" name="name" placeholder="Nombre"/>
+
+          <label htmlFor="email">Correo electrónico</label>
+          <input type="email" name="email" placeholder="Email"/>
+
+          <label htmlFor="subject">Asunto</label>
+          <input type="text" name="subject" placeholder="Asunto"/>
+
+          <label htmlFor="message">Mensaje</label>
+          <textarea name="message" id="" cols="15" rows="5" placeholder="Escribe aquí tu mensaje"></textarea>
+
+          <input className="btnSubmit" type="submit" value={"enviar"} />
+
+          <input type="hidden" name="_next" value="http://localhost:5173/bosques-entre-pueblos/?name=&email=&subject=&message=#/contact" />
+          <input type="hidden" name="_captcha" value="false" />
+        </form>
+      </section>
       
       
     </div>
