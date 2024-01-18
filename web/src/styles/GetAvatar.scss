@@ -10,6 +10,8 @@
     align-items: center;
     box-sizing: border-box;
     background: darkred;
+    // border: 4px solid white;
+    // box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
     border: 0;
     font-family: sans-serif;
@@ -19,6 +21,10 @@
     @media all and (min-width: 768px) {   
       font-size: 18px;
     }
+  }
+  .get-avatar__label:hover{
+    background-color:  rgb(190, 78, 49);
+    ;
   }
   
   .get-avatar__upload-field {

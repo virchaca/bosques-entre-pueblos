@@ -35,6 +35,16 @@
     @media screen and (min-width: 768px) {
       font-size: 24px;
     }
+    &:hover {
+      font-size: 14px; 
+      @media screen and (min-width: 768px) {
+        font-size: 28px;
+      }
+      // color: #ff9900; 
+      // color: #00cc66;
+      color: #008040;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    }
   }
 
   .aPictures {

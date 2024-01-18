@@ -34,7 +34,7 @@ function Hero() {
             <select
               id="season"
               name="select"
-              className="seasonInput"
+              className=" seasonSelect"
               value={season}
               onChange={handleSelectSeason}
             >
@@ -135,8 +135,8 @@ function Hero() {
           región biogeográfica mediterránea española en la que se ha encontrado
           el briofito Bruchia vogesiaca.
         </p>
-        <input type="checkbox" id="btn" />
-        <label htmlFor="btn"></label>
+        <input type="checkbox" id="btn" className="inputIntro"/>
+        <label htmlFor="btn" className="labelIntro"></label>
 
 </div>
      

@@ -26,14 +26,14 @@ function InfoSpace() {
                       href="https://www.i-bejar.com/rutas/comarca/laguna-marcos-alberca.htm"
                       target="blank"
                     >
-                      <button className="btn3"> LAGUNA SAN MARCOS</button>
+                      <button className="btn1"> LAGUNA SAN MARCOS</button>
                     </a>
 
                     <a
                       href="https://es.wikiloc.com/rutas-senderismo/bosque-de-madronos-miranda-del-castanar-84675005"
                       target="blank"
                     >
-                      <button className="btn4">BOSQUE MADROÑOS</button>
+                      <button className="btn2">BOSQUE MADROÑOS</button>
                     </a>
                     <a
                       href="https://www.turismoentresierras.com/las-piscinas-naturales-de-la-sierra-de-francia-2/"

@@ -11,7 +11,7 @@ function Contact() {
       <p className="myContact">
         {" "}
         <i className="fa-regular fa-paper-plane"></i>
-        Contacto{" "}
+        Email:{" "}
         <a
           href="mailto:virginia.alvarez82@gmail.com?&subject=Bosques Entre Pueblos - Contacto &body=Hola Vir,
                   "
@@ -42,7 +42,7 @@ function Contact() {
 
           <input className="btnSubmit" type="submit" value={"enviar"} />
 
-          <input type="hidden" name="_next" value="http://localhost:5173/bosques-entre-pueblos/?name=&email=&subject=&message=#/contact" />
+          <input type="hidden" name="_next" value="https://virchaca.github.io/bosques-entre-pueblos/#/contact" />
           <input type="hidden" name="_captcha" value="false" />
         </form>
       </section>
