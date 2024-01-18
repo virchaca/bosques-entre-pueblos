@@ -4,16 +4,20 @@
   align-items: center;
   background-image: url(../images/bosque.jpg);
   margin-top: 10px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   justify-content: center;
+  min-height: 70vh;
+  padding-block: 1rem;
 
   @media all and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-image: url(../images/bosque.jpg);
+    min-height: 90vh;
     // margin-top: 10px;
-    // margin-bottom: 100px;
+    margin-bottom: 100px;
+   
   }
   .formDisplay {
     display: flex;
@@ -35,7 +39,7 @@
    
     .seasonTips {
       color: black;
-      border: 5px solid black;
+      border: 3px solid black;
       background-color: white;
       border-style: dashed;
       opacity: 0.8;
@@ -56,21 +60,7 @@
     }
   }
 
-  .intro {
-    background-color: wheat;
-    padding: 10px;
-    margin: 1.5rem;
-    border: 5px solid black;
-    border-style: dashed;
-    opacity: 0.8;
-    font-size: 10px;
-    // width: 15em;
-    @media screen and (min-width: 768px) {
-      width: 20rem;
-      padding: 30px;
-      font-size: 16px;
-    }
-  }
+
 
   .mainSectionForm {
     display: flex;
@@ -94,4 +84,55 @@
       padding: 4px;
     }
   }
+
+  .contain{
+    background-color: wheat;
+    opacity: 0.8;
+    border: 3px solid black;
+    width: 15rem;
+
+    @media screen and (min-width: 768px) {
+      width: 20rem;
+      padding: 30px;
+      font-size: 16px;
+    }
+
+     .extra{
+    display: none;
+  }
+  p{
+    padding: 10px;
+    display: block;
+    font-size: 10px;   
+    @media screen and (min-width: 768px) {   
+      font-size: 16px;
+    }
+  }
+  input[type="checkbox"]{
+    height: 2rem;
+    display: block;
+    appearance: none;
+  }
+  label{
+    position: relative;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  label::before{
+    content: 'ver más';
+  }
+  input[type="checkbox"]:checked ~ label::before {
+    content: 'ver menos';
+  }
+  // .dots:has(~ input[type="checkbox"]:checked) {
+  //   display: none;
+  // }
+  .extra:has(~ input[type="checkbox"]:checked) {
+    display: block;
+  }
+  }
+ 
+
 }

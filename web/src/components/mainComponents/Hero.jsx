@@ -110,14 +110,18 @@ function Hero() {
             </p>
           </div>
         </div>
+<div className="contain">
 
-        <p className="intro">
+     <p className="original intro">
           Su importancia vegetal radica principalmente en la existencia de
           bosques galaico-portugueses de roble rebollo y roble carballo (en cuyo
           sotosbosque crecen acebos, serbales y arce menor) y los castaños, que
           constituyen una población de gran valor por su adaptación al clima de
           la zona pues sólo se encuentran en zonas bastante húmedas durante todo
-          el año. Entre otros ecosistemas con los que cuenta se podrían destacar
+          el año.
+        </p>        {/* <span className="dots">...</span> */}
+        <p className="extra intro">
+        Entre otros ecosistemas con los que cuenta se podrían destacar
           los brezales secos europeos y mediterráneos endémicos con aliaga, las
           zonas subestépicas de gramíneas y anuales del Thero-Brachypodietea,
           encinares de Quercus ilex y Quercus rotundifolia, los bosques de
@@ -131,6 +135,11 @@ function Hero() {
           región biogeográfica mediterránea española en la que se ha encontrado
           el briofito Bruchia vogesiaca.
         </p>
+        <input type="checkbox" id="btn" />
+        <label htmlFor="btn"></label>
+
+</div>
+     
       </section>
     </div>
   );

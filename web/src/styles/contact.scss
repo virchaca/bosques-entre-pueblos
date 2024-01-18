@@ -1,0 +1,31 @@
+.contactDiv {
+    background-image: url("../images/dehesa4.png");
+    padding: 2rem;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media all and (min-width: 768px) {
+        padding: 4rem;    
+    }
+  
+    .contactSpace {    
+background-color: white;
+opacity: 0.8;
+      border: 2px solid black;
+    //   border-style: dashed solid;
+      border-radius: 25px;
+      margin-block: 2rem;      
+      width: fit-content;    
+      padding: 10px;
+      font-size: 12px; 
+      margin: auto;
+
+      
+      @media all and (min-width: 768px) {
+        margin: auto;
+        text-align: center;  
+        font-size: 16px;      
+      }
+      
+    }
+  }

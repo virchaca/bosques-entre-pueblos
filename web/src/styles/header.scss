@@ -17,13 +17,13 @@
     }
   
     .dateAndTime {
-      border: 1px solid darkgray;
+      // border: 1px solid darkgray;
       height: fit-content;
       width: fit-content;
       font-size: 12px;
   
       @media all and (min-width: 768px) {
-        border: 1px solid darkgray;
+        // border: 1px solid darkgray;
         height: fit-content;
         font-size: 16px;
       }

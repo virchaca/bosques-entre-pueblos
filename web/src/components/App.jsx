@@ -9,6 +9,7 @@ import Hero from "./mainComponents/Hero";
 import InfoSpace from "./mainComponents/InfoSpace";
 import UsersPics from "./mainComponents/UsersPics";
 import SponsorSpace from "./mainComponents/SponsorSpace";
+import Contact from "./mainComponents/Contact";
 
 import Fauna from "./pageComponents/Fauna";
 import Forests from "./pageComponents/Forests";
@@ -91,7 +92,7 @@ function App() {
           <Route path="/Users" element={<Users />} />
           <Route path="/Card" element={<Card />} />
           
-          <Route path="/contact" element={<SponsorSpace />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/Forest1" element={<Forest1 />} />
           <Route path="/Forest2" element={<Forest2 />} />
           <Route path="/Forest3" element={<Forest3 />} />

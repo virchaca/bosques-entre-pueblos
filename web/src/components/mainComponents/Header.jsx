@@ -30,8 +30,8 @@ function Header() {
           </div>
           <section>
             <div className="dateAndTime">
-              <span>Fecha y hora actual {currentDateTime.toLocaleDateString()}</span><span>-</span>
-              <span> {currentDateTime.toLocaleTimeString()}</span>
+              <span>{currentDateTime.toLocaleDateString()} - 
+              {currentDateTime.toLocaleTimeString()}</span>
             </div>
           </section>
         </section>
