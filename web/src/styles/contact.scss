@@ -3,18 +3,18 @@
   padding: 2rem;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   flex-direction: column;
   @media all and (min-width: 768px) {
     padding: 4rem;
-    flex-direction: row;    
+    flex-direction: row;
     
   }
 
   .contactSpace {
     background-color: white;
     opacity: 0.8;
-    border: 2px solid black;   
+    border: 2px solid black;
     border-radius: 25px;
     margin-block: 2rem;
     width: fit-content;
@@ -27,50 +27,54 @@
     }
   }
 
-  .formSection{
+  .formSection {
     background-color: silver;
+    opacity: 0.9;
     padding: 5px;
-    border-radius: 15px;
+    border-radius: 20px;
     font-size: 12px;
     border: 2px solid black;
     margin: auto;
+    text-align: center;
 
-    @media all and (min-width: 768px) {    
+    @media all and (min-width: 768px) {
       font-size: 16px;
       width: 350px;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+
+      .input {
+        border-radius: 15px;
+        padding: 5px;
+      }
+      .input::placeholder {
+        font-size: 10px;
+        @media all and (min-width: 768px) {
+          font-size: 14px;
         }
-     .form{    
-    display: flex;
-    flex-direction: column;
-    
-    input{
-      border-radius: 15px;
-      padding: 5px;
-      font-size: 10px;
-      @media all and (min-width: 768px) {    
-        font-size: 14px;
+      }
+      .textarea {
+        border-radius: 15px;
+        padding: 5px;
+        font-size: 10px;
+        @media all and (min-width: 768px) {
+          font-size: 16px;
+        }
       }
     }
-    textarea{
+    .btnSubmit {
       border-radius: 15px;
+      margin-inline: 20px;
+      background-color: black;
+      color: white;
+      text-align: center;
       padding: 5px;
-      font-size: 10px;
-      @media all and (min-width: 768px) {    
-        font-size: 16px;
+      cursor: pointer;
+      @media all and (min-width: 768px) {
+        margin-inline: 30px;
       }
     }
   }
-  .btnSubmit{
-    // width: fit-content;
-    margin-inline: 20px;
-    background-color: darkolivegreen;
-    text-align: center;    
-    cursor: pointer;
-    @media all and (min-width: 768px) {    
-      margin-inline: 30px;
-    }
-  }
- 
-  }
- 
 }
