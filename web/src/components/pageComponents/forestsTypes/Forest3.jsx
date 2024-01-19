@@ -16,10 +16,9 @@ const Forest3 = () => {
      <p className="riverDescription">Formación vegetal que presenta una variedad de fauna y flora concretas, constituyendo un ecosistema de gran valor, sobre todo en zonas de climas secos como es el caso de Castilla. Se caracteriza por extenderse a lo largo de cauces de río, sobre terrenos que se encuentran empapados de agua. Depende las condiciones del mismo, la vegetación es diferente. La primera franja suele presentar especies más pequeñas, como arbustos o juncos, que son capaces de aguantar las crecidas periódicas del nivel del agua.
      Conforme el cauce del río avanza, se da paso a otras especies de mayor tamaño: al principio, con árboles de pequeño tamaño y muy adaptados a suelos con un alto nivel freático como, por ejemplo, la familia de los Salix. Poco a poco se descubren especies menos tolerantes, pero que siguen necesitando las condiciones de alta humedad que ofrece este entorno como es el caso del género Fraxinus.</p>
 
-     <p className="inProcess">
-        El inventario se encuentra actualmente en proceso, mientras llevamos a
-        cabo la identificación y clasificación de las especies. Agradecemos su
-        paciencia y comprensión durante este período.
+     <br />
+      <p className="inProcess">
+        Inventario en proceso de elaboración.
       </p>
      
     <Link to="/Forests" className="backToMain">

@@ -37,7 +37,7 @@ function Header() {
         </section>
         <section className="burguerMenu">
           <div onClick={handleClick}>
-            <i className="fa-solid fa-bars"></i>
+            <i className="menuIcon fa-solid fa-bars"></i>
 
             <section className={classMenu === true ? "hidden" : ""}>
               <ul className="menuList">

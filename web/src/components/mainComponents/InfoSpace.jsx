@@ -85,7 +85,7 @@ function InfoSpace() {
                       {" "}
                       <a
                         href="https://www.elcafedelahistoria.com/refranes-bosque/"
-                        title="refranitos refranitos..."
+                        title="refranes"
                         target="blank"
                         
                       >

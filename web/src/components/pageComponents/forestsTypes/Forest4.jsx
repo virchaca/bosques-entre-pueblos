@@ -19,10 +19,9 @@ const Forest4 = () => {
       </p>
       {/* <img className='imgForest4' src={forest1} alt="" /> */}
      
+      <br />
       <p className="inProcess">
-        El inventario se encuentra actualmente en proceso, mientras llevamos a
-        cabo la identificación y clasificación de las especies. Agradecemos su
-        paciencia y comprensión durante este período.
+        Inventario en proceso de elaboración.
       </p>
       
     <Link to="/Forests" className="backToMain">

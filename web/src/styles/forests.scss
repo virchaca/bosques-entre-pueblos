@@ -34,6 +34,10 @@
       padding: 3px;
       margin-block: 0.5rem;
       font-size: 10px;
+      &:hover{
+        background-color: gray;
+      }
+     
       @media all and (min-width: 768px) {
         width: 50rem;
         margin: 20px;
@@ -41,7 +45,15 @@
         width: 16rem;
         padding: 10px;
         margin-block: 1rem;
-        font-size: 16px;
+        font-size: 14px;
+      }
+      .eachLink{
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+       p{
+        font-weight: 300;
+       }
       }
     }
     .forestText {
@@ -58,10 +70,16 @@
   }
   
   .inProcess {
-    color: rgb(82, 9, 9);
-    background-color: gray;
+    // color: rgb(141, 21, 21);
+    color: red;
+    // background-color: gray;
     opacity: 0.6;
     width: fit-content;
+    padding: 3px;
+    font-size: 10px;
+    @media all and (min-width: 768px) {
+      font-size: 14px;
+    }
   }
   .forest1 {
     background-image: url(../images/castaño.jpg);

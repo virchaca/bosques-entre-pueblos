@@ -31,11 +31,9 @@ const Forest1 = () => {
         arándanos (Vaccinium mirtyllus), majuelos (Crateagus monogyna) y plantas
         deporte hérbáceo.{" "}
       </p>
-
+          <br />
       <p className="inProcess">
-        El inventario se encuentra actualmente en proceso, mientras llevamos a
-        cabo la identificación y clasificación de las especies. Agradecemos su
-        paciencia y comprensión durante este período.
+        Inventario en proceso de elaboración.
       </p>
 
       <Link to="/Forests" className="backToMain">

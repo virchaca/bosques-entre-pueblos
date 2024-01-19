@@ -32,9 +32,13 @@
       display: flex;
       justify-content: space-between;
       text-decoration: none;
+      
       @media all and (min-width: 768px) {
         justify-content: space-between;
         margin-inline: 1rem;
+      }
+      .menuIcon{
+        cursor: pointer;
       }
   
       .menuList {
