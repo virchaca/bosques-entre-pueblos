@@ -78,7 +78,7 @@ function Header() {
                   </Link>
                 </li>
               </ul>
-              {/*  como la funcion handle ordena que haga lo contrario a lo k tiene, con poner aqui que ejecute la funcion handle, hará lo contrario a lo k hay, es decir, cierra lista y muestra icono */}
+              {/*  como la funcion handle ordena que haga lo contrario a lo k tiene, con poner aquí que ejecute la funcion handle, hará lo contrario a lo k hay, es decir, cierra lista y muestra icono */}
             </section>
           </div>
           <div>

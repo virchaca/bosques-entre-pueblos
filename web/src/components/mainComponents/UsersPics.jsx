@@ -34,7 +34,7 @@ function UsersPics() {
         </p>
         <div className="usersPicturesHeader">
           <div className="usersPicText">
-            <h3 className="h3Foro">Sube aqui tus fotos...</h3>
+            <h3 className="h3Foro">Sube aquí tus fotos...</h3>
             <p>
               Prueba la foto que quieras compartirnos en el botón de
               <strong>'sube tu foto'</strong>.
@@ -43,7 +43,7 @@ function UsersPics() {
               Cuando lo tengas claro, envíanosla{" "}
               <a href="mailto:virginia.alvarez82@gmail.com?&subject=Subir foto usuario - Contacto &body=Buenos días, me gustaría compartir esta foto con vosotros.
                   ">
-                <button className="sendPhotoBtn">pulsando aqui</button>
+                <button className="sendPhotoBtn">pulsando aquí</button>
               </a>
             </p>
             <p>La revisaremos y la subiremos!</p>

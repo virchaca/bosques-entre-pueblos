@@ -75,7 +75,7 @@ function App() {
                 </section>
                 <InfoSpace />
                 <UsersPics />
-                {/* de aqui he quitado: avatar={avatar}/> */}
+                {/* de aquí he quitado: avatar={avatar}/> */}
 
                 {/* <div className="arrowDiv">
                   <a href="/">

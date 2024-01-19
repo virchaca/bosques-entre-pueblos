@@ -83,7 +83,7 @@ const Card = () => {
               <input
                 className=""
                 type="text"
-                placeholder="escribe aqui tu nombre"
+                placeholder="escribe aquí tu nombre"
                 name="name"
                 id="name"
                 value={name}
@@ -95,7 +95,7 @@ const Card = () => {
               Apellido
               <input
                 type="text"
-                placeholder="escribe aqui tu apellido"
+                placeholder="escribe aquí tu apellido"
                 name="surname"
                 id="surname"
                 value={surname}
@@ -107,7 +107,7 @@ const Card = () => {
               Fecha
               <input
                 type="text"
-                placeholder="escribe aqui la fecha"
+                placeholder="escribe aquí la fecha"
                 name="date"
                 id="date"
                 value={date}
@@ -121,7 +121,7 @@ const Card = () => {
               id="places"
               cols="30"
               rows="3"
-              placeholder="escribe aqui algunos de los sitios que has visitado"
+              placeholder="escribe aquí algunos de los sitios que has visitado"
               value={places}
               onChange={handleInputPlaces}
             ></textarea>
@@ -131,7 +131,7 @@ const Card = () => {
               id="anecdote"
               cols="30"
               rows="3"
-              placeholder="escribe aqui alguna anecdota que te haya sucedido durante tu visita y que quieras recordar"
+              placeholder="escribe aquí alguna anecdota que te haya sucedido durante tu visita y que quieras recordar"
               value={anecdote}
               onChange={handleInputAnecdote}
             ></textarea>
