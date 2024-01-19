@@ -10,7 +10,6 @@ import pic4 from "../../images/usersPictures/4.jpg";
 import pic8 from "../../images/usersPictures/8.jpg";
 import flores from "../../images/usersPictures/flores.jpg";
 import pic7 from "../../images/usersPictures/7.jpg";
-import casta3 from "../../images/usersPictures/casta3.jpg";
 import lepista from "../../images/usersPictures/lepista.png";
 import amanita2 from "../../images/usersPictures/amanita.png";
 import erizo2 from "../../images/usersPictures/erizo2.jpg";
@@ -63,8 +62,7 @@ function UsersPics() {
           <img className="imgUsersPics" src={flores} alt="" />
           <img className="imgUsersPics" src={pic7} alt="" />
           <img className="imgUsersPics" src={rusco} alt="" />
-          <img className="imgUsersPics" src={corzo} alt="" />
-          <img className="imgUsersPics" src={casta3} alt="" />
+          <img className="imgUsersPics" src={corzo} alt="" />        
           <img className="imgUsersPics" src={amanita2} alt="" />
           <img className="imgUsersPics" src={erizo2} alt="" />
         </div>
