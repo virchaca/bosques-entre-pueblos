@@ -1,0 +1,109 @@
+// .carrousel {
+//   padding: 2em;
+//   color: var(--negro);
+//   transition: all 0.4s ease;
+//   border-radius: 1em;
+//   box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec),
+//     inset 0 0 0 transparent, inset 0 0 0 transparent;
+//   overflow: hidden;
+// }
+
+// .carrousel {
+//   width: 90%;
+//   max-width: 120em;
+//   background-color: var(--blanco);
+
+//   .grande {
+//     width: 200%;
+//     display: flex;
+//     flex-flow: row nowrap;
+//     justify-content: center;
+//     align-items: center;
+
+//     transition: all 0.5s ease;
+//     transform: translateX(0%);
+
+//     .img {
+//       width: calc(100% / 3 - 2rem);
+//       // min-height: 10vh;
+//       width: 200x;
+//       color: var(--negro);
+//       border-radius: 1em;
+
+//       // transition: all 0.4s ease;
+//       // background-color: var(--blanco);
+//       // box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+//     }
+//   }
+
+//   .puntos {
+//     width: 100%;
+//     // margin: 1em 0 0;
+//     padding: 0.4em;
+//     display: flex;
+//     flex-flow: row nowrap;
+//     justify-content: center;
+//     align-items: center;
+
+//     .punto {
+//       width: 2em;
+//       height: 2em;
+//       border-radius: 1em;
+//       list-style: none;
+//       text-align: center;
+//       // margin: 1em 1em 0;
+//       // color: var(--negro);
+//       // transition: all 0.4s ease;
+
+//       // background-color: var(--blanco);
+//       // box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+//     }
+//     .punto.activo {
+//       background-color: lightblue;
+//     }
+//   }
+// }
+
+.carroussel {
+  margin: 0;
+  padding: 0;
+  font-family: lato;
+
+  .slider-frame {
+    width: 1280px;
+    height: auto;
+    margin:  auto;
+    overflow: hidden;
+
+    animation: slide 16s infiite alternate ease-in-out; //son 4 fotos, a 4 segundos por foto
+
+    ul {
+      display: flex;    
+      padding: 0;
+      width: 400%;
+      margin: auto;
+      li {
+        list-style: none;
+        width: 30%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes slide {
+    0% { margin-left: 0%;}
+    20% { margin-left: 0%;}
+  //dejamos un 5% libre entre intervalo e intervalo
+   
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+
+    75% { margin-left: -300%;}
+    95% { margin-left: -300%;}
+}

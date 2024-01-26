@@ -15,6 +15,7 @@ import Fauna from "./pageComponents/Fauna";
 import Forests from "./pageComponents/Forests";
 import Users from "./pageComponents/Users";
 import Card from "./pageComponents/Card";
+// import Carroussel from "./Carroussel";
 
 import Forest1 from "./pageComponents/forestsTypes/Forest1";
 import Forest2 from "./pageComponents/forestsTypes/Forest2";
@@ -82,7 +83,7 @@ function App() {
                     <i className="arrow fa-solid fa-circle-arrow-up fa-2xl"></i>
                   </a>
                 </div> */}
-
+                {/* <Carroussel /> */}
                 <SponsorSpace />
               </>
             }
@@ -91,7 +92,7 @@ function App() {
           <Route path="/Forests" element={<Forests />} />
           <Route path="/Users" element={<Users />} />
           <Route path="/Card" element={<Card />} />
-          
+
           <Route path="/contact" element={<Contact />} />
           <Route path="/Forest1" element={<Forest1 />} />
           <Route path="/Forest2" element={<Forest2 />} />
@@ -103,18 +104,26 @@ function App() {
       </main>
 
       <footer className="footer">
-        
-             
-
         <p className="mybrand">
-          <a href="https://virchaca.github.io/portfolio/" target="blank" title="Portfolio"><i className="icons fa-solid fa-user-tie"></i></a>
+          <a
+            href="https://virchaca.github.io/portfolio/"
+            target="blank"
+            title="Portfolio"
+          >
+            <i className="icons fa-solid fa-user-tie"></i>
+          </a>
           <a
             href="https://www.linkedin.com/in/virginia-alvarezperez/"
-            target="blank" title="Virginia Alvarez Perez"
+            target="blank"
+            title="Virginia Alvarez Perez"
           >
             <i className="icons fa-brands fa-linkedin"></i>
           </a>
-          <a href="https://github.com/virchaca" target="blank" title="Github Virchaca">
+          <a
+            href="https://github.com/virchaca"
+            target="blank"
+            title="Github Virchaca"
+          >
             <i className="icons fa-brands fa-github-alt"></i>
           </a>{" "}
           @VirWebCreations

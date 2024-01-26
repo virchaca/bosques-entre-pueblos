@@ -14,15 +14,15 @@ const Forest1 = () => {
         <h1 className="chestnutTitle">BOSQUE DE CASTAÑOS</h1>
         {/* <img className='imgForest1' src={forest1} alt="" /> */}
       </div>
-      <div className="chestnutDescription">      
-      <p >
+      <div >      
+      <p className="chestnutDescription">
         Bosques donde predomina el castaño (Castanea sativa), en algunos casos
         ejemplares centenarios, además de numerosos avellanos, robles, acebedas
         -únicas en la provincia de Salamanca- y sus cerezos silvestres de más de
         20 metros de altura. Descubrimos este hermoso y desconocido bosque bajo
         la lluvia.
       </p>
-      <p >
+      <p className="chestnutDescription">
         {" "}
         El árbol dominante de este bosque es el castaño, castannea sativa, con
         ejemplares de envergadura que crecen entre tilos(Tilia platyphyllos),
