@@ -70,8 +70,19 @@
       font-size: 16px;
       margin-inline: 100px;
     }
+    a{
+      text-decoration: none;
+      color: green;
+      font-weight: bold;
+    }
   }
   .crow {
     text-align: center;
+    img{
+      @media all and (max-width: 768px) {
+     height: 180px;
+    }
+    
+    }
   }
 }

@@ -145,6 +145,7 @@ const Card = () => {
               id="backgrounds"
               value={bottomPic}
               onChange={handleBottomPic}
+              className="selecCard"
             >
               <option value="fondo1">fondo1</option>
               <option value="fondo2">fondo2</option>

@@ -17,6 +17,12 @@ const Forest5 = () => {
                     Quercus ilex aporta más de un 80% de los ejemplares, pero aparecen otras especies como el quejigo 
                     (Quercus faginea) y el alcornoque (Quercus suber). El estrato inferior consta de altas presencias de 
                     Lavandula stoechas, Daphne gnidium o Cistus ladanifer y otras especies de géneros como Thymus o Cytisus. Abundan los rebaños de vacas y de cerdos, sobretodo en la época de la montaners, cuando caen las bellotas del árbol y sirven de alimento al cerdo ibérico.             
+                    </p> 
+    <p className="holmDescription">
+                    En las inmediaciones de las Sierra de Francia y algunas manchas boscosas puntuales. Masas en las que 
+                    Quercus ilex aporta más de un 80% de los ejemplares, pero aparecen otras especies como el quejigo 
+                    (Quercus faginea) y el alcornoque (Quercus suber). El estrato inferior consta de altas presencias de 
+                    Lavandula stoechas, Daphne gnidium o Cistus ladanifer y otras especies de géneros como Thymus o Cytisus. Abundan los rebaños de vacas y de cerdos, sobretodo en la época de la montaners, cuando caen las bellotas del árbol y sirven de alimento al cerdo ibérico.             
                     </p>
 
                     <br />

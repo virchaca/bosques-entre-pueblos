@@ -28,6 +28,7 @@
       // border: 1px solid black;
       font-size: 12px;
       padding: 3px;
+      text-align: center;
       @media all and (min-width: 768px) {
         font-size: 16px;
         padding: 0px;
@@ -42,6 +43,7 @@
         cursor: pointer;
         font-size: 12px;
         box-shadow: 2px -2px 5px rgba(0, 0, 0.4, 0.4);
+        margin-block: 10px;
         @media all and (min-width: 768px) {
           font-size: 14px;
         }
@@ -56,6 +58,8 @@
       align-items: center;
       border: 5px solid white;
       border-style: dashed;
+
+      
       background-color: black;
       padding: 5px;
 

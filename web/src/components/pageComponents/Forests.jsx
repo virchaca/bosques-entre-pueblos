@@ -11,7 +11,7 @@ const Forests = () => {
         <i className="fa-solid fa-left-long"></i> Back
       </Link>
 
-      <div className="forestsDiv">      
+      <div className="forestsDiv">
         <Routes>
           <Route
             path="/"
@@ -22,69 +22,33 @@ const Forests = () => {
                   {" "}
                   <div className="forestLink">
                     {" "}
-                    <Link className="eachLink" to="/Forest1">BOSQUES DE CASTAÑOS
-                     <p>
-                    Bosques donde predomina el castaño (Castanea sativa), en algunos casos ejemplares centenarios, 
-                    además de numerosos avellanos, robles, acebedas -únicas en la provincia de Salamanca- 
-                    y sus cerezos silvestres de más de 20 metros de altura. Descubrimos este hermoso y 
-                    desconocido bosque bajo la lluvia.                   
-                    </p>
+                    <Link className="eachLink" to="/Forest1">
+                      BOSQUES DE CASTAÑOS
                     </Link>
-                   
                   </div>
                   <div className="forestLink">
                     {" "}
-                    <Link className="eachLink" to="/Forest2">BOSQUES MIXTOS DE FRONDOSAS
-                     <p>
-                     Masas boscosas de roble melojo o rebollo (Quercus Pirenayca), adapatados a climas secos 
-                     y continentales. Conviven con ejemplares de encina, el sauce cenizo, 
-                     haya, fresnos y castaño. El sotobosque se encuentra conformado 
-                     principalmente por  los géneros Cytisus, Rubus y Rosa.                 
-                    </p>
+                    <Link className="eachLink" to="/Forest2">
+                      BOSQUES MIXTOS DE FRONDOSAS
                     </Link>
-                   
-                    {/* <p>    Masas boscosas de roble melojo (Quercus Pirenayca), árboles que crecen sobre suelos silíceos, 
-                     adapatados a climas secos y continentales. Se puede también encontrar ejemplares de encina 
-                     (Quercus Ilex), y en su ámbito setas como Amanita muscaria, a. cesarea, boletus edulis, b. aereus. 
-                     Y especies de árboles como el sauce cenizo (Salix atrocinerea), haya, fresnos y castaño. El sotobosque se encuentra conformado 
-                     principalmente por especies de los géneros Cytisus, Rubus y Rosa.    </p> */}
                   </div>
                   <div className="forestLink">
                     {" "}
-                    <Link className="eachLink" to="/Forest3">BOSQUES DE RIVERA
-                    <p>
-                    Formación vegetal con una variedad de flora concreta, que se extiende a lo largo de cauces de río. La primera franja suele presentar especies más pequeñas, como arbustos o juncos. Conforme el cauce del río avanza, se da paso a otras especies de mayor tamaño muy adaptados a suelos con un alto nivel freático como la familia de los Salix, Fresnos y chopos.
-                    </p>
+                    <Link className="eachLink" to="/Forest3">
+                      BOSQUES DE RIVERA
                     </Link>
-                    
                   </div>
                   <div className="forestLink">
                     {" "}
-                    <Link className="eachLink" to="/Forest4">BOSQUES DE PIORNO 
-                      <p>
-                    En las zonas más altas se encuentran los bosques de Piornos o retamas(genista florida),espectaculares cuando florecen. Forman extensos matorrales, solos o conviviendo con arbustos como el enebro rastrero, escoba blanca y con hierbas o matas, como viborera salmantina, el cantueso, tomillo perruno, Santolina, la dedalera.
-                      </p>
+                    <Link className="eachLink" to="/Forest4">
+                      BOSQUES DE PIORNO
                     </Link>
-                  
-                      {/* <p>
-                    En las zonas más altas de la Sierra de Francia se encuentran los bosques de Piornos o retamas(genista florida), muestran una de las manifestaciones más espectaculares cuando florecen. Forman extensos matorrales, solos o conviviendo con otros arbustos, como el enebro rastrero (Juniperus communis), escoba blanca,  hierbas y matas, como viborera salmantina (Echium salmanticum), la ortegia (Ortegia hispanica, ), el cantueso ( Lavandula pedunculata), Lamiáceas, tomillo perruno, Santolina rosmarinifolia,  Asteráceas y la dedalera de flores rosadas (Digitalis thapsi Plantagináceas).
-                      </p> */}
                   </div>
                   <div className="forestLink">
                     {" "}
-                    <Link className="eachLink" to="/Forest5">BOSQUES DE DEHESA
-                      <p>
-                    En las inmediaciones de las Sierra de Francia y algunas manchas boscosas puntuales. Masas donde predomina la encina, 
-                    con otras especies como el quejigo, y el alcornoque. El estrato inferior consta de altas presencias de Lavandula , Daphne gnidium o Cistus ladanifer, géneros como Thymus o Cytisus.        
-                    </p>
+                    <Link className="eachLink" to="/Forest5">
+                      BOSQUES DE DEHESA
                     </Link>
-                  
-                    {/* <p>
-                    En las inmediaciones de las Sierra de Francia y algunas manchas boscosas puntuales. Masas en las que 
-                    Quercus ilex aporta más de un 80% de los ejemplares, pero aparecen otras especies como el quejigo 
-                    (Quercus faginea) y el alcornoque (Quercus suber). El estrato inferior consta de altas presencias de 
-                    Lavandula stoechas, Daphne gnidium o Cistus ladanifer y otras especies de géneros como Thymus o Cytisus. Abundan los rebaños de vacas y de cerdos, sobretodo en la época de la montaners, cuando caen las bellotas del árbol y sirven de alimento al cerdo ibérico.             
-                    </p> */}
                   </div>
                 </section>
               </>
@@ -117,9 +81,7 @@ const Forests = () => {
           económica de muchos pueblos de la Sierra. Como especie exclusiva del
           Parque Natural cabe destacar la Armeria salmantica, planta que forma
           pequeñas matas y crece únicamente en el entorno de la Peña de Francia.
-          
         </p>
-        
       </div>
       <Link to="/" className="backToMain">
         <i className="fa-solid fa-left-long"></i> Back

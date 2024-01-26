@@ -14,7 +14,15 @@ const Forest1 = () => {
         <h1 className="chestnutTitle">BOSQUE DE CASTAÑOS</h1>
         {/* <img className='imgForest1' src={forest1} alt="" /> */}
       </div>
-      <p className="chestnutDescription">
+      <div className="chestnutDescription">      
+      <p >
+        Bosques donde predomina el castaño (Castanea sativa), en algunos casos
+        ejemplares centenarios, además de numerosos avellanos, robles, acebedas
+        -únicas en la provincia de Salamanca- y sus cerezos silvestres de más de
+        20 metros de altura. Descubrimos este hermoso y desconocido bosque bajo
+        la lluvia.
+      </p>
+      <p >
         {" "}
         El árbol dominante de este bosque es el castaño, castannea sativa, con
         ejemplares de envergadura que crecen entre tilos(Tilia platyphyllos),
@@ -31,10 +39,10 @@ const Forest1 = () => {
         arándanos (Vaccinium mirtyllus), majuelos (Crateagus monogyna) y plantas
         deporte hérbáceo.{" "}
       </p>
-          <br />
-      <p className="inProcess">
-        Inventario en proceso de elaboración.
-      </p>
+      <br />
+
+      </div>
+      <p className="inProcess">Inventario en proceso de elaboración.</p>
 
       <Link to="/Forests" className="backToMain">
         <i className="fa-solid fa-left-long"></i> Back

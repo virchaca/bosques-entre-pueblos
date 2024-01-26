@@ -12,6 +12,12 @@
       color: wheat;
       text-align: center;
       padding: 50px;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      1px 1px 0 white; 
+      font-size: 20px;
+      @media all and (min-width: 768px) {
+        font-size: 34px;
+      }
     }
     .forestsTypes {
       display: flex;
@@ -20,37 +26,48 @@
       justify-content: center;
       text-align: center;
       align-items: center;
-      // list-style: none;
+      margin-inline: 2rem;    
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      1px 1px 0 white; 
       @media all and (min-width: 768px) {
         flex-direction: row;
         flex-wrap: nowrap;
+        margin-inline: 3rem;
+        
       }
     }
   
     .forestLink {
-      border: 1px solid white;
-      width: 8rem;
-      background-color: wheat;
-      padding: 3px;
-      margin-block: 0.5rem;
-      font-size: 10px;
-      &:hover{
-        background-color: gray;
+      border-radius: 50%;
+      width: 5rem;
+      margin-block: 0.5rem;      
+      font-size: 10px;      
+      &:hover{      
+        font-size: 14px;
       }
      
       @media all and (min-width: 768px) {
         width: 50rem;
         margin: 20px;
         padding: 20px;
-        width: 16rem;
+        width: 10rem;
         padding: 10px;
         margin-block: 1rem;
-        font-size: 14px;
+        font-size: 18px;
+        &:hover{      
+          font-size: 20px;
+        }
+       
       }
       .eachLink{
         text-decoration: none;
         color: black;
+        color: wheat;
         font-weight: bolder;
+        margin: auto;
+        &:hover{       
+          color: white;
+        }
        p{
         font-weight: 300;
        }
@@ -99,18 +116,14 @@
         font-size: 28px;
       }
     }
-    .chestnutDescription {
-      background-color: white;
-      border: 2px solid black;
-      width: 50%;
-      margin: 2rem;
-      padding: 2rem;
-      font-size: 10px;
-      @media all and (min-width: 768px) {
-        font-size: 16px;
-      }
+    
+  }
+  .chestnutDescription {  
+    margin-inline: 2rem;     
+    @media all and (min-width: 768px) {         
     }
   }
+
   
   .forest2 {
     background-image: url(../images/hayedo4.png);
