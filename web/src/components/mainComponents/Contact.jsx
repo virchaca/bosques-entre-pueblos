@@ -21,12 +21,12 @@ function Contact() {
           @VirWebCreations{" "}
         </a>{" "}
       </p>    
-          <p>Contáctanos para cualquier consulta</p>
+          <p>Escríbemos por mail o formulario</p>
           
        </section>
       
       <section className="formSection">
-        <h4>Mediante formulario</h4>
+        {/* <h4>Mediante formulario</h4> */}
         <form action="https://formsubmit.co/e304ce9ec8898c2d635b585601a5787f" method="POST" className="form" > 
           {/* <label htmlFor="name" >Nombre</label> */}
           <input className="input" type="text" name="name" placeholder="Nombre"/>

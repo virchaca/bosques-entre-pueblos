@@ -28,9 +28,9 @@ function Hero() {
               <input type="submit" value="Buscar" className="plantInput" />
             </label> */}
 
-            <label className="seasonInput" htmlFor="season">
-              Indícanos en que momento del año nos visitas y te daremos algunos consejos sobre que hacer en esa época.
-            </label>
+            {/* <label className="seasonInput" htmlFor="season">
+              En que momento del año nos visitas...
+            </label> */}
             <select
               id="season"
               name="select"
@@ -38,7 +38,7 @@ function Hero() {
               value={season}
               onChange={handleSelectSeason}
             >
-              <option value="">Elige estación</option>
+              <option value="">En que momento del año nos visitas...</option>
               <option value="summer">verano</option>
               <option value="autumn">otoño</option>
               <option value="winter">invierno</option>

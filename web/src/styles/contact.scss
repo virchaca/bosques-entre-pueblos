@@ -28,14 +28,15 @@
   }
 
   .formSection {
-    background-color: silver;
+    // background-color: silver;
     opacity: 0.9;
     padding: 5px;
     border-radius: 20px;
     font-size: 12px;
-    border: 2px solid black;
+    // border: 2px solid black;
     margin: auto;
     text-align: center;
+    width: 80%;
 
     @media all and (min-width: 768px) {
       font-size: 16px;
@@ -48,9 +49,13 @@
       .input {
         border-radius: 15px;
         padding: 5px;
+        &:hover{
+          background-color: silver;
+        }
       }
       .input::placeholder {
         font-size: 10px;
+        
         @media all and (min-width: 768px) {
           font-size: 14px;
         }
@@ -61,6 +66,9 @@
         font-size: 10px;
         @media all and (min-width: 768px) {
           font-size: 16px;
+        }
+        &:hover{
+          background-color: silver;
         }
       }
     }

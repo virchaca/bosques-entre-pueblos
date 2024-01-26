@@ -15,6 +15,7 @@ import amanita2 from "../../images/usersPictures/amanita.png";
 import erizo2 from "../../images/usersPictures/erizo2.jpg";
 import rusco from "../../images/usersPictures/rusco.jpg";
 import corzo from "../../images/usersPictures/corzo.jpg";
+import mierla1 from "../../images/usersPictures/mierla1.png";
 
 import { useState } from "react";
 import GetAvatar from "../GetAvatar";
@@ -60,6 +61,7 @@ function UsersPics() {
           <img className="imgUsersPics" src={pic4} alt="" />
           <img className="imgUsersPics" src={pic8} alt="" />
           <img className="imgUsersPics" src={flores} alt="" />
+          <img className="imgUsersPics" src={mierla1} alt="" />
           <img className="imgUsersPics" src={pic7} alt="" />
           <img className="imgUsersPics" src={rusco} alt="" />
           <img className="imgUsersPics" src={corzo} alt="" />        

@@ -17,6 +17,7 @@
     min-height: 90vh;
     // margin-top: 10px;
     margin-bottom: 100px;
+    align-items: flex-start;
    
   }
   .formDisplay {
@@ -55,9 +56,9 @@
    
     .seasonTips {
       color: black;
-      border: 3px solid black;
+      // border: 3px solid black;
       background-color: white;
-      border-style: dashed;
+      // border-style: dashed;
       opacity: 0.8;
       margin: 2rem;
       padding: 1rem;
@@ -82,7 +83,7 @@
   .mainSectionForm {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    // background-color: black;
     color: white;
     opacity: 0.8;
     margin-block: 50px;
@@ -96,8 +97,8 @@
       padding: 4px;
     }
     .seasonInput {
-      background-color: white;
-      color: black;
+      background-color: black;
+      color: white;
       padding: 4px;
     }
   }
@@ -105,7 +106,8 @@
   .contain{
     background-color: wheat;
     opacity: 0.8;
-    border: 3px solid black;
+    // border: 3px solid black;
+    box-shadow: 10px -10px 20px rgba(0, 0, 0.4, 0.8);
     width: 15rem;
 
     @media screen and (min-width: 768px) {
@@ -138,8 +140,9 @@
   label{
     position: relative;
     padding: 5px;
-    background-color: black;
-    color: white;
+    // background-color: black;
+    // color: white;
+    font-weight: bolder;
     cursor: pointer;    
     font-size: 10px;   
     @media screen and (min-width: 768px) {   
@@ -148,10 +151,10 @@
     }
   }
   label::before{
-    content: 'ver más';    
+    content: 'ver más...';    
   }
   input[type="checkbox"]:checked ~ label::before {
-    content: 'ver menos';
+    content: '...ver menos';
    
   }
   // .dots:has(~ input[type="checkbox"]:checked) {
