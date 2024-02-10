@@ -84,6 +84,6 @@ console.log('hello plant');
 
 //SERVIDOR DE ESTATICOS PARA LLAMAR AL FRONTEND - WEB
 
-const staticServerPath = "./web/dist";
+const staticServerPath = "./src/public-react";  //"./web/dist"
 server.use(express.static(staticServerPath));
 
