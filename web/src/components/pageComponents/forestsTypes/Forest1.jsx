@@ -2,8 +2,31 @@
 // import forest1 from "../../../images/forest1.png";
 import { Link } from "react-router-dom";
 import "../../../styles/forests.scss";
+import PropTypes from "prop-types";
 
-const Forest1 = () => {
+const Forest1 = ({ allPlants }) => {
+
+
+  const renderPlantsCastaño = (plants) => {
+    return (
+      <ul className="ulListCastaño">
+        {plants
+          .filter((item) => item.forest_type === "Castaño")
+          .map((plant) => (
+            <li key={plant.id}>
+              <strong>Common Name:</strong> {plant.common_name}
+              <br />
+              <strong>Latin Name:</strong> {plant.latin_name}
+              <br />
+              <strong>Fam:</strong> {plant.fam}
+              <br />
+              <strong>Forest Type:</strong> {plant.forest_type}
+              <br />
+            </li>
+          ))}
+      </ul>
+    );
+  };
   return (
     <>
       <Link to="/Forests" className="backToMain">
@@ -40,7 +63,14 @@ const Forest1 = () => {
         deporte hérbáceo.{" "}
       </p>
       <br />
-
+      <div>
+      <h2>Bosque de castaños</h2>
+      {allPlants.length > 0 ? (
+        renderPlantsCastaño(allPlants)
+      ) : (
+        <p>Cargando datos...</p>
+      )}
+    </div>
       </div>
       <p className="inProcess">Inventario en proceso de elaboración.</p>
 
@@ -49,6 +79,10 @@ const Forest1 = () => {
       </Link>
     </>
   );
+};
+
+Forest1.propTypes = {
+  allPlants: PropTypes.array.isRequired,
 };
 
 export default Forest1;

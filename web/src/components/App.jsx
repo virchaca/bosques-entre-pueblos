@@ -23,6 +23,8 @@ import Forest3 from "./pageComponents/forestsTypes/Forest3";
 import Forest4 from "./pageComponents/forestsTypes/Forest4";
 import Forest5 from "./pageComponents/forestsTypes/Forest5";
 
+import { useEffect, useState } from "react";
+
 // me lo he llevado a UsersPics
 // import moni7 from "../images/moni7.png";
 // import GetAvatar from "./GetAvatar";
@@ -35,6 +37,48 @@ function App() {
   //   setAvatar(avatar);
   // };
 
+  ///////////empiezo las cosas raras de conectar API////////////////
+
+  const [allPlants, setAllPlants] = useState([]);
+
+  useEffect(() => {
+    const fetchDataFromAPI = async () => {
+      try {
+        const response = await fetch("http://localhost:4001/plants");
+        if (!response.ok) {
+          throw new Error("Error al obtener los datos");
+        }
+        const Data = await response.json();
+        setAllPlants(Data.results);
+      } catch (error) {
+        console.error("Error al obtener datos de la API:", error);
+      }
+    };
+
+    fetchDataFromAPI();
+  }, []);
+
+    //////////cosas conectar API acaban
+ 
+  
+  //renderizar todas las plantas
+  // const renderPlants = (plants) => {
+  //   return (
+  //     <ul className="ulList">
+  //       {plants.map(plant => (
+  //         <li key={plant.id}>
+  //           <strong>Common Name:</strong> {plant.common_name}<br />
+  //           <strong>Latin Name:</strong> {plant.latin_name}<br />
+  //           <strong>Fam:</strong> {plant.fam}<br />
+  //           <strong>Forest Type:</strong> {plant.forest_type}<br />
+  //         </li>
+  //       ))}
+  //     </ul>
+  //   );
+  // };
+
+
+
   return (
     <>
       <Header />
@@ -45,7 +89,7 @@ function App() {
             path="/"
             element={
               <>
-                <Hero />
+                <Hero allPlants={allPlants}/>
 
                 <section className="menuSection">
                   <span className="aPictures">
@@ -84,6 +128,14 @@ function App() {
                   </a>
                 </div> */}
                 {/* <Carroussel /> */}
+
+                {/* con este div se muestra la info de la API */}
+                <section>
+                  <h2>Mostrando el contenido de mi API desde React</h2>
+                               
+                </section>
+
+                {/* hasta aquí el div que muestra la info de la API */}
                 <SponsorSpace />
               </>
             }
@@ -94,11 +146,11 @@ function App() {
           <Route path="/Card" element={<Card />} />
 
           <Route path="/contact" element={<Contact />} />
-          <Route path="/Forest1" element={<Forest1 />} />
-          <Route path="/Forest2" element={<Forest2 />} />
-          <Route path="/Forest3" element={<Forest3 />} />
-          <Route path="/Forest4" element={<Forest4 />} />
-          <Route path="/Forest5" element={<Forest5 />} />
+          <Route path="/Forest1" element={<Forest1 allPlants={allPlants} />} />
+          <Route path="/Forest2" element={<Forest2 allPlants={allPlants} />} />
+          <Route path="/Forest3" element={<Forest3 allPlants={allPlants} />} />
+          <Route path="/Forest4" element={<Forest4 allPlants={allPlants} />} />
+          <Route path="/Forest5" element={<Forest5 allPlants={allPlants} />} />
           <Route path="/UsersPics" element={<UsersPics />} />
         </Routes>
       </main>

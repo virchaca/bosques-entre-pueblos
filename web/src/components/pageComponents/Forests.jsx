@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // import React from 'react'
 // import Forest1 from "./forestsTypes/Forest1";
 // import Forest2 from "./forestsTypes/Forest2";
@@ -5,6 +6,31 @@ import { Routes, Route, Link } from "react-router-dom";
 import "../../styles/forests.scss";
 
 const Forests = () => {
+
+  
+  //{allPlants} --> proptype
+
+  // const renderPlantsCastaño = (plants) => {
+  //   return (
+  //     <ul className="ulListCastaño">
+  //       {plants
+  //         .filter((item) => item.forest_type === "Castaño")
+  //         .map((plant) => (
+  //           <li key={plant.id}>
+  //             <strong>Common Name:</strong> {plant.common_name}
+  //             <br />
+  //             <strong>Latin Name:</strong> {plant.latin_name}
+  //             <br />
+  //             <strong>Fam:</strong> {plant.fam}
+  //             <br />
+  //             <strong>Forest Type:</strong> {plant.forest_type}
+  //             <br />
+  //           </li>
+  //         ))}
+  //     </ul>
+  //   );
+  // };
+
   return (
     <>
       <Link to="/" className="backToMain">
@@ -57,6 +83,15 @@ const Forests = () => {
           {/* <Route path="/Forest1" element={<Forest1 />} />          
           <Route path="/Fauna" element={<Forest2 />} /> */}
         </Routes>
+        {/* <div>
+                    <h2>Bosque de castaños</h2>
+                    {allPlants.length > 0 ? (
+                      renderPlantsCastaño(allPlants)
+                    ) : (
+                      <p>Cargando datos...</p>
+                    )}
+                  </div> */}
+
         <p className="forestText">
           VEGETACIÓN En las cumbres más altas del Parque Natural, la vegetación
           ha tenido que adaptarse a la crudeza del clima, dominando el piorno y
@@ -82,6 +117,7 @@ const Forests = () => {
           Parque Natural cabe destacar la Armeria salmantica, planta que forma
           pequeñas matas y crece únicamente en el entorno de la Peña de Francia.
         </p>
+    
       </div>
       <Link to="/" className="backToMain">
         <i className="fa-solid fa-left-long"></i> Back
